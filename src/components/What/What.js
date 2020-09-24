@@ -3,7 +3,7 @@ import vacine from "../../asets/vacine.png";
 import shelter from "../../asets/shelter.png";
 import tree from "../../asets/tree.png";
 import firstaid from "../../asets/firstaid.png";
-import polio from "../../asets/polio.png";
+import polio from "../../asets/polio.png?raw=true";
 import leg from "../../asets/leg.png";
 import book from "../../asets/book.png";
 
@@ -202,7 +202,7 @@ export default class What extends Component {
               </span>{" "}
             </h2>
             {this.state.table.map((i) => {
-              return <img className="image" src={this.state.image} />;
+              return <div><img className="image" src={this.state.image} /></div>;
             })}
             <div><h2><br/><q>{this.state.info}</q></h2></div>
             <div><h3>more info at: <a className="a" href={this.state.href}>{this.state.adress}</a></h3></div>
