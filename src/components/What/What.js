@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import vacine from "../../asets/vacine.png";
+import vacine from "../../asets/vacine.png?raw=true";
 import shelter from "../../asets/shelter.png";
 import tree from "../../asets/tree.png";
 import firstaid from "../../asets/firstaid.png";
