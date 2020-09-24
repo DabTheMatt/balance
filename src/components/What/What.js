@@ -3,7 +3,7 @@ import vacine from "../../asets/vacine.png?raw=true";
 import shelter from "../../asets/shelter.png";
 import tree from "../../asets/tree.png";
 import firstaid from "../../asets/firstaid.png";
-import polio from "../../asets/polio.png";
+import polio from "../../asets/polio.png?raw=true";
 import leg from "../../asets/leg.png";
 import book from "../../asets/book.png";
 
