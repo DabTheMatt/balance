@@ -42,17 +42,14 @@ h2 {
     flex-direction: column;
 }
 
-.main {
-    
-   
-  }
+
 
 .center {
     text-align: center;
 }
 
 .titleRotation {
-    transform: rotate(-2deg);
+    font-family: 'Baskervville', serif;
 }
 
 .weight400 {
@@ -98,7 +95,7 @@ button {
     text-align: center;
     text-transform: capitalize;
     color: white;
-    font-family: 'Lobster', cursive;
+    font-family: 'Baskervville', serif;
     width: 60%;
     
    
@@ -161,7 +158,7 @@ label {
 }
 
 .top1em {
-    margin-top: 1em;
+    margin-top: 0.6em;
 }
 
 .a {
@@ -195,11 +192,11 @@ h3 {
         font-weight: bold;
         font-size: 2em;
     }
+    .checkmargintop20vh {
+        margin-top: 25vh;
+    }
     .container {
         margin: 2em auto;
-       
-
-    
     }
     .form {
         display: flex;
@@ -237,9 +234,8 @@ h3 {
     label {
         font-size: 1.5em;
     }
-    .maincheck {
-        line-height: 8em;
-    }
+    
+    
     .mainh2 {
         font-size: 1.5em;
     }
@@ -253,6 +249,10 @@ h3 {
         
         font-size: 1em;
         margin: 0 auto;
+    }
+    .titleRotation {
+        font-size: 4em;
+        font-weight: bold;
     }
     .top1em {
         margin-top: 0em;
