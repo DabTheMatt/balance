@@ -1,4 +1,4 @@
-# Welcome to the Balance project.
+# Welcome to the Balance project
 
 It is a project to create an application to change the world. It was born from the idea of ​​re-evaluating values, the need to talk about consumerism, and to raise our awareness as consumers.
 
@@ -34,7 +34,7 @@ Beata Kwiecińska / Maciej Dąbrowski
 
 - - 
 
-# Witaj w projekcie Balance.
+# Witaj w projekcie Balance
 
 projekcie stworzenia aplikacji mającej zmieniać świat. Pomysł na Balance zrodził się z potrzzeby przewartościowywania wartości, rozmowy o konsumpcjoniźmie, zwiększania naszej świadomości jako konsumentów.
 
