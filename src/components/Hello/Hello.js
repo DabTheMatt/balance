@@ -9,10 +9,10 @@ function Hello() {
     
 
         <div className="center container">
-        <div><h1 className="titleRotation">BALANC<span className="weight300">E</span></h1></div>
+        <div className="margintop20vh"><h1 className="titleRotation">BALANC<span className="weight300">E</span></h1></div>
         
-        <h2>how much is it worth?</h2>
-        <button ><Link className="check" to="/main">Check</Link></button>
+        <h2 className="mainh2">how much is it worth?</h2>
+        <button ><Link className="check maincheck" to="/main">Check</Link></button>
       </div>
       
             

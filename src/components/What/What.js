@@ -180,17 +180,12 @@ export default class What extends Component {
   render() {
     return (
       <div
-        className="container"
-        style={{
-          width: "80%",
-          height: "auto",
-          marginBottom: "6rem",
-          marginTop: "6rem",
-        }}
+        className="container main"
+        
       >
         {this.state.showHow ? (
-          <div style={{}}>
-            <h1>
+          <div className="center container main">
+            <h1 className="top1em">
               Your <br />
               <span className="thing">{this.state.whatValue}</span>
             </h1>
@@ -201,14 +196,17 @@ export default class What extends Component {
                 {this.state.text1} {this.state.table.length} {this.state.text2}
               </span>{" "}
             </h2>
+            <div className="margin3em">
             {[...this.state.table].map((i) => {
               return <img className="image" src={this.state.image} />;
             })}
-            <div><h2><br/><q>{this.state.info}</q></h2></div>
+            </div>
+            <div className="margin3em"><h2><br/><q>{this.state.info}</q></h2></div>
             <div><h3>more info at: <a className="a" href={this.state.href}>{this.state.adress}</a></h3></div>
-            <div><h3><br/><br/><br/><a className="ainvert" href="../">Check once again...</a></h3></div>
+            <div><h3><a className="ainvert" href="../#/">Check once again...</a></h3></div>
           </div>
         ) : (
+          <div className="margintop10vh">
           <form onSubmit={this.handleSubmit} className="form">
             <label>What do you want to buy?</label>
             <input
@@ -236,6 +234,7 @@ export default class What extends Component {
               How much is it worth?
             </button>
           </form>
+          </div>
         )}
 
         <div></div>
