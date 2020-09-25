@@ -53,7 +53,7 @@ Do rozwoju aplikacji potrzebujemy aktualnie pomocy:
 - badaczy / socjologów / pracowników NGO
 - specjalistów od interfejsu użytkownika
 
-### Projekt Balance App jest projektem Non Profit, jednak poszukujemy mecenasów zmiany gotowych przekazać fundusze na rozwój aplikacji.
+### Projekt Balance App jest projektem Non Profit, jednak poszukujemy mecenasów zmiany gotowych przekazać fundusze na rozwój aplikacji. // niejasny akapit
 
 Mamy nadzieję, że rozwój aplikacji pomoże także w rozwoju społecznego domu kultury w miejscowości Podłęże w Polsce, gdzie przez wiele lat działało INSPIRO. Było to miejsce działające na rzecz mieszkańców, a w szczególności dzieci. INSPIRO było bezpieczną przystanią dla ludzi o różnych poglądach, koncentrującym się na budowaniu społeczeństwa obywatelskiego.
 
