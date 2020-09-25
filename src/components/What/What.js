@@ -203,7 +203,7 @@ export default class What extends Component {
             </div>
             <div className="margin3em"><h2><br/><q>{this.state.info}</q></h2></div>
             <div><h3>more info at: <a className="a" href={this.state.href}>{this.state.adress}</a></h3></div>
-            <div><h3><a className="ainvert" href="../#/">Check once again...</a></h3></div>
+            <div><h3><a className="ainvert" href="../balance/#/">Check once again...</a></h3></div>
           </div>
         ) : (
           <div className="margintop10vh">
