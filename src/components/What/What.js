@@ -27,6 +27,7 @@ export default class What extends Component {
       adress: "",
       href: "",
     };
+    
   }
 
   handleSubmit = () => {
@@ -46,8 +47,10 @@ export default class What extends Component {
     });
   };
 
-  handleClick = () => {
-    
+  handleClick(e) {
+    e.preventDefault();
+  
+
     if (this.state.costValue <= 50) {
         console.log("aaa")
       let randomNumber = Math.floor(Math.random() * (2 - 1)) + 1;
@@ -208,7 +211,7 @@ export default class What extends Component {
           </div>
         ) : (
           <div className="margintop10vh">
-          <form onSubmit={this.handleSubmit} className="form">
+          <form onSubmit={this.handleSubmit()} className="form">
             <label>What do you want to buy?</label>
             <input
               className="input"
@@ -227,8 +230,8 @@ export default class What extends Component {
             ></input>
 
             <button
-              onClick={this.handleClick}
               
+              type="submit"
               className="check top5rem"
               style={{ textTransform: "" }}
             >
