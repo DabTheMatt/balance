@@ -100,9 +100,9 @@ this.setState({
 numberOf: array.length,
 image: bee,
 table: [...array],
-text1: `You can adopt `,
+text1: `as much as adoption of `,
 text2: "bees",
-info: "Adopt a Bee is a Greenpeace social campaign that has been running since 2013, thanks to which thousands of people are involved in helping bees, and Poland is becoming more pollinator-friendly. Thanks to virtual 'adoptions' on the adoptujpszczole.pl website, everyone has a chance to help honey and wild bees.",
+info: "'Adopt a Bee' is a Greenpeace social campaign that has been running since 2013, thanks to which thousands of people are involved in helping bees, and Poland is becoming more pollinator-friendly. Thanks to virtual 'adoptions' on the adoptujpszczole.pl website, everyone has a chance to help honey and wild bees.",
 adress: "ADOPT BEE website (pl)",
 href: "https://adoptujpszczole.pl/"
 
