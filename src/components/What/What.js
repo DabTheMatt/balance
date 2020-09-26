@@ -7,6 +7,8 @@ import polio from "../../asets/polio.png?raw=true";
 import leg from "../../asets/leg.png";
 import book from "../../asets/book.png";
 import pencil from "../../asets/pencil.png";
+import bee from "../../asets/bee.png";
+
 
 
 export default class What extends Component {
@@ -54,8 +56,8 @@ export default class What extends Component {
       console.log("cost", this.state.costValue);
       console.log("randomnumer", randomNumber);
 
-              if (randomNumber <=50) {
-              console.log("<=50")
+              if (randomNumber <=33) {
+              console.log("<=33")
                 
               let array = new Array(parseInt(Number(this.state.costValue) / 0.19));
 
@@ -72,8 +74,8 @@ export default class What extends Component {
       });
 
 
-              } else if (randomNumber >50) {
-              console.log(">50");
+              } else if (randomNumber <=66) {
+              console.log("<=66");
 
               let array = new Array(parseInt(Number(this.state.costValue) / 0.03));
 
@@ -88,6 +90,23 @@ export default class What extends Component {
         href: "https://www.market.unicefusa.org/inspired-gifts/1000-pencils-for-a-whole-school/S4460701/"
       
       });
+
+    } else if (randomNumber >66) {
+      console.log(">66");
+
+      let array = new Array(parseInt(Number(this.state.costValue) / 1.28));
+
+this.setState({
+numberOf: array.length,
+image: bee,
+table: [...array],
+text1: `You can adopt `,
+text2: "bees",
+info: "Adopt a Bee is a Greenpeace social campaign that has been running since 2013, thanks to which thousands of people are involved in helping bees, and Poland is becoming more pollinator-friendly. Thanks to virtual 'adoptions' on the adoptujpszczole.pl website, everyone has a chance to help honey and wild bees.",
+adress: "ADOPT BEE website (pl)",
+href: "https://adoptujpszczole.pl/"
+
+});
 
                     }
       
