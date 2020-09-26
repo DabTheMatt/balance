@@ -6,6 +6,7 @@ import firstaid from "../../asets/firstaid.png";
 import polio from "../../asets/polio.png?raw=true";
 import leg from "../../asets/leg.png";
 import book from "../../asets/book.png";
+import pencil from "../../asets/pencil.png";
 
 
 export default class What extends Component {
@@ -49,22 +50,48 @@ export default class What extends Component {
 
   handleClick = () => {
     if (this.state.costValue <= 50) {
-        console.log("aaa")
-      let randomNumber = Math.floor(Math.random() * (2 - 1)) + 1;
+      let randomNumber = Math.floor(Math.random()*100);
       console.log("cost", this.state.costValue);
+      console.log("randomnumer", randomNumber);
 
-      let array = new Array(parseInt(Number(this.state.costValue) / 0.19));
+              if (randomNumber <=50) {
+              console.log("<=50")
+                
+              let array = new Array(parseInt(Number(this.state.costValue) / 0.19));
 
       this.setState({
         numberOf: array.length,
         image: polio,
         table: [...array],
-        text1: "polio vacines for ",
+        text1: `${array.length} polio vacines for `,
         text2: "children",
         info: "These oral polio vaccine drops can protect children under age 5 from polio, a highly contagious viral infection. Honor your friends and loved ones by helping children who need it most.",
         adress: "UNICEF website",
         href: "https://www.market.unicefusa.org/inspired-gifts/polio-vaccines-to-protect-100-children/S359190/"
+      
       });
+
+
+              } else if (randomNumber >50) {
+              console.log(">50");
+
+              let array = new Array(parseInt(Number(this.state.costValue) / 0.03));
+
+      this.setState({
+        numberOf: array.length,
+        image: pencil,
+        table: [...array],
+        text1: `${array.length} pencils for `,
+        text2: "children",
+        info: "Pencils can equip a school with the essential tools for self-expression. One of the most basic yet crucial educational supplies, pencils can make a huge difference in children's lives — and give them hope for a brighter future.",
+        adress: "UNICEF website",
+        href: "https://www.market.unicefusa.org/inspired-gifts/1000-pencils-for-a-whole-school/S4460701/"
+      
+      });
+
+                    }
+      
+    
     } else if (this.state.costValue <= 100) {
       console.log("bbb")
       let randomNumber = Math.floor(Math.random() * (1 + 2)) + 1;
