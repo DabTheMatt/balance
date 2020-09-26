@@ -47,6 +47,7 @@ export default class What extends Component {
   };
 
   handleClick = () => {
+    
     if (this.state.costValue <= 50) {
         console.log("aaa")
       let randomNumber = Math.floor(Math.random() * (2 - 1)) + 1;
@@ -227,7 +228,7 @@ export default class What extends Component {
 
             <button
               onClick={this.handleClick}
-              type="submit"
+              
               className="check top5rem"
               style={{ textTransform: "" }}
             >
