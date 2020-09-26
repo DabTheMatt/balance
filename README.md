@@ -36,13 +36,13 @@ Beata Kwiecińska / Maciej Dąbrowski
 
 # Witaj w projekcie Balance
 
-projekcie stworzenia aplikacji mającej zmieniać świat. Pomysł na Balance zrodził się z potrzzeby przewartościowywania wartości, rozmowy o konsumpcjoniźmie, zwiększania naszej świadomości jako konsumentów.
+projekcie stworzenia aplikacji mającej zmieniać Świat. Pomysł na Balance zrodził się z potrzeby przewartościowywania wartości (z poszukiwań odpowiedzi na pytanie ile są warte nasze codzienne decyzje, ile są warte nowe spodnie, ile jest warte nowe krzesło, ile jest warty nowa lampa), rozmowy o konsumpcjoniźmie, rozmowy o planecie,  zwiększania naszej świadomości jako konsumentów.
 
 Balance App ma nie tylko zmieniać Świat globalnie, ale także przysłużyć się do zmiany naszej najbliższej społeczności. 
 
 ### Szukamy osób, które chcą zaangażować się w zmianę i zaoferować swój czas i doświadczenie.
 
-Balance to prosta aplikacja. która porównuje wartość rzeczy z wartościami z innych kategorii takich jak pomoc humanitarna, zachowanie dziedzictwa, wspieranie inicjatyw oddolnych.
+Balance to prosta aplikacja, która porównuje wartość rzeczy z wartościami z innych kategorii takich jak pomoc humanitarna, zachowanie dziedzictwa, wspieranie inicjatyw oddolnych.
 
 ### Balance daje możliwość poznania organizacji i programów zajmujących się pomaganiem i zmienianiem świata.
 
@@ -55,7 +55,7 @@ Do rozwoju aplikacji potrzebujemy aktualnie pomocy:
 
 ### Projekt Balance App jest projektem Non Profit, jednak poszukujemy mecenasów zmiany gotowych przekazać fundusze na rozwój aplikacji.
 
-Mamy nadzieję, że rozwój aplikacji pomoże także w rozwoju społecznego domu kultury w miejscowości Podłęże w Polsce, gdzie przez wiele lat działało INSPIRO. Było to miejsce działające na rzecz mieszkańców, a w szczególności dzieci. INSPIRO było bezpieczną przystanią dla ludzi o różnych poglądach, koncentrującym się na budowaniu społeczeństwa obywatelskiego.
+Mamy nadzieję, że rozwój aplikacji zmieni świat ale również pomoże w rozwoju społecznego startup-u "INSPIRO UP" a w przyszłości w budowie społecznego domu kultury w Polsce, gdzie przez wiele lat działało INSPIRO. Było to miejsce działające na rzecz społeczności. INSPIRO było bezpieczną przystanią dla ludzi o różnych poglądach, koncentrującym się na edukacji, spotkaniu z drugim człowiekiem, kulturze, sztuce, budowaniu społeczeństwa obywatelskiego.
 
 Marzymy o tym, aby INSPIRO mogło znowu zaistnieć i wierzymy, że rozwój Balance App i praca nad tym projektem pomogą nam spełnić to marzenie. 
 
