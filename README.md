@@ -34,37 +34,37 @@ Beata Kwiecińska / Maciej Dąbrowski
 
 - - 
 
-# Witaj w projekcie Balance
+Witaj w projekcie Balance
+projekcie stworzenia aplikacji która zmieni Świat. Pomysł na Balance zrodził się z poszukiwań odpowiedzi na pytanie ile są warte nasze codzienne decyzje? Ile są warte nasze zakupy? Ile jest warte nowe krzesło, spodnie, gra wideo? Balance powstała w czasie rozmów o konsumpcjoniźmie, o poszanowaniu środowiska, oraz o zwiększeniu naszej świadomości jako konsumentów.
 
-projekcie stworzenia aplikacji mającej zmieniać Świat. Pomysł na Balance zrodził się z potrzeby przewartościowywania wartości (z poszukiwań odpowiedzi na pytanie ile są warte nasze codzienne decyzje, ile są warte nowe spodnie, ile jest warte nowe krzesło, ile jest warty nowa lampa), rozmowy o konsumpcjoniźmie, rozmowy o planecie,  zwiększania naszej świadomości jako konsumentów.
+Balance App ma nie tylko zmieniać Świat globalnie, ale także przysłużyć się do zmiany naszej najbliższej społeczności.
 
-Balance App ma nie tylko zmieniać Świat globalnie, ale także przysłużyć się do zmiany naszej najbliższej społeczności. 
+Szukamy osób, które chcą zaangażować się w zmianę i zaoferować swój czas i doświadczenie.
 
-### Szukamy osób, które chcą zaangażować się w zmianę i zaoferować swój czas i doświadczenie.
+Balance to prosta aplikacja, która porównuje wartość rzeczy z wartościami pochodzącymi z innych kategorii takich jak pomoc humanitarna, zachowanie dziedzictwa, wspieranie inicjatyw oddolnych.
 
-Balance to prosta aplikacja, która porównuje wartość rzeczy z wartościami z innych kategorii takich jak pomoc humanitarna, zachowanie dziedzictwa, wspieranie inicjatyw oddolnych.
-
-### Balance daje możliwość poznania organizacji i programów zajmujących się pomaganiem i zmienianiem świata.
+Balance daje możliwość poznania organizacji i programów zajmujących się pomaganiem innym i dbaniem o środowisko naturalne.
 
 Do rozwoju aplikacji potrzebujemy aktualnie pomocy:
 
-- w programowaniu
-- w tłumaczeniu na inne języki
-- badaczy / socjologów / pracowników NGO
+- programistów,
+- tłumaczy,
+- badaczy,
+- socjologów,
+- pracowników NGO,
 - specjalistów od interfejsu użytkownika
 
-### Projekt Balance App jest projektem Non Profit, jednak poszukujemy mecenasów zmiany gotowych przekazać fundusze na rozwój aplikacji.
+Projekt Balance App jest projektem Non Profit, jednak poszukujemy mecenasów zmiany gotowych przekazać fundusze na rozwój aplikacji.
 
-Mamy nadzieję, że rozwój aplikacji zmieni świat ale również pomoże w rozwoju społecznego startup-u "INSPIRO UP" a w przyszłości w budowie społecznego domu kultury w Polsce, gdzie przez wiele lat działało INSPIRO. Było to miejsce działające na rzecz społeczności. INSPIRO było bezpieczną przystanią dla ludzi o różnych poglądach, koncentrującym się na edukacji, spotkaniu z drugim człowiekiem, kulturze, sztuce, budowaniu społeczeństwa obywatelskiego.
+Mamy nadzieję, że rozwój aplikacji nie tylko wywoła zmianę ale również pomoże w rozwoju społecznego startup-u "INSPIRO UP", a w przyszłości wspomoże finansowo budowę społecznego domu kultury w Polsce, gdzie przez wiele lat działało INSPIRO. Było to miejsce działające na rzecz społeczności, które było bezpieczną przystanią dla ludzi o różnych poglądach, koncentrującym się na edukacji, spotkaniu z drugim człowiekiem, kulturze, sztuce oraz budowaniu społeczeństwa obywatelskiego.
 
-Marzymy o tym, aby INSPIRO mogło znowu zaistnieć i wierzymy, że rozwój Balance App i praca nad tym projektem pomogą nam spełnić to marzenie. 
+Marzymy o tym, aby INSPIRO mogło znowu zaistnieć i wierzymy, że rozwój Balance App i praca nad tym projektem pomogą nam spełnić to marzenie.
 
-Aby urzeczywistnić naszą wizję i stworzyć społeczny startup tworzący aplikacje, które mogą zmieniać świat, nauczyliśmy się podstaw programowania. 
+Aby urzeczywistnić naszą wizję i zbudować społeczny startup tworzący aplikacje mające zmieniać świat, nauczyliśmy się podstaw programowania.
 
-### Zmiana nie musi być trudna, jednak razem z Wami stanie się możliwa.
+Zmiana nie musi być trudna, jednak razem z Wami stanie się możliwa.
 
 Zapraszamy do współpracy
 
-INSPIRO UP
-Beata Kwiecińska / Maciej Dąbrowski
+INSPIRO UP Beata Kwiecińska / Maciej Dąbrowski
 
