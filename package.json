@@ -20,7 +20,8 @@
     "react-scripts": "^3.4.3",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "save-dev": "0.0.1-security"
+    "save-dev": "0.0.1-security",
+    "tabletop": "^1.6.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,9 +29,7 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

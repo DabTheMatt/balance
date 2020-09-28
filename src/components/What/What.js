@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Tabletop from "tabletop";
 import vacine from "../../asets/vacine.png?raw=true";
 import shelter from "../../asets/shelter.png";
 import tree from "../../asets/tree.png";
@@ -9,13 +10,12 @@ import book from "../../asets/book.png";
 import pencil from "../../asets/pencil.png";
 import bee from "../../asets/bee.png";
 
-
-
 export default class What extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
+      data: [],
       whatValue: "",
       costValue: "",
       showHow: false,
@@ -30,6 +30,18 @@ export default class What extends Component {
       adress: "",
       href: "",
     };
+  }
+
+  componentDidMount() {
+    Tabletop.init({
+      key: "1NKa7gPtvcImda1TyAfkM9mlkJ5rDuke5eRqmQImNFWA",
+      callback: (googleData) => {
+        this.setState({
+          data: googleData,
+        });
+      },
+      simpleSheet: true,
+    });
   }
 
   handleSubmit = (e) => {
@@ -52,88 +64,85 @@ export default class What extends Component {
 
   handleClick = () => {
     if (this.state.costValue <= 50) {
-      let randomNumber = Math.floor(Math.random()*100);
+      let randomNumber = Math.floor(Math.random() * 100);
       console.log("cost", this.state.costValue);
       console.log("randomnumer", randomNumber);
 
-              if (randomNumber <=33) {
-              console.log("<=33")
-                
-              let array = new Array(parseInt(Number(this.state.costValue) / 0.19));
+      if (randomNumber <= 33) {
+        console.log("<=33");
 
-      this.setState({
-        numberOf: array.length,
-        image: polio,
-        table: [...array],
-        text1: `${array.length} polio vacines for `,
-        text2: "children",
-        info: "These oral polio vaccine drops can protect children under age 5 from polio, a highly contagious viral infection. Honor your friends and loved ones by helping children who need it most.",
-        adress: "UNICEF website",
-        href: "https://www.market.unicefusa.org/inspired-gifts/polio-vaccines-to-protect-100-children/S359190/"
-      
-      });
+        let array = new Array(parseInt(Number(this.state.costValue) / 0.19));
 
+        this.setState({
+          numberOf: array.length,
+          image: polio,
+          table: [...array],
+          text1: `${array.length} polio vacines for `,
+          text2: "children",
+          info:
+            "These oral polio vaccine drops can protect children under age 5 from polio, a highly contagious viral infection. Honor your friends and loved ones by helping children who need it most.",
+          adress: "UNICEF website",
+          href:
+            "https://www.market.unicefusa.org/inspired-gifts/polio-vaccines-to-protect-100-children/S359190/",
+        });
+      } else if (randomNumber <= 66) {
+        console.log("<=66");
 
-              } else if (randomNumber <=66) {
-              console.log("<=66");
+        let array = new Array(parseInt(Number(this.state.costValue) / 0.03));
 
-              let array = new Array(parseInt(Number(this.state.costValue) / 0.03));
+        this.setState({
+          numberOf: array.length,
+          image: pencil,
+          table: [...array],
+          text1: `${array.length} pencils for `,
+          text2: "children",
+          info:
+            "Pencils can equip a school with the essential tools for self-expression. One of the most basic yet crucial educational supplies, pencils can make a huge difference in children's lives — and give them hope for a brighter future.",
+          adress: "UNICEF website",
+          href:
+            "https://www.market.unicefusa.org/inspired-gifts/1000-pencils-for-a-whole-school/S4460701/",
+        });
+      } else if (randomNumber > 66) {
+        console.log(">66");
 
-      this.setState({
-        numberOf: array.length,
-        image: pencil,
-        table: [...array],
-        text1: `${array.length} pencils for `,
-        text2: "children",
-        info: "Pencils can equip a school with the essential tools for self-expression. One of the most basic yet crucial educational supplies, pencils can make a huge difference in children's lives — and give them hope for a brighter future.",
-        adress: "UNICEF website",
-        href: "https://www.market.unicefusa.org/inspired-gifts/1000-pencils-for-a-whole-school/S4460701/"
-      
-      });
+        let array = new Array(parseInt(Number(this.state.costValue) / 1.28));
 
-    } else if (randomNumber >66) {
-      console.log(">66");
-
-      let array = new Array(parseInt(Number(this.state.costValue) / 1.28));
-
-this.setState({
-numberOf: array.length,
-image: bee,
-table: [...array],
-text1: `as much as adoption of `,
-text2: "bees",
-info: "'Adopt a Bee' is a Greenpeace social campaign that has been running since 2013, thanks to which thousands of people are involved in helping bees, and Poland is becoming more pollinator-friendly. Thanks to virtual 'adoptions' on the adoptujpszczole.pl website, everyone has a chance to help honey and wild bees.",
-adress: "ADOPT BEE website (pl)",
-href: "https://adoptujpszczole.pl/"
-
-});
-
-                    }
-      
-    
+        this.setState({
+          numberOf: array.length,
+          image: bee,
+          table: [...array],
+          text1: `as much as adoption of `,
+          text2: "bees",
+          info:
+            "'Adopt a Bee' is a Greenpeace social campaign that has been running since 2013, thanks to which thousands of people are involved in helping bees, and Poland is becoming more pollinator-friendly. Thanks to virtual 'adoptions' on the adoptujpszczole.pl website, everyone has a chance to help honey and wild bees.",
+          adress: "ADOPT BEE website (pl)",
+          href: "https://adoptujpszczole.pl/",
+        });
+      }
     } else if (this.state.costValue <= 100) {
-      console.log("bbb")
+      console.log("bbb");
       let randomNumber = Math.floor(Math.random() * (1 + 2)) + 1;
-    console.log("rn", randomNumber);
+      console.log("rn", randomNumber);
 
-    let array = new Array(parseInt(Number(this.state.costValue) / 5));
+      let array = new Array(parseInt(Number(this.state.costValue) / 5));
 
-    this.setState({
-      numberOf: array.length,
-      image: book,
-      text1: `${array.length} books from a local bookstore for yourself or for`,
-      text2: "of your friends",
-      info: "Buying books at local bookstores not only supports local businesses and allows the distribution of cultural goods, but can also help in raising funds for those in real need.",
-      adress: "OXFAM website",
-      href: "https://www.oxfam.org.uk/"
-    });
+      this.setState({
+        numberOf: array.length,
+        image: book,
+        text1: `${array.length} books from a local bookstore for yourself or for`,
+        text2: "of your friends",
+        info:
+          "Buying books at local bookstores not only supports local businesses and allows the distribution of cultural goods, but can also help in raising funds for those in real need.",
+        adress: "OXFAM website",
+        href: "https://www.oxfam.org.uk/",
+      });
 
-    this.setState({
-      table: [...array],
-    });
-  } else if (this.state.costValue <= 200) {
-        console.log("bbb")
-        let randomNumber = Math.floor(Math.random() * (1 + 2)) + 1;
+      this.setState({
+        table: [...array],
+      });
+    } else if (this.state.costValue <= 200) {
+      console.log("bbb");
+      let randomNumber = Math.floor(Math.random() * (1 + 2)) + 1;
       console.log("rn", randomNumber);
 
       let array = new Array(parseInt(Number(this.state.costValue) / 32));
@@ -143,17 +152,19 @@ href: "https://adoptujpszczole.pl/"
         image: firstaid,
         text1: `${array.length} large first aid kits for a `,
         text2: "health workers",
-        info: "First aid kit for the treatment of minor injuries. The sturdy bag contains an array of medical supplies including bandages, soap, blanket, towel, forceps, scalpel blade, pain reliever and ointments.",
+        info:
+          "First aid kit for the treatment of minor injuries. The sturdy bag contains an array of medical supplies including bandages, soap, blanket, towel, forceps, scalpel blade, pain reliever and ointments.",
         adress: "UNICEF website",
-        href: "https://www.market.unicefusa.org/inspired-gifts/large-first-aid-kit-for-a-health-worker/S9975020/"
+        href:
+          "https://www.market.unicefusa.org/inspired-gifts/large-first-aid-kit-for-a-health-worker/S9975020/",
       });
 
       this.setState({
         table: [...array],
       });
     } else if (this.state.costValue <= 500) {
-        console.log("bbb")
-        let randomNumber = Math.floor(Math.random() * (1 + 2)) + 1;
+      console.log("bbb");
+      let randomNumber = Math.floor(Math.random() * (1 + 2)) + 1;
       console.log("rn", randomNumber);
 
       let array = new Array(parseInt(Number(this.state.costValue) / 18));
@@ -163,20 +174,19 @@ href: "https://adoptujpszczole.pl/"
         image: shelter,
         text1: `${array.length} tarpaulins too shelter `,
         text2: "families",
-        info: "In times of disaster, this tarp made of heavy-duty plastic sheeting can help protect a family from the elements. This large sheet can provide temporary cover and serve as a windshield or groundsheet. These tarps are provided to Child-Friendly Spaces and also used to wrap around temporary latrines",
+        info:
+          "In times of disaster, this tarp made of heavy-duty plastic sheeting can help protect a family from the elements. This large sheet can provide temporary cover and serve as a windshield or groundsheet. These tarps are provided to Child-Friendly Spaces and also used to wrap around temporary latrines",
         adress: "UNICEF website",
-        href: "https://www.market.unicefusa.org/inspired-gifts/tarpaulins-to-shelter-children-and-their-families/S5086011/"
-
+        href:
+          "https://www.market.unicefusa.org/inspired-gifts/tarpaulins-to-shelter-children-and-their-families/S5086011/",
       });
 
       this.setState({
         table: [...array],
       });
-
-   
-  } else if (this.state.costValue <= 2000) {
-        console.log("bbb")
-        let randomNumber = Math.floor(Math.random() * (1 + 2)) + 1;
+    } else if (this.state.costValue <= 2000) {
+      console.log("bbb");
+      let randomNumber = Math.floor(Math.random() * (1 + 2)) + 1;
       console.log("rn", randomNumber);
 
       let array = new Array(parseInt(Number(this.state.costValue) / 69));
@@ -186,50 +196,44 @@ href: "https://adoptujpszczole.pl/"
         image: tree,
         text1: "as much as planting ",
         text2: "baobabs",
-        info: "The baobab is an indigenous tree of Madagascar and widespread throughout Africa. Well-known for its imposing presence, consider that the tree’s diameter can reach a width of 10 meters. Considered the social hub of villages, the baobab’s shade hosts markets, meetings, dances, and games. It’s planted in to assist with the recovery of natural forests.",
+        info:
+          "The baobab is an indigenous tree of Madagascar and widespread throughout Africa. Well-known for its imposing presence, consider that the tree’s diameter can reach a width of 10 meters. Considered the social hub of villages, the baobab’s shade hosts markets, meetings, dances, and games. It’s planted in to assist with the recovery of natural forests.",
         adress: "Treedom, let's green the planet website",
-        href: "https://www.treedom.net/en/plant-a-tree/baobab-tree_637"
-
+        href: "https://www.treedom.net/en/plant-a-tree/baobab-tree_637",
       });
 
       this.setState({
         table: [...array],
       });
+    } else if (this.state.costValue <= 50000) {
+      console.log("bbb");
+      let randomNumber = Math.floor(Math.random() * (1 + 2)) + 1;
+      console.log("rn", randomNumber);
 
-   
-  } else if (this.state.costValue <= 50000) {
-    console.log("bbb")
-    let randomNumber = Math.floor(Math.random() * (1 + 2)) + 1;
-  console.log("rn", randomNumber);
+      let array = new Array(parseInt(Number(this.state.costValue) / 500));
 
-  let array = new Array(parseInt(Number(this.state.costValue) / 500));
+      this.setState({
+        numberOf: array.length,
+        image: leg,
+        text1: "as much as funding ",
+        text2: "mechanical leg prosthesis for children",
+        info: `Most of our patients have lost their limbs due to the war. Despite the circumstances that brought people to the center, it’s a hopeful place. Daily, we see physical and psychological support provide tangible improvements to refugees’ quality of life."`,
+        adress: "RELIEF International website",
+        href:
+          "https://www.ri.org/providing-life-changing-prosthetics-for-syrian-refugees/",
+      });
 
-  this.setState({
-    numberOf: array.length,
-    image: leg,
-    text1: "as much as funding ",
-    text2: "mechanical leg prosthesis for children",
-    info: `Most of our patients have lost their limbs due to the war. Despite the circumstances that brought people to the center, it’s a hopeful place. Daily, we see physical and psychological support provide tangible improvements to refugees’ quality of life."`,
-    adress: "RELIEF International website",
-    href: "https://www.ri.org/providing-life-changing-prosthetics-for-syrian-refugees/"
-
-  });
-
-  this.setState({
-    table: [...array],
-  });
-
-
-};
-
-}
+      this.setState({
+        table: [...array],
+      });
+    }
+  };
 
   render() {
+    const { data } = this.state;
+    console.log("data", data);
     return (
-      <div
-        className="container main"
-        
-      >
+      <div className="container main">
         {this.state.showHow ? (
           <div className="center container main">
             <h1 className="top1em">
@@ -244,43 +248,71 @@ href: "https://adoptujpszczole.pl/"
               </span>{" "}
             </h2>
             <div className="margin3em">
-            {[...this.state.table].map((i) => {
-              return <img className="image" src={this.state.image} />;
-            })}
+              {[...this.state.table].map((i) => {
+                return <img className="image" src={this.state.image} />;
+              })}
             </div>
-            <div className="margin3em"><h2><br/><q>{this.state.info}</q></h2></div>
-            <div><h3>more info at: <a className="a" href={this.state.href}>{this.state.adress}</a></h3></div>
-            <div><h3><a className="ainvert" href="../balance/#/">Check once again...</a></h3></div>
+            <div className="margin3em">
+              <h2>
+                <br />
+                <q>{this.state.info}</q>
+              </h2>
+            </div>
+            <div>
+              <h3>
+                more info at:{" "}
+                <a className="a" href={this.state.href}>
+                  {this.state.adress}
+                </a>
+              </h3>
+            </div>
+            <div>
+              <h3>
+                <a className="ainvert" href="../balance/#/">
+                  Check once again...
+                </a>
+              </h3>
+            </div>
+            <div id="footer">
+              <br></br>
+              <br></br>
+              <div>
+                {data.map((obj) => {
+                  return <div key="obj.id">{obj.footer}</div>;
+                })}
+              </div>
+              <br></br>
+            </div>
           </div>
         ) : (
           <div className="margintop10vh">
-          <form onSubmit={this.handleSubmit} className="form">
-            <label>What do you want to buy?</label>
-            <input
-              className="input"
-              onChange={this.handleThingChange}
-              value={this.state.whatValue}
-            ></input>
-            <label>How much it costs?</label>
+            <form onSubmit={this.handleSubmit} className="form">
+              <label>What do you want to buy?</label>
+              <input
+                className="input"
+                onChange={this.handleThingChange}
+                value={this.state.whatValue}
+              ></input>
+              <label>How much it costs?</label>
 
-            <input
-              type="number"
-              className="input"
-              onChange={this.handleCostChange}
-              placeholder=""
-              value={this.state.costValue}
-              style={{ width: "40%" }}
-            ></input>
+              <input
+                type="number"
+                className="input"
+                onChange={this.handleCostChange}
+                placeholder=""
+                value={this.state.costValue}
+                style={{ width: "40%" }}
+              ></input>
 
-            <button
-              onClick={this.handleClick}
-              type="submit"
-              className="check top5rem"
-              style={{ textTransform: "" }}
-            >
-              How much is it worth?
-            </button>
-          </form>
+              <button
+                onClick={this.handleClick}
+                type="submit"
+                className="check top5rem"
+                style={{ textTransform: "" }}
+              >
+                How much is it worth?
+              </button>
+            </form>
           </div>
         )}
 
