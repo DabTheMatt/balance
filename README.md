@@ -1,36 +1,37 @@
-# Welcome to the Balance project
+Welcome to the Balance project
 
-It is a project to create an application to change the world. It was born from the idea of ​​re-evaluating values, the need to talk about consumerism, and to raise our awareness as consumers.
+the project to create an application that will change the world. The idea for Balance was born out of the search for an answer to the question of how much are our everyday decisions worth? How much are our purchases worth? How much is a new chair, pants, video game worth? Balance was created during conversations about consumerism, about respect for the environment, and about increasing our awareness as consumers.
 
-The Balance App is not only supposed to change the world globally, but also to help us change our immediate social environment.
+The Balance App is not only to change the world globally, but also to contribute to the change of our immediate community.
 
-### We are looking for people who want to get involved in change and offer their time and experience.
+We are looking for people who want to get involved in change and offer their time and experience.
 
-Balance is a simple application. which compares the value of things with the value of other categories such as humanitarian aid, heritage conservation, supporting remote initiatives, relief / emergency programs, responsible voluntering, comunity work, disaster funds, international charities, etc.
+Balance is a simple application that compares the value of a thing with the value of other categories such as humanitarian aid, heritage conservation, supporting grassroots initiatives.
 
-### Balance gives the opportunity to learn about organizations and programs dealing with helping and changing the world.
+Balance gives the opportunity to learn about organizations and programs that help others and care for the natural environment.
 
-We currently need help to develop the application:
+We are currently looking for help to develop the application:
 
-- in programming
-- in translation into other languages
-- researchers / sociologists / NGO workers
+- developers,
+- explains,
+- researchers,
+- sociologists,
+- NGO employees,
 - user interface specialists
 
-### The Balance App project is a Not for profit project, but we are also looking for help from change patrons and funds for the development of the app.
+The Balance App project is a Non Profit project, however we are looking for patrons of change ready to donate funds for the development of the app.
 
-We hope that the development of the application will also help in the development of the local comunity center in Podłęże / Poland, where the INSPIRO comunity center has operated for many years. It was a place that works for the benefit of residents, especially children. INSPIRO was a safe haven for people of different views focused on building a civil society.
+We hope that the development of the application will not only bring about a change, but will also help in the development of the social startup "INSPIRO UP", and in the future it will financially support the construction of a social community center in Poland, where INSPIRO has operated for many years. It was a community center that was a safe haven for people of different minds, focusing on education, socializing, culture, art and building a civil society.
 
-We hope that the INSPIRO comunity center will be able to exist again and we believe that the development of the Balance App and work on this project can make this dream come true.
+We dream about INSPIRO being able to exist again and we believe that the development of the Balance App and work on this project will help us make this dream come true.
 
-We learned the basics of programming to make our vision a reality and create a social framework that creates applications that can change the world.
+To make our vision a reality and build a social startup that creates applications to change the world, we learned the basics of programming.
 
-### Change does not have to be difficult, but it will become possible with you.
+Change does not have to be difficult, but it will become possible with you.
 
 We invite you to cooperation
 
-INSPIRO UP
-Beata Kwiecińska / Maciej Dąbrowski
+INSPIRO UP Beata Kwiecińska / Maciej Dąbrowski
 
 - - 
 
