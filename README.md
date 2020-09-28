@@ -1,4 +1,4 @@
-Welcome to the Balance project
+# Welcome to the Balance project
 
 the project to create an application that will change the world. The idea for Balance was born out of the search for an answer to the question of how much are our everyday decisions worth? How much are our purchases worth? How much is a new chair, pants, video game worth? Balance was created during conversations about consumerism, about respect for the environment, and about increasing our awareness as consumers.
 
@@ -35,7 +35,8 @@ INSPIRO UP Beata Kwiecińska / Maciej Dąbrowski
 
 - - 
 
-Witaj w projekcie Balance
+#Witaj w projekcie Balance
+
 projekcie stworzenia aplikacji która zmieni Świat. Pomysł na Balance zrodził się z poszukiwań odpowiedzi na pytanie ile są warte nasze codzienne decyzje? Ile są warte nasze zakupy? Ile jest warte nowe krzesło, spodnie, gra wideo? Balance powstała w czasie rozmów o konsumpcjoniźmie, o poszanowaniu środowiska, oraz o zwiększeniu naszej świadomości jako konsumentów.
 
 Balance App ma nie tylko zmieniać Świat globalnie, ale także przysłużyć się do zmiany naszej najbliższej społeczności.
