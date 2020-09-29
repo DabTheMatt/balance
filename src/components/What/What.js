@@ -63,6 +63,8 @@ export default class What extends Component {
   };
 
   handleClick = () => {
+    const { data } = this.state;
+
     if (this.state.costValue <= 50) {
       let randomNumber = Math.floor(Math.random() * 100);
       console.log("cost", this.state.costValue);
@@ -120,26 +122,45 @@ export default class What extends Component {
         });
       }
     } else if (this.state.costValue <= 100) {
-      console.log("bbb");
-      let randomNumber = Math.floor(Math.random() * (1 + 2)) + 1;
-      console.log("rn", randomNumber);
-
-      let array = new Array(parseInt(Number(this.state.costValue) / 5));
-
-      this.setState({
-        numberOf: array.length,
-        image: book,
-        text1: `${array.length} books from a local bookstore for yourself or for`,
-        text2: "of your friends",
-        info:
-          "Buying books at local bookstores not only supports local businesses and allows the distribution of cultural goods, but can also help in raising funds for those in real need.",
-        adress: "OXFAM website",
-        href: "https://www.oxfam.org.uk/",
+      console.log("<90");
+      this.state.data.map((obj) => {
+        if (obj.thershold <= 100) {
+        console.log("fff", this.state.numberOf);
+        let array = new Array(
+          parseInt(Number(this.state.costValue) / obj.price_per_item)
+        );
+        return this.setState({
+          numberOf: array.length,
+          image: obj.image,
+          table: [...array],
+          text1: `${array.length} ${obj.text1}`,
+          text2: obj.text2,
+          info: obj.info,
+          adress: obj.website_name,
+          href: obj.webpage_adress,
+        })};
       });
+    // } else if (this.state.costValue <= 100) {
+    //   console.log("bbb");
+    //   let randomNumber = Math.floor(Math.random() * (1 + 2)) + 1;
+    //   console.log("rn", randomNumber);
 
-      this.setState({
-        table: [...array],
-      });
+    //   let array = new Array(parseInt(Number(this.state.costValue) / 5));
+
+    //   this.setState({
+    //     numberOf: array.length,
+    //     image: book,
+    //     text1: `${array.length} books from a local bookstore for yourself or for`,
+    //     text2: "of your friends",
+    //     info:
+    //       "Buying books at local bookstores not only supports local businesses and allows the distribution of cultural goods, but can also help in raising funds for those in real need.",
+    //     adress: "OXFAM website",
+    //     href: "https://www.oxfam.org.uk/",
+    //   });
+
+    //   this.setState({
+    //     table: [...array],
+    //   });
     } else if (this.state.costValue <= 200) {
       console.log("bbb");
       let randomNumber = Math.floor(Math.random() * (1 + 2)) + 1;
@@ -276,11 +297,7 @@ export default class What extends Component {
             <div id="footer">
               <br></br>
               <br></br>
-              <div>
-                {data.map((obj) => {
-                  return <div key="obj.id">{obj.footer}</div>;
-                })}
-              </div>
+              
               <br></br>
             </div>
           </div>
