@@ -62,9 +62,7 @@ export default class What extends Component {
       let array = new Array(
         parseInt(Number(this.state.costValue) / obj.price_per_item)
       );
-      return 
-      
-      this.setState({
+      return this.setState({
         numberOf: array.length,
         image: obj.image,
         table: [...array],
