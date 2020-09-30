@@ -186,6 +186,13 @@ h3 {
     color: white;
 }
 
+::placeholder {
+    color: white;
+    text-transform: lowercase;
+    font-size: 0.5em;
+
+}
+
 @media (max-width: 1024px) {
 
     .check {

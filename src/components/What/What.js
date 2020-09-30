@@ -262,7 +262,7 @@ export default class What extends Component {
                 type="number"
                 className="input"
                 onChange={this.handleCostChange}
-                placeholder=""
+                placeholder="$"
                 value={this.state.costValue}
                 style={{ width: "40%" }}
               ></input>

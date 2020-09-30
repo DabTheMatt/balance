@@ -78,7 +78,7 @@ export default class What_pl extends Component {
     this.state.data.map((obj) => {
       if (obj.thershold <= 50) {
       let array = new Array(
-        parseInt(Number(this.state.costValue) / obj.price_per_item)
+        parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
       );
       return this.setState({
         numberOf: array.length,
@@ -95,7 +95,7 @@ export default class What_pl extends Component {
     this.state.data.map((obj) => {
       if (obj.thershold <= 80) {
       let array = new Array(
-        parseInt(Number(this.state.costValue) / obj.price_per_item)
+        parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
       );
       return this.setState({
         numberOf: array.length,
@@ -112,7 +112,7 @@ export default class What_pl extends Component {
       this.state.data.map((obj) => {
         if (obj.thershold <= 100) {
         let array = new Array(
-          parseInt(Number(this.state.costValue) / obj.price_per_item)
+          parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
         );
         return this.setState({
             numberOf: array.length,
@@ -130,7 +130,7 @@ export default class What_pl extends Component {
     this.state.data.map((obj) => {
       if (obj.thershold <= 200) {
       let array = new Array(
-        parseInt(Number(this.state.costValue) / obj.price_per_item)
+        parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
       );
       return this.setState({
         numberOf: array.length,
@@ -147,7 +147,7 @@ export default class What_pl extends Component {
     this.state.data.map((obj) => {
       if (obj.thershold <= 500) {
       let array = new Array(
-        parseInt(Number(this.state.costValue) / obj.price_per_item)
+        parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
       );
       return this.setState({
         numberOf: array.length,
@@ -164,7 +164,7 @@ export default class What_pl extends Component {
     this.state.data.map((obj) => {
       if (obj.thershold <= 2000) {
       let array = new Array(
-        parseInt(Number(this.state.costValue) / obj.price_per_item)
+        parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
       );
       return this.setState({
         numberOf: array.length,
@@ -181,7 +181,7 @@ export default class What_pl extends Component {
     this.state.data.map((obj) => {
       if (obj.thershold <= 50000) {
       let array = new Array(
-        parseInt(Number(this.state.costValue) / obj.price_per_item)
+        parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
       );
       return this.setState({
         numberOf: array.length,
@@ -262,7 +262,7 @@ export default class What_pl extends Component {
                 type="number"
                 className="input"
                 onChange={this.handleCostChange}
-                placeholder=""
+                placeholder="zł"
                 value={this.state.costValue}
                 style={{ width: "40%" }}
               ></input>
