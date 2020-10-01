@@ -8,6 +8,8 @@ We are looking for people who want to get involved in change and offer their tim
 
 Balance is a simple application that compares the value of a thing with the value of other categories such as humanitarian aid, heritage conservation, supporting grassroots initiatives.
 
+You can find the app here: [Balance App](https://dabthematt.github.io/balance/).
+
 Balance gives the opportunity to learn about organizations and programs that help others and care for the natural environment.
 
 We are currently looking for help to develop the application:
