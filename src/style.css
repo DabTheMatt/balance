@@ -115,7 +115,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .margin3em {
-    margin: 0 3em;
+    margin: 0 2.5em;
 }
 
 .margintop20vh {
@@ -193,7 +193,23 @@ h3 {
 
 }
 
+.polishbutton {
+    color: white;
+    font-Size: 0.7em
+}
+
+.polishbutton:hover {
+    color: black
+}
+
 @media (max-width: 1024px) {
+    .ainvert {
+        font-family: 'Baskervville', serif;
+        font-weight: 100;
+        font-size: 1.6em;
+        text-decoration: none;
+        color: white;
+    }
 
     .check {
         font-weight: bold;
@@ -263,5 +279,43 @@ h3 {
     }
     .top1em {
         margin-top: 0em;
+    }
+
+    .polishbutton {
+        font-size: 1.2em;
+        font-weight: normal;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .check {
+    font-size: 1.6em;
+    }
+    .container {
+        margin: 0em auto;
+    }
+    h1 {
+        font-size: 4em;
+        margin: 0 auto;
+        }
+    .html {
+        max-width: 320px;
+        max-height: 568px;
+    }
+    .mainh2 {
+        font-size: 1.2em;
+    }
+    .margintop20vh {
+        margin-top: 10vh;
+    }
+    .polishbutton {
+        font-size: 0.8em;
+    }
+    .titleRotation {
+        font-size: 3em;
+    }
+    .top1em {
+        margin-top: 0.5em;
     }
 }

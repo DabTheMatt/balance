@@ -9,10 +9,11 @@ function Hello() {
     
 
         <div className="center container">
-        <div className="margintop20vh"><h1 className="titleRotation">BALANCE</h1></div>
+        <div className="margintop20vh"><h1 className="titleRotation  animate__animated animate__fadeIn">BALANCE</h1></div>
         
-        <h2 className="mainh2">how much is it worth? / Ile to jest warte?</h2>
-        <div className="checkmargintop20vh"><button ><Link className="check" to="/what">Check / </Link><Link className="check" to="/what_pl">Sprawdź</Link></button></div>
+        <h2 className="mainh2">how much is it worth?</h2>
+        <div className="checkmargintop20vh"><button ><Link className="check animate__delay-1s animate__animated animate__fadeIn" to="/what">Check</Link></button></div>
+        <div><h2><br></br><Link className="check polishbutton" to="/what_pl">wersja polska</Link></h2></div>
       </div>
       
             
