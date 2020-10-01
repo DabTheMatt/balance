@@ -2,6 +2,8 @@
 
 the project to create an application that will change the world. The idea for Balance was born out of the search for an answer to the question of how much are our everyday decisions worth? How much are our purchases worth? How much is a new chair, pants, video game worth? Balance was created during conversations about consumerism, about respect for the environment, and about increasing our awareness as consumers.
 
+![Balance App!](https://raw.githubusercontent.com/DabTheMatt/balance/master/src/asets/balance2.png "Balance App L")
+
 The Balance App is not only to change the world globally, but also to contribute to the change of our immediate community.
 
 We are looking for people who want to get involved in change and offer their time and experience.
