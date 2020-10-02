@@ -126,23 +126,7 @@ export default class What extends Component {
         })};
       }); 
 
-    } else if (this.state.costValue <= 150) {
-      this.state.data.map((obj) => {
-        if (obj.thershold <= 150) {
-        let array = new Array(
-          parseInt(Number(this.state.costValue) / obj.price_per_item)
-        );
-        return this.setState({
-          numberOf: array.length,
-          image: obj.image,
-          table: [...array],
-          text1: `${array.length} ${obj.text1}`,
-          text2: obj.text2,
-          info: obj.info,
-          adress: obj.website_name,
-          href: obj.webpage_adress,
-        })};
-      }); 
+    
    
   } else if (this.state.costValue <= 200) {
     this.state.data.map((obj) => {
@@ -161,6 +145,25 @@ export default class What extends Component {
         href: obj.webpage_adress,
       })};
     }); 
+
+  } else if (this.state.costValue <= 250) {
+    this.state.data.map((obj) => {
+      if (obj.thershold <= 250) {
+      let array = new Array(
+        parseInt(Number(this.state.costValue) / obj.price_per_item)
+      );
+      return this.setState({
+        numberOf: array.length,
+        image: obj.image,
+        table: [...array],
+        text1: `${array.length} ${obj.text1}`,
+        text2: obj.text2,
+        info: obj.info,
+        adress: obj.website_name,
+        href: obj.webpage_adress,
+      })};
+    }); 
+
   } else if (this.state.costValue <= 500) {
     this.state.data.map((obj) => {
       if (obj.thershold <= 500) {
