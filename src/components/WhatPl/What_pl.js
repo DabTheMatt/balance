@@ -177,7 +177,7 @@ export default class What_pl extends Component {
         href: obj.webpage_adress,
       })};
     }); 
-  } else if (this.state.costValue <= 50000) {
+  } else if (this.state.costValue <= 100000) {
     this.state.data.map((obj) => {
       if (obj.thershold <= 50000) {
       let array = new Array(
@@ -194,6 +194,23 @@ export default class What_pl extends Component {
         href: obj.webpage_adress,
       })};
     }); 
+  } else if (this.state.costValue <= 500000) {
+    this.state.data.map((obj) => {
+      if (obj.thershold.pl <= 80000) {
+      let array = new Array(
+        parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
+      );
+      return this.setState({
+        numberOf: array.length,
+        image: obj.image,
+        table: [...array],
+        text1: `${obj.text1_pl}`,
+        text2: obj.text2_pl,
+        info: obj.info_pl,
+        adress: obj.website_name_pl,
+        href: obj.webpage_adress,
+      })};
+    });
     }
   };
 
