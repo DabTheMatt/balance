@@ -273,12 +273,12 @@ export default class What extends Component {
                 {this.state.text1} {this.state.table.length} {this.state.text2}
               </span>{" "}
             </h2>
-            <div className="margin3em">
+            <div className="margin3em info">
               {[...this.state.table].map((i) => {
                 return <img className="image" src={this.state.image} />;
               })}
             </div>
-            <div className="margin3em">
+            <div className="margin3em info">
               <h2>
                 <br />
                 <q>{this.state.info}</q>

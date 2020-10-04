@@ -11,6 +11,10 @@ html {
     margin: 0 auto;
 }
 
+.info {
+    width: 60vw;
+}
+
 h1 {
     font-weight: 200;
     font-size: 7em;
@@ -78,11 +82,15 @@ button {
     text-decoration: none;
     font-weight: 500;
     font-size: 3em;
+
+
 }
 
 .check:hover {
     
     color: white;
+
+
 }
 
 .input {
@@ -115,7 +123,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .margin3em {
-    margin: 0 2.5em;
+    margin: 0 5em;
 }
 
 .margintop20vh {
@@ -155,7 +163,9 @@ label {
     margin: 1.5em;
     line-height: 1.4em;
     text-transform: capitalize;
+    
 }
+
 
 .top1em {
     margin-top: 0.6em;
@@ -245,6 +255,9 @@ h3 {
     h3 {
         font-size: 1em;
     }
+    .info {
+        width: 80vw;
+    }
     .input {
         
         font-size: 2em;
@@ -302,6 +315,9 @@ h3 {
     .html {
         max-width: 320px;
         max-height: 568px;
+    }
+    .info {
+        width: 100vw;
     }
     .mainh2 {
         font-size: 1.2em;
