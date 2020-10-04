@@ -36,6 +36,10 @@ export default class What extends Component {
     });
   }
 
+  reloadPage = () => {
+    window.location.reload(false);
+  }
+
   handleSubmit = (e) => {
     e.preventDefault();
     this.setState({
@@ -198,6 +202,23 @@ export default class What extends Component {
         href: obj.webpage_adress,
       })};
     }); 
+  } else if (this.state.costValue <= 25000) {
+    this.state.data.map((obj) => {
+      if (obj.thershold <= 25000) {
+      let array = new Array(
+        parseInt(Number(this.state.costValue) / obj.price_per_item)
+      );
+      return this.setState({
+        numberOf: array.length,
+        image: obj.image,
+        table: [...array],
+        text1: `${array.length} ${obj.text1}`,
+        text2: obj.text2,
+        info: obj.info,
+        adress: obj.website_name,
+        href: obj.webpage_adress,
+      })};
+    }); 
   } else if (this.state.costValue <= 50000) {
     this.state.data.map((obj) => {
       if (obj.thershold <= 50000) {
@@ -215,9 +236,9 @@ export default class What extends Component {
         href: obj.webpage_adress,
       })};
     }); 
-  } else if (this.state.costValue <= 80000) {
+  } else if (this.state.costValue <= 100000) {
     this.state.data.map((obj) => {
-      if (obj.thershold <= 80000) {
+      if (obj.thershold <= 100000) {
       let array = new Array(
         parseInt(Number(this.state.costValue) / obj.price_per_item)
       );
@@ -272,12 +293,19 @@ export default class What extends Component {
               </h3>
             </div>
             <div>
-              <h3>
-                <a className="ainvert" href="../balance/#/">
+              <h3 className="ainvert" onClick={this.reloadPage}>
+                
                   Check once again...
-                </a>
+                
+                
               </h3>
-            </div>
+              </div>
+              <div>
+                <a className="a" style={{marginTop: "6em", fontSize: "1.5em"}} href="../balance/#/">
+                    Home
+                </a>
+                </div>
+            
             <div id="footer">
               <br></br>
               <br></br>

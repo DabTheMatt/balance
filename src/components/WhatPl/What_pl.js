@@ -36,6 +36,10 @@ export default class What_pl extends Component {
     });
   }
 
+  reloadPage = () => {
+    window.location.reload(false);
+  }
+
   handleSubmit = (e) => {
     e.preventDefault();
     this.setState({
@@ -56,9 +60,9 @@ export default class What_pl extends Component {
 
   handleClick = () => {
 
-  if (this.state.costValue <= 20) {
+  if (this.state.costValue <= 10) {
     this.state.data.map((obj) => {
-      if (obj.thershold <= 20) {
+      if (obj.thershold_pl <= 10) {
       let array = new Array(
         parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
       );
@@ -74,9 +78,9 @@ export default class What_pl extends Component {
       })
     };
     }); 
-  } else if (this.state.costValue <= 50) {
+  } else if (this.state.costValue <= 20) {
     this.state.data.map((obj) => {
-      if (obj.thershold <= 50) {
+      if (obj.thershold_pl <= 20) {
       let array = new Array(
         parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
       );
@@ -91,9 +95,9 @@ export default class What_pl extends Component {
         href: obj.webpage_adress,
       })};
     }); 
-  } else if (this.state.costValue <= 80) {
+  } else if (this.state.costValue <= 50) {
     this.state.data.map((obj) => {
-      if (obj.thershold <= 80) {
+      if (obj.thershold_pl <= 50) {
       let array = new Array(
         parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
       );
@@ -110,7 +114,7 @@ export default class What_pl extends Component {
     }); 
     } else if (this.state.costValue <= 100) {
       this.state.data.map((obj) => {
-        if (obj.thershold <= 100) {
+        if (obj.thershold_pl <= 100) {
         let array = new Array(
           parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
         );
@@ -126,9 +130,9 @@ export default class What_pl extends Component {
         })};
       }); 
    
-  } else if (this.state.costValue <= 200) {
+  } else if (this.state.costValue <= 500) {
     this.state.data.map((obj) => {
-      if (obj.thershold <= 200) {
+      if (obj.thershold_pl <= 500) {
       let array = new Array(
         parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
       );
@@ -143,9 +147,9 @@ export default class What_pl extends Component {
         href: obj.webpage_adress,
       })};
     }); 
-  } else if (this.state.costValue <= 500) {
+  } else if (this.state.costValue <= 1000) {
     this.state.data.map((obj) => {
-      if (obj.thershold <= 500) {
+      if (obj.thershold_pl <= 1000) {
       let array = new Array(
         parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
       );
@@ -162,7 +166,7 @@ export default class What_pl extends Component {
     }); 
   } else if (this.state.costValue <= 2000) {
     this.state.data.map((obj) => {
-      if (obj.thershold <= 2000) {
+      if (obj.thershold_pl <= 2000) {
       let array = new Array(
         parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
       );
@@ -177,9 +181,43 @@ export default class What_pl extends Component {
         href: obj.webpage_adress,
       })};
     }); 
+  } else if (this.state.costValue <= 5000) {
+    this.state.data.map((obj) => {
+      if (obj.thershold_pl <= 5000) {
+      let array = new Array(
+        parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
+      );
+      return this.setState({
+        numberOf: array.length,
+        image: obj.image,
+        table: [...array],
+        text1: `${obj.text1_pl}`,
+        text2: obj.text2_pl,
+        info: obj.info_pl,
+        adress: obj.website_name_pl,
+        href: obj.webpage_adress,
+      })};
+    }); 
+  } else if (this.state.costValue <= 50000) {
+    this.state.data.map((obj) => {
+      if (obj.thershold_pl <= 50000) {
+      let array = new Array(
+        parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
+      );
+      return this.setState({
+        numberOf: array.length,
+        image: obj.image,
+        table: [...array],
+        text1: `${obj.text1_pl}`,
+        text2: obj.text2_pl,
+        info: obj.info_pl,
+        adress: obj.website_name_pl,
+        href: obj.webpage_adress,
+      })};
+    });
   } else if (this.state.costValue <= 100000) {
     this.state.data.map((obj) => {
-      if (obj.thershold <= 50000) {
+      if (obj.thershold_pl <= 100000) {
       let array = new Array(
         parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
       );
@@ -193,10 +231,10 @@ export default class What_pl extends Component {
         adress: obj.website_name_pl,
         href: obj.webpage_adress,
       })};
-    }); 
+    });
   } else if (this.state.costValue <= 500000) {
     this.state.data.map((obj) => {
-      if (obj.thershold.pl <= 80000) {
+      if (obj.thershold_pl <= 500000) {
       let array = new Array(
         parseInt(Number(this.state.costValue) / obj.price_per_item_pl)
       );
@@ -251,12 +289,17 @@ export default class What_pl extends Component {
               </h3>
             </div>
             <div>
-              <h3>
-                <a className="ainvert" href="../balance/#/">
-                  Sprawdź jeszcze raz...
-                </a>
+              <h3 className="ainvert" onClick={this.reloadPage}>
+                Sprawdź jeszcze raz...
+                  
+                
               </h3>
             </div>
+            <div>
+                <a className="a" style={{marginTop: "6em", fontSize: "1.5em"}} href="../balance/#/">
+                    Strona główna
+                </a>
+                </div>
             <div id="footer">
               <br></br>
               <br></br>
