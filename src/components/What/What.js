@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Tabletop from "tabletop";
 
-
 export default class What extends Component {
   constructor(props) {
     super(props);
@@ -9,6 +8,7 @@ export default class What extends Component {
     this.state = {
       data: [],
       whatValue: "",
+      defaultValue: 0,
       costValue: "",
       showHow: false,
       nomberOfVacines: "",
@@ -21,6 +21,8 @@ export default class What extends Component {
       info: "",
       adress: "",
       href: "",
+      whatErrorMsg: "",
+      costErrorMsg: "",
     };
   }
 
@@ -38,12 +40,26 @@ export default class What extends Component {
 
   reloadPage = () => {
     window.location.reload(false);
-  }
+  };
 
   handleSubmit = (e) => {
     e.preventDefault();
+
+    if (this.state.costValue == 0) {
+      console.log("zero");
+      this.setState({
+        costErrorMsg: "enter the amount",
+      });
+    } else if (this.state.costValue !== 0) {
+      console.log("empty");
+      this.setState({
+        showHow: this.state.showHow ? false : true,
+      });
+    }
+  };
+  handleThingChange = (e) => {
     this.setState({
-      showHow: this.state.showHow ? false : true,
+      whatValue: e.target.value,
     });
   };
   handleThingChange = (e) => {
@@ -59,200 +75,204 @@ export default class What extends Component {
   };
 
   handleClick = () => {
-
-  if (this.state.costValue <= 20) {
-    this.state.data.map((obj) => {
-      if (obj.thershold <= 20) {
-      let array = new Array(
-        parseInt(Number(this.state.costValue) / obj.price_per_item)
-      );
-      return this.setState({
-        numberOf: array.length,
-        image: obj.image,
-        table: [...array],
-        text1: `${array.length} ${obj.text1}`,
-        text2: obj.text2,
-        info: obj.info,
-        adress: obj.website_name,
-        href: obj.webpage_adress,
-      })
-    };
-    }); 
-  } else if (this.state.costValue <= 50) {
-    this.state.data.map((obj) => {
-      if (obj.thershold <= 50) {
-      let array = new Array(
-        parseInt(Number(this.state.costValue) / obj.price_per_item)
-      );
-      return this.setState({
-        numberOf: array.length,
-        image: obj.image,
-        table: [...array],
-        text1: `${array.length} ${obj.text1}`,
-        text2: obj.text2,
-        info: obj.info,
-        adress: obj.website_name,
-        href: obj.webpage_adress,
-      })};
-    }); 
-  } else if (this.state.costValue <= 80) {
-    this.state.data.map((obj) => {
-      if (obj.thershold <= 80) {
-      let array = new Array(
-        parseInt(Number(this.state.costValue) / obj.price_per_item)
-      );
-      return this.setState({
-        numberOf: array.length,
-        image: obj.image,
-        table: [...array],
-        text1: `${array.length} ${obj.text1}`,
-        text2: obj.text2,
-        info: obj.info,
-        adress: obj.website_name,
-        href: obj.webpage_adress,
-      })};
-    }); 
+    if (this.state.costValue <= 20) {
+      this.state.data.map((obj) => {
+        if (obj.thershold <= 20) {
+          let array = new Array(
+            parseInt(Number(this.state.costValue) / obj.price_per_item)
+          );
+          return this.setState({
+            numberOf: array.length,
+            image: obj.image,
+            table: [...array],
+            text1: `${array.length} ${obj.text1}`,
+            text2: obj.text2,
+            info: obj.info,
+            adress: obj.website_name,
+            href: obj.webpage_adress,
+          });
+        }
+      });
+    } else if (this.state.costValue <= 50) {
+      this.state.data.map((obj) => {
+        if (obj.thershold <= 50) {
+          let array = new Array(
+            parseInt(Number(this.state.costValue) / obj.price_per_item)
+          );
+          return this.setState({
+            numberOf: array.length,
+            image: obj.image,
+            table: [...array],
+            text1: `${array.length} ${obj.text1}`,
+            text2: obj.text2,
+            info: obj.info,
+            adress: obj.website_name,
+            href: obj.webpage_adress,
+          });
+        }
+      });
+    } else if (this.state.costValue <= 80) {
+      this.state.data.map((obj) => {
+        if (obj.thershold <= 80) {
+          let array = new Array(
+            parseInt(Number(this.state.costValue) / obj.price_per_item)
+          );
+          return this.setState({
+            numberOf: array.length,
+            image: obj.image,
+            table: [...array],
+            text1: `${array.length} ${obj.text1}`,
+            text2: obj.text2,
+            info: obj.info,
+            adress: obj.website_name,
+            href: obj.webpage_adress,
+          });
+        }
+      });
     } else if (this.state.costValue <= 100) {
       this.state.data.map((obj) => {
         if (obj.thershold <= 100) {
-        let array = new Array(
-          parseInt(Number(this.state.costValue) / obj.price_per_item)
-        );
-        return this.setState({
-          numberOf: array.length,
-          image: obj.image,
-          table: [...array],
-          text1: `${array.length} ${obj.text1}`,
-          text2: obj.text2,
-          info: obj.info,
-          adress: obj.website_name,
-          href: obj.webpage_adress,
-        })};
-      }); 
-
-    
-   
-  } else if (this.state.costValue <= 200) {
-    this.state.data.map((obj) => {
-      if (obj.thershold <= 200) {
-      let array = new Array(
-        parseInt(Number(this.state.costValue) / obj.price_per_item)
-      );
-      return this.setState({
-        numberOf: array.length,
-        image: obj.image,
-        table: [...array],
-        text1: `${array.length} ${obj.text1}`,
-        text2: obj.text2,
-        info: obj.info,
-        adress: obj.website_name,
-        href: obj.webpage_adress,
-      })};
-    }); 
-
-  } else if (this.state.costValue <= 250) {
-    this.state.data.map((obj) => {
-      if (obj.thershold <= 250) {
-      let array = new Array(
-        parseInt(Number(this.state.costValue) / obj.price_per_item)
-      );
-      return this.setState({
-        numberOf: array.length,
-        image: obj.image,
-        table: [...array],
-        text1: `${array.length} ${obj.text1}`,
-        text2: obj.text2,
-        info: obj.info,
-        adress: obj.website_name,
-        href: obj.webpage_adress,
-      })};
-    }); 
-
-  } else if (this.state.costValue <= 500) {
-    this.state.data.map((obj) => {
-      if (obj.thershold <= 500) {
-      let array = new Array(
-        parseInt(Number(this.state.costValue) / obj.price_per_item)
-      );
-      return this.setState({
-        numberOf: array.length,
-        image: obj.image,
-        table: [...array],
-        text1: `${array.length} ${obj.text1}`,
-        text2: obj.text2,
-        info: obj.info,
-        adress: obj.website_name,
-        href: obj.webpage_adress,
-      })};
-    }); 
-  } else if (this.state.costValue <= 2000) {
-    this.state.data.map((obj) => {
-      if (obj.thershold <= 2000) {
-      let array = new Array(
-        parseInt(Number(this.state.costValue) / obj.price_per_item)
-      );
-      return this.setState({
-        numberOf: array.length,
-        image: obj.image,
-        table: [...array],
-        text1: `${array.length} ${obj.text1}`,
-        text2: obj.text2,
-        info: obj.info,
-        adress: obj.website_name,
-        href: obj.webpage_adress,
-      })};
-    }); 
-  } else if (this.state.costValue <= 25000) {
-    this.state.data.map((obj) => {
-      if (obj.thershold <= 25000) {
-      let array = new Array(
-        parseInt(Number(this.state.costValue) / obj.price_per_item)
-      );
-      return this.setState({
-        numberOf: array.length,
-        image: obj.image,
-        table: [...array],
-        text1: `${array.length} ${obj.text1}`,
-        text2: obj.text2,
-        info: obj.info,
-        adress: obj.website_name,
-        href: obj.webpage_adress,
-      })};
-    }); 
-  } else if (this.state.costValue <= 50000) {
-    this.state.data.map((obj) => {
-      if (obj.thershold <= 50000) {
-      let array = new Array(
-        parseInt(Number(this.state.costValue) / obj.price_per_item)
-      );
-      return this.setState({
-        numberOf: array.length,
-        image: obj.image,
-        table: [...array],
-        text1: `${array.length} ${obj.text1}`,
-        text2: obj.text2,
-        info: obj.info,
-        adress: obj.website_name,
-        href: obj.webpage_adress,
-      })};
-    }); 
-  } else if (this.state.costValue <= 100000) {
-    this.state.data.map((obj) => {
-      if (obj.thershold <= 100000) {
-      let array = new Array(
-        parseInt(Number(this.state.costValue) / obj.price_per_item)
-      );
-      return this.setState({
-        numberOf: array.length,
-        image: obj.image,
-        table: [...array],
-        text1: `${array.length} ${obj.text1}`,
-        text2: obj.text2,
-        info: obj.info,
-        adress: obj.website_name,
-        href: obj.webpage_adress,
-      })};
-    }); 
+          let array = new Array(
+            parseInt(Number(this.state.costValue) / obj.price_per_item)
+          );
+          return this.setState({
+            numberOf: array.length,
+            image: obj.image,
+            table: [...array],
+            text1: `${array.length} ${obj.text1}`,
+            text2: obj.text2,
+            info: obj.info,
+            adress: obj.website_name,
+            href: obj.webpage_adress,
+          });
+        }
+      });
+    } else if (this.state.costValue <= 200) {
+      this.state.data.map((obj) => {
+        if (obj.thershold <= 200) {
+          let array = new Array(
+            parseInt(Number(this.state.costValue) / obj.price_per_item)
+          );
+          return this.setState({
+            numberOf: array.length,
+            image: obj.image,
+            table: [...array],
+            text1: `${array.length} ${obj.text1}`,
+            text2: obj.text2,
+            info: obj.info,
+            adress: obj.website_name,
+            href: obj.webpage_adress,
+          });
+        }
+      });
+    } else if (this.state.costValue <= 250) {
+      this.state.data.map((obj) => {
+        if (obj.thershold <= 250) {
+          let array = new Array(
+            parseInt(Number(this.state.costValue) / obj.price_per_item)
+          );
+          return this.setState({
+            numberOf: array.length,
+            image: obj.image,
+            table: [...array],
+            text1: `${array.length} ${obj.text1}`,
+            text2: obj.text2,
+            info: obj.info,
+            adress: obj.website_name,
+            href: obj.webpage_adress,
+          });
+        }
+      });
+    } else if (this.state.costValue <= 500) {
+      this.state.data.map((obj) => {
+        if (obj.thershold <= 500) {
+          let array = new Array(
+            parseInt(Number(this.state.costValue) / obj.price_per_item)
+          );
+          return this.setState({
+            numberOf: array.length,
+            image: obj.image,
+            table: [...array],
+            text1: `${array.length} ${obj.text1}`,
+            text2: obj.text2,
+            info: obj.info,
+            adress: obj.website_name,
+            href: obj.webpage_adress,
+          });
+        }
+      });
+    } else if (this.state.costValue <= 2000) {
+      this.state.data.map((obj) => {
+        if (obj.thershold <= 2000) {
+          let array = new Array(
+            parseInt(Number(this.state.costValue) / obj.price_per_item)
+          );
+          return this.setState({
+            numberOf: array.length,
+            image: obj.image,
+            table: [...array],
+            text1: `${array.length} ${obj.text1}`,
+            text2: obj.text2,
+            info: obj.info,
+            adress: obj.website_name,
+            href: obj.webpage_adress,
+          });
+        }
+      });
+    } else if (this.state.costValue <= 25000) {
+      this.state.data.map((obj) => {
+        if (obj.thershold <= 25000) {
+          let array = new Array(
+            parseInt(Number(this.state.costValue) / obj.price_per_item)
+          );
+          return this.setState({
+            numberOf: array.length,
+            image: obj.image,
+            table: [...array],
+            text1: `${array.length} ${obj.text1}`,
+            text2: obj.text2,
+            info: obj.info,
+            adress: obj.website_name,
+            href: obj.webpage_adress,
+          });
+        }
+      });
+    } else if (this.state.costValue <= 50000) {
+      this.state.data.map((obj) => {
+        if (obj.thershold <= 50000) {
+          let array = new Array(
+            parseInt(Number(this.state.costValue) / obj.price_per_item)
+          );
+          return this.setState({
+            numberOf: array.length,
+            image: obj.image,
+            table: [...array],
+            text1: `${array.length} ${obj.text1}`,
+            text2: obj.text2,
+            info: obj.info,
+            adress: obj.website_name,
+            href: obj.webpage_adress,
+          });
+        }
+      });
+    } else if (this.state.costValue <= 100000) {
+      this.state.data.map((obj) => {
+        if (obj.thershold <= 100000) {
+          let array = new Array(
+            parseInt(Number(this.state.costValue) / obj.price_per_item)
+          );
+          return this.setState({
+            numberOf: array.length,
+            image: obj.image,
+            table: [...array],
+            text1: `${array.length} ${obj.text1}`,
+            text2: obj.text2,
+            info: obj.info,
+            adress: obj.website_name,
+            href: obj.webpage_adress,
+          });
+        }
+      });
     }
   };
 
@@ -294,22 +314,23 @@ export default class What extends Component {
             </div>
             <div>
               <h3 className="ainvert" onClick={this.reloadPage}>
-                
-                  Check once again...
-                
-                
+                Check once again...
               </h3>
-              </div>
-              <div>
-                <a className="a" style={{marginTop: "6em", fontSize: "1.5em"}} href="../balance/#/">
-                    Home
-                </a>
-                </div>
-            
+            </div>
+            <div>
+              <a
+                className="a"
+                style={{ marginTop: "6em", fontSize: "1.5em" }}
+                href="../balance/#/"
+              >
+                Home
+              </a>
+            </div>
+
             <div id="footer">
               <br></br>
               <br></br>
-              
+
               <br></br>
             </div>
           </div>
@@ -332,7 +353,11 @@ export default class What extends Component {
                 value={this.state.costValue}
                 style={{ width: "40%" }}
               ></input>
-
+              {this.state.costErrorMsg ? (
+                <div style={{ height: "20px" }}>{this.state.costErrorMsg}</div>
+              ) : (
+                <div style={{ height: "20px" }}>{this.state.costErrorMsg}</div>
+              )}
               <button
                 onClick={this.handleClick}
                 type="submit"
