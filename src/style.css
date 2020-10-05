@@ -11,6 +11,10 @@ html {
     margin: 0 auto;
 }
 
+::placeholder {
+    padding: 0;
+}
+
 .info {
     width: 60vw;
 }
@@ -257,6 +261,7 @@ h3 {
     }
     .info {
         width: 80vw;
+        margin: 0 15em;
     }
     .input {
         
@@ -280,6 +285,9 @@ h3 {
     }
     .margintop20vh {
         margin-top: 20vh;
+    }
+    .margin3em {
+        margin: 0 2em;
     }
     .thing {
         
@@ -317,10 +325,15 @@ h3 {
         max-height: 568px;
     }
     .info {
-        width: 100vw;
+        width: 80vw;
+        margin: 0 2em;
+
     }
     .mainh2 {
         font-size: 1.2em;
+    }
+    .margin3em {
+        margin: 0 2em;
     }
     .margintop20vh {
         margin-top: 10vh;

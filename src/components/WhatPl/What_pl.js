@@ -9,6 +9,7 @@ export default class What_pl extends Component {
     this.state = {
       data: [],
       whatValue: "",
+      defaultValue: 0,
       costValue: "",
       showHow: false,
       nomberOfVacines: "",
@@ -21,6 +22,8 @@ export default class What_pl extends Component {
       info: "",
       adress: "",
       href: "",
+      whatErrorMsg: "",
+      costErrorMsg: "",
     };
   }
 
@@ -42,9 +45,24 @@ export default class What_pl extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.setState({
-      showHow: this.state.showHow ? false : true,
-    });
+
+    if (this.state.costValue == 0) {
+      console.log("zero") 
+      this.setState ({
+        costErrorMsg: "Wpisz kwotę"
+      })
+    } else if (this.state.costValue !== 0) {
+      
+
+      console.log("empty");
+      this.setState({
+        showHow: this.state.showHow ? false : true,
+      });
+    }
+
+    
+    
+    
   };
   handleThingChange = (e) => {
     this.setState({
@@ -53,7 +71,8 @@ export default class What_pl extends Component {
   };
 
   handleCostChange = (e) => {
-    this.setState({
+    
+        this.setState({
       costValue: e.target.value,
     });
   };
@@ -88,7 +107,7 @@ export default class What_pl extends Component {
         numberOf: array.length,
         image: obj.image,
         table: [...array],
-        text1: `${array.length} ${obj.text1_pl}`,
+        text1: `${obj.text1_pl}`,
         text2: obj.text2_pl,
         info: obj.info_pl,
         adress: obj.website_name_pl,
@@ -105,7 +124,7 @@ export default class What_pl extends Component {
         numberOf: array.length,
         image: obj.image,
         table: [...array],
-        text1: `${array.length} ${obj.text1_pl}`,
+        text1: `${obj.text1_pl}`,
         text2: obj.text2_pl,
         info: obj.info_pl,
         adress: obj.website_name_pl,
@@ -122,7 +141,7 @@ export default class What_pl extends Component {
             numberOf: array.length,
             image: obj.image,
             table: [...array],
-            text1: `${array.length} ${obj.text1_pl}`,
+            text1: `${obj.text1_pl}`,
             text2: obj.text2_pl,
             info: obj.info_pl,
             adress: obj.website_name_pl,
@@ -140,7 +159,7 @@ export default class What_pl extends Component {
         numberOf: array.length,
         image: obj.image,
         table: [...array],
-        text1: `${array.length} ${obj.text1_pl}`,
+        text1: `${obj.text1_pl}`,
         text2: obj.text2_pl,
         info: obj.info_pl,
         adress: obj.website_name_pl,
@@ -315,8 +334,11 @@ export default class What_pl extends Component {
                 className="input"
                 onChange={this.handleThingChange}
                 value={this.state.whatValue}
+                style={{ width: "40%" }}
               ></input>
+              {this.state.whatErrorMsg ? (<div style={{height: "20px"}}>{this.state.whatErrorMsg}</div>) : (<div style={{height: "20px"}}>{this.state.whatErrorMsg}</div>)}
               <label>Ile to kosztuje?</label>
+              
 
               <input
                 type="number"
@@ -326,7 +348,7 @@ export default class What_pl extends Component {
                 value={this.state.costValue}
                 style={{ width: "40%" }}
               ></input>
-
+              {this.state.costErrorMsg ? (<div style={{height: "20px"}}>{this.state.costErrorMsg}</div>) : (<div style={{height: "20px"}}>{this.state.costErrorMsg}</div>)}
               <button
                 onClick={this.handleClick}
                 type="submit"
@@ -335,6 +357,7 @@ export default class What_pl extends Component {
               >
                 Ile to jest wate?
               </button>
+              
             </form>
           </div>
         )}
