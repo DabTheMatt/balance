@@ -1,4 +1,4 @@
-# Welcome to the Balance project [polska wersja](#header-title)
+# Welcome to the Balance project [polska wersja](#Witaj w projekcie Balance)
 
 the project to create an application that will change the world. The idea for Balance was born out of the search for an answer to the question of how much are our everyday decisions worth? How much are our purchases worth? How much is a new chair, a pair of trousers, a video game worth? 
 
@@ -41,7 +41,7 @@ INSPIRO UP / Beata Kwiecińska / Maciej Dąbrowski
 
 - - - - -
 
-# Witaj w projekcie Balance (#polskawersja)
+# Witaj w projekcie Balance 
 
 projekcie stworzenia aplikacji, która zmieni świat. Pomysł na Balance zrodził się z poszukiwania odpowiedzi na pytanie, ile warte są nasze codzienne decyzje? Ile warte są nasze zakupy? Ile warte jest nowe krzesło, para spodni, gra wideo?
 
