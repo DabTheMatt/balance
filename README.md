@@ -1,45 +1,48 @@
-# Welcome to the Balance project
+Welcome to the Balance project
 
-the project to create an application that will change the world. The idea for Balance was born out of the search for an answer to the question of how much are our everyday decisions worth? How much are our purchases worth? How much is a new chair, pants, video game worth? Balance was created during conversations about consumerism, about respect for the environment, and about increasing our awareness as consumers.
+the project to create an application that will change the world. The idea for Balance was born out of the search for an answer to the question of how much are our everyday decisions worth? How much are our purchases worth? How much is a new chair, a pair of trousers, a video game worth? 
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/DabTheMatt/balance/master/src/asets/balance2.png" width="600">
-  </p>
+</p>
 
-The Balance App is not only to change the world globally, but also to contribute to the change of our immediate community.
+Balance was created during conversations about consumerism, about respect for the environment, and about increasing our awareness as consumers. 
 
-We are looking for people who want to get involved in change and offer their time and experience.
+The Balance App aims not only to change the world globally, but also to change the lives of our immediate community by raising awareness of global issues, challenging our consumerism and informing our decisions.  
 
-Balance is a simple application that compares the value of a thing with the value of other categories such as humanitarian aid, heritage conservation, supporting grassroots initiatives.
+We are looking for people who want to get involved in this life changing project and who can offer their time, experience and expertise.
 
-You can find the app here: [Balance App](https://dabthematt.github.io/balance/).
+Balance is a simple application that compares the value of an item  with the value of supporting organisations dealing with humanitarian aid, heritage conservation and grassroots initiatives.
 
-Balance gives the opportunity to learn about organizations and programs that help others and care for the natural environment.
+Balance gives the consumer the opportunity to learn about organizations and programs that help others and care for the natural environment.
 
-We are currently looking for help to develop the application:
+We are currently looking for help to develop the application from the following people:
 
 - developers,
-- explains,
 - researchers,
 - sociologists,
 - NGO employees,
 - user interface specialists
 
-The Balance App project is a Non Profit project, however we are looking for patrons of change ready to donate funds for the development of the app.
+The Balance App project is a Non Profit project, however we are looking for patrons of change who might be willing to donate funds for the development of the app.
 
-We hope that the development of the application will not only bring about a change, but will also help in the development of the social startup "INSPIRO UP", and in the future it will financially support the construction of a social community center in Poland, where INSPIRO has operated for many years. It was a community center that was a safe haven for people of different minds, focusing on education, socializing, culture, art and building a civil society.
+We hope that the development of the application will not only bring about a change 
+in our spending habits, social awareness and community spirit, but will also help in the development of the social startup "INSPIRO UP", and in the future INSPIRO UP” will financially support the construction of an independent community center in Poland, where INSPIRO has operated for many years. Inspiro created a community centre that was a safe haven for people from all walks of life focusing on education, self development, socializing, culture, art and building a civil society.
 
 We dream about INSPIRO being able to exist again and we believe that the development of the Balance App and work on this project will help us make this dream come true.
 
-To make our vision a reality and build a social startup that creates applications to change the world, we learned the basics of programming.
+To make our vision a reality and build a social startup that creates applications to change the world, we learned the basics of programming, and now we are putting that knowledge into action.
 
-Change does not have to be difficult, but it will become possible with you.
+Change is difficult but it does not have to be impossible, and we hope it will be possible with you.
 
-We invite you to cooperation
+We invite you to collaborate with us 
 
-INSPIRO UP Beata Kwiecińska / Maciej Dąbrowski
+INSPIRO UP / Beata Kwiecińska / Maciej Dąbrowski
 
-- - 
+
+
+
+- - - - - 
 
 #Witaj w projekcie Balance
 
