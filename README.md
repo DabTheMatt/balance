@@ -1,4 +1,4 @@
-Welcome to the Balance project
+# Welcome to the Balance project
 
 the project to create an application that will change the world. The idea for Balance was born out of the search for an answer to the question of how much are our everyday decisions worth? How much are our purchases worth? How much is a new chair, a pair of trousers, a video game worth? 
 
@@ -27,7 +27,7 @@ We are currently looking for help to develop the application from the following 
 The Balance App project is a Non Profit project, however we are looking for patrons of change who might be willing to donate funds for the development of the app.
 
 We hope that the development of the application will not only bring about a change 
-in our spending habits, social awareness and community spirit, but will also help in the development of the social startup "INSPIRO UP", and in the future INSPIRO UP” will financially support the construction of an independent community center in Poland, where INSPIRO has operated for many years. Inspiro created a community centre that was a safe haven for people from all walks of life focusing on education, self development, socializing, culture, art and building a civil society.
+in our spending habits, social awareness and community spirit, but will also help in the development of the social startup "INSPIRO UP". In the future “INSPIRO UP” will financially support the construction of an independent community center in Poland, where INSPIRO has operated for many years. Inspiro created a community centre that was a safe haven for people from all walks of life focusing on education, self development, socializing, culture, art and building a civil society.
 
 We dream about INSPIRO being able to exist again and we believe that the development of the Balance App and work on this project will help us make this dream come true.
 
@@ -39,43 +39,42 @@ We invite you to collaborate with us
 
 INSPIRO UP / Beata Kwiecińska / Maciej Dąbrowski
 
+- - - - -
 
+# Witaj w projekcie Balance
 
+projekcie stworzenia aplikacji, która zmieni świat. Pomysł na Balance zrodził się z poszukiwania odpowiedzi na pytanie, ile warte są nasze codzienne decyzje? Ile warte są nasze zakupy? Ile warte jest nowe krzesło, para spodni, gra wideo?
 
-- - - - - 
+Balance powstało podczas rozmów o konsumpcjonizmie, szacunku dla środowiska, a także o zwiększaniu naszej świadomości jako konsumentów.
 
-#Witaj w projekcie Balance
+Celem aplikacji Balance jest nie tylko globalna zmiana świata, ale także zmiana życia naszej najbliższej społeczności poprzez zwiększanie świadomości o globalnych problemach, kwestionowanie naszego konsumpcjonizmu i informowanie o naszych decyzjach.
 
-projekcie stworzenia aplikacji która zmieni Świat. Pomysł na Balance zrodził się z poszukiwań odpowiedzi na pytanie ile są warte nasze codzienne decyzje? Ile są warte nasze zakupy? Ile jest warte nowe krzesło, spodnie, gra wideo? Balance powstała w czasie rozmów o konsumpcjoniźmie, o poszanowaniu środowiska, oraz o zwiększeniu naszej świadomości jako konsumentów.
+Poszukujemy osób, które chcą zaangażować się w ten zmieniający życie projekt i mogą zaoferować swój czas, doświadczenie i wiedzę.
 
-Balance App ma nie tylko zmieniać Świat globalnie, ale także przysłużyć się do zmiany naszej najbliższej społeczności.
+Balance to prosta aplikacja, która porównuje wartość przedmiotu z wartością pomocy organizacji zajmujących się pomocą humanitarną, ochroną dziedzictwa kulturowego oraz wspieraniem inicjatyw oddolnych.
 
-Szukamy osób, które chcą zaangażować się w zmianę i zaoferować swój czas i doświadczenie.
+Balance daje konsumentowi możliwość poznania organizacji i programów, które pomagają innym i dbają o środowisko naturalne.
 
-Balance to prosta aplikacja, która porównuje wartość rzeczy z wartościami pochodzącymi z innych kategorii takich jak pomoc humanitarna, zachowanie dziedzictwa, wspieranie inicjatyw oddolnych.
+Obecnie poszukujemy pomocy przy tworzeniu aplikacji. Poszukujemy:
 
-Balance daje możliwość poznania organizacji i programów zajmujących się pomaganiem innym i dbaniem o środowisko naturalne.
-
-Do rozwoju aplikacji potrzebujemy aktualnie pomocy:
-
-- programistów,
-- tłumaczy,
-- badaczy,
+- deweloperów,
+- naukowców,
 - socjologów,
-- pracowników NGO,
+- pracowników organizacji pozarządowych,
 - specjalistów od interfejsu użytkownika
 
-Projekt Balance App jest projektem Non Profit, jednak poszukujemy mecenasów zmiany gotowych przekazać fundusze na rozwój aplikacji.
+Projekt Balance App to projekt non-profit, jednak poszukujemy patronów zmian, którzy mogliby przekazać środki finansowe na rozwój aplikacji.
 
-Mamy nadzieję, że rozwój aplikacji nie tylko wywoła zmianę ale również pomoże w rozwoju społecznego startup-u "INSPIRO UP", a w przyszłości wspomoże finansowo budowę społecznego domu kultury w Polsce, gdzie przez wiele lat działało INSPIRO. Było to miejsce działające na rzecz społeczności, które było bezpieczną przystanią dla ludzi o różnych poglądach, koncentrującym się na edukacji, spotkaniu z drugim człowiekiem, kulturze, sztuce oraz budowaniu społeczeństwa obywatelskiego.
+Mamy nadzieję, że rozwój aplikacji przyniesie zmianę nie tylko w naszych konsumenckich nawykach, świadomości społecznej i duchu wspólnoty, ale także pomoże w rozwoju startupu społecznego “INSPIRO UP”. W przyszłości “INSPIRO UP” wesprze finansowo budowę niezależnego domu kultury w Polsce, gdzie INSPIRO działało przez wiele lat. Stworzyliśmy centrum społeczności, które było bezpieczną przystanią dla ludzi z różnych środowisk i które skupiało się na edukacji, samorozwoju, życiu towarzyskim, kulturze, sztuce i budowaniu społeczeństwa obywatelskiego.
 
-Marzymy o tym, aby INSPIRO mogło znowu zaistnieć i wierzymy, że rozwój Balance App i praca nad tym projektem pomogą nam spełnić to marzenie.
+Marzymy o tym, by INSPIRO mogło znowu zaistnieć i wierzymy, że rozwój aplikacji Balance i praca nad tym projektem pomoże nam to marzenie spełnić.
 
-Aby urzeczywistnić naszą wizję i zbudować społeczny startup tworzący aplikacje mające zmieniać świat, nauczyliśmy się podstaw programowania.
+Aby urzeczywistnić naszą wizję i zbudować społeczny startup tworzący aplikacje zmieniające świat, nauczyliśmy się podstaw programowania. Teraz wprowadzamy tę wiedzę w życie.
 
-Zmiana nie musi być trudna, jednak razem z Wami stanie się możliwa.
+Zmiana jest trudna, ale wierzymy, że z Tobą stanie się możliwa.
 
 Zapraszamy do współpracy
 
-INSPIRO UP Beata Kwiecińska / Maciej Dąbrowski
+INSPIRO UP / Beata Kwiecińska / Maciej Dąbrowski
+
 
