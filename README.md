@@ -1,8 +1,6 @@
 # Welcome to the Balance project 
 
-<p style="text-align:center">
-  [link do wersji polskiej](#Witaj-w-projekcie-Balance)
-</p>
+[link do wersji polskiej](#Witaj-w-projekcie-Balance)
 
 the project to create an application that will change the world. The idea for Balance was born out of the search for an answer to the question of how much are our everyday decisions worth? How much are our purchases worth? How much is a new chair, a pair of trousers, a video game worth? 
 
