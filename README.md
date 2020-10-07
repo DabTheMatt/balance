@@ -41,7 +41,7 @@ INSPIRO UP / Beata Kwiecińska / Maciej Dąbrowski
 
 - - - - -
 
-# Witaj w projekcie Balance
+# Witaj w projekcie Balance [Header Title](#header-title)
 
 projekcie stworzenia aplikacji, która zmieni świat. Pomysł na Balance zrodził się z poszukiwania odpowiedzi na pytanie, ile warte są nasze codzienne decyzje? Ile warte są nasze zakupy? Ile warte jest nowe krzesło, para spodni, gra wideo?
 
