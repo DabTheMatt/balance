@@ -12,6 +12,8 @@ Balance was created during conversations about consumerism, about respect for th
 
 The Balance App aims not only to change the world globally, but also to change the lives of our immediate community by raising awareness of global issues, challenging our consumerism and informing our decisions.  
 
+You can find the app here: [Balance App](https://dabthematt.github.io/balance/).
+
 We are looking for people who want to get involved in this life changing project and who can offer their time, experience and expertise.
 
 Balance is a simple application that compares the value of an item  with the value of supporting organisations dealing with humanitarian aid, heritage conservation and grassroots initiatives.
