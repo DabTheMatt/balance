@@ -53,6 +53,8 @@ Balance powstało podczas rozmów o konsumpcjonizmie, szacunku dla środowiska, 
 
 Celem aplikacji Balance jest nie tylko globalna zmiana świata, ale także zmiana życia naszej najbliższej społeczności poprzez zwiększanie świadomości o globalnych problemach, kwestionowanie naszego konsumpcjonizmu i informowanie o naszych decyzjach.
 
+Balance App znajdziesz pod linkiem: [Balance App](https://dabthematt.github.io/balance/).
+
 Poszukujemy osób, które chcą zaangażować się w ten zmieniający życie projekt i mogą zaoferować swój czas, doświadczenie i wiedzę.
 
 Balance to prosta aplikacja, która porównuje wartość przedmiotu z wartością pomocy organizacji zajmujących się pomocą humanitarną, ochroną dziedzictwa kulturowego oraz wspieraniem inicjatyw oddolnych.
