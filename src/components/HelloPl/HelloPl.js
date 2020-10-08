@@ -85,7 +85,7 @@ export default class HelloPl extends Component {
                 o projekcie
               </Link>
             </h2>
-            <p>alpha build 0.1</p>
+            <p>v0.1-alpha</p>
           </div>
         </div>
       </div>
