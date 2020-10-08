@@ -46,6 +46,9 @@ export default class What extends Component {
     e.preventDefault();
 
     if (this.state.costValue == 0) {
+      e.preventDefault();
+
+
       console.log("zero");
       this.setState({
         costErrorMsg: "enter the amount",
@@ -75,7 +78,10 @@ export default class What extends Component {
   };
 
   handleClick = () => {
-    if (this.state.costValue <= 20) {
+    if (this.state.costValue == 0 ) {
+      console.log("ggg")
+    }
+    else if (this.state.costValue <= 20) {
       this.state.data.map((obj) => {
         if (obj.thershold <= 20) {
           let array = new Array(

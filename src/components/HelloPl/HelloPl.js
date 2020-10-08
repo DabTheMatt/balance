@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import Main from "../Main/Main";
 
-export default class Hello extends Component {
+export default class HelloPl extends Component {
   constructor(props) {
     super(props);
 
@@ -57,7 +57,7 @@ export default class Hello extends Component {
             </h1>
           </div>
 
-          <h2 className="mainh2">how much is it worth?</h2>
+          <h2 className="mainh2">ile to jest warte?</h2>
           <div className="checkmargintop20vh">
             <button
               onMouseEnter={this.handleEnter}
@@ -65,24 +65,24 @@ export default class Hello extends Component {
             >
               <Link
                 className="check  animate__slow animate__animated animate__fadeIn"
-                to="/what"
+                to="/whatpl"
               >
-                check
+                sprawdź
               </Link>
             </button>
           </div>
           <div>
             <h2>
               
-              <Link className="check polishbutton" to="/hellopl">
-                / wersja polska /
+              <Link className="check polishbutton" to="/#">
+                / english version /
               </Link>
             </h2>
           </div>
           <div>
             <h2>
-              <Link className="check polishbutton" to="about">
-                about
+              <Link className="check polishbutton" to="aboutpl">
+                o projekcie
               </Link>
             </h2>
           </div>

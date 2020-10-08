@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Tabletop from "tabletop";
 
-export default class Whatr extends Component {
+export default class What extends Component {
   constructor(props) {
     super(props);
 
@@ -43,34 +43,33 @@ export default class Whatr extends Component {
     window.location.reload(false);
   };
 
-
   handleSubmit = (e) => {
-    
- 
+    e.preventDefault();
+
     if (this.state.costValue == 0) {
       console.log("zero");
       this.setState({
         costErrorMsg: "enter the amount",
       });
-      e.preventDefault();
     } else if (this.state.costValue !== 0) {
       console.log("empty");
       this.setState({
         showHow: this.state.showHow ? false : true,
       });
     }
-  
   };
   handleThingChange = (e) => {
     this.setState({
       whatValue: e.target.value,
     });
   };
- 
+  handleThingChange = (e) => {
+    this.setState({
+      whatValue: e.target.value,
+    });
+  };
 
   handleCostChange = (e) => {
-    e.preventDefault();
-
     this.setState({
       costValue: e.target.value,
     });
@@ -95,22 +94,23 @@ export default class Whatr extends Component {
         (this.state.valuesArray.length - 3)
     );
     console.log("random", random);
-    let obj = this.state.valuesArray[random];
-    console.log("ppp", obj);
+    let ppp = this.state.valuesArray[random];
+    console.log("ppp", ppp);
 
     let array = new Array(
-      parseInt(Number(this.state.costValue) / obj.price_per_item)
+      parseInt(Number(this.state.costValue) / ppp.price_per_item_pl)
     );
     return this.setState({
       numberOf: array.length,
-      image: obj.image,
+      image: ppp.image,
       table: [...array],
-      text1: `${obj.text1}`,
-      text2: obj.text2,
-      info: obj.info,
-      adress: obj.website_name,
-      href: obj.webpage_adress,
+      text1: `${ppp.text1_pl}`,
+      text2: ppp.text2_pl,
+      info: ppp.info_pl,
+      adress: ppp.website_name_pl,
+      href: ppp.webpage_adress,
     });
+    console.log("r");
   };
 
   render() {
@@ -120,22 +120,22 @@ export default class Whatr extends Component {
         {this.state.showHow ? (
           <div className="center container main">
             <h1 className="top1em">
-              Your <br />
+              <br />
               <span className="thing">{this.state.whatValue}</span>
             </h1>
             <h2>
-              is worth <br />
+              kosztuje tyle, ile... <br />
               <br />
               <span style={{ color: "black" }}>
                 {this.state.text1} {this.state.table.length} {this.state.text2}
               </span>{" "}
             </h2>
-            <div className="margin3em info">
+            <div className="margin3em">
               {[...this.state.table].map((i) => {
                 return <img className="image" src={this.state.image} />;
               })}
             </div>
-            <div className="margin3em info">
+            <div className="margin3em">
               <h2>
                 <br />
                 <q>{this.state.info}</q>
@@ -143,7 +143,7 @@ export default class Whatr extends Component {
             </div>
             <div>
               <h3>
-                more info at:{" "}
+                więcej informacji pod adresem:{" "}
                 <a className="a" href={this.state.href}>
                   {this.state.adress}
                 </a>
@@ -151,19 +151,18 @@ export default class Whatr extends Component {
             </div>
             <div>
               <h3 className="ainvert" onClick={this.reloadPage}>
-                Check once again...
+                Sprawdź jeszcze raz...
               </h3>
             </div>
             <div>
               <a
-                className="a check"
+                className="a"
                 style={{ marginTop: "6em", fontSize: "1.5em" }}
                 href="../balance/#/"
               >
-                Home
+                Strona główna
               </a>
             </div>
-
             <div id="footer">
               <br></br>
               <br></br>
@@ -174,20 +173,25 @@ export default class Whatr extends Component {
         ) : (
           <div className="margintop10vh">
             <form onSubmit={this.handleSubmit} className="form">
-              <label>What do you want to buy?</label>
+              <label>Co chcesz kupić?</label>
               <input
                 className="input"
                 onChange={this.handleThingChange}
                 value={this.state.whatValue}
+                style={{ width: "40%" }}
               ></input>
-              <label>How much it costs?</label>
+              {this.state.whatErrorMsg ? (
+                <div style={{ height: "20px" }}>{this.state.whatErrorMsg}</div>
+              ) : (
+                <div style={{ height: "20px" }}>{this.state.whatErrorMsg}</div>
+              )}
+              <label>Ile to kosztuje?</label>
 
               <input
                 type="number"
-                pattern="[0-9]"
                 className="input"
                 onChange={this.handleCostChange}
-                placeholder="$"
+                placeholder="zł"
                 value={this.state.costValue}
                 style={{ width: "40%" }}
               ></input>
@@ -202,7 +206,7 @@ export default class Whatr extends Component {
                 className="check top5rem"
                 style={{ textTransform: "" }}
               >
-                How much is it worth?
+                Ile to jest wate?
               </button>
             </form>
           </div>

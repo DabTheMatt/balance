@@ -2,12 +2,60 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+.white {
+  color: white;
+}
+
+.aboutHeaderHello {
+  font-family: "Baskervville, serif";
+  font-size: "0.5em";
+  color: "black"
+}
+
+.aboutHeader {
+  font-family: "Baskervville", serif;
+  width: 50vw;
+  color: black;
+  font-size: 1em;
+  text-align: left;
+  line-height: 0.9em;
+}
+
+.aboutTitle {
+  font-size: 2em;
+  color: white;
+}
+
+.aboutHeaderContainer {
+  margin-top: 6em;
+  height: 7em;
+}
+
+.aboutParagraph {
+  font-family: "Baskervville, serif";
+            font-size: 1.2em;
+            width: 50vw;
+            text-align: left;
+            margin-bottom: 3em;
+}
+
+
+
 body {
   background: #00c3ff;
   margin: 0 auto;
+  overflow-x: hidden; 
 }
 
 .bulbOn {
+  background-image: url("../src/asets/licensed/lightbulbcolor.png");
+  height: 50px;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bulbAboutOn {
   background-image: url("../src/asets/licensed/lightbulbcolor.png");
   height: 50px;
   width: auto;
@@ -30,6 +78,15 @@ body {
   position: relative;
   top: 30px;
   left: 300px;
+}
+.bulbAboutPosition {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 2em;
+  position: relative;
+  text-align: left;
+  top: 130px;
+  left: 730px;
 }
 
 html {
@@ -110,6 +167,18 @@ button {
 
 .check:hover {
   color: white;
+}
+
+.checkinvert {
+  font-family: "Baskervville", serif;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 3em;
+}
+
+.checkinvert:hover {
+  color: black;
 }
 
 .input {
@@ -226,6 +295,33 @@ h3 {
 }
 
 @media (max-width: 1024px) {
+  .aboutHeader {
+    font-family: "Baskervville", serif;
+    width: 70vw;
+    color: black;
+    font-size: 1em;
+    text-align: left;
+    line-height: 0.9em;
+  }
+
+  .aboutHeaderContainer {
+    margin-top: 4em;
+    height: 4em;
+  }
+
+  .aboutParagraph {
+    font-family: "Baskervville, serif";
+              font-size: 0.7em;
+              width: 70vw;
+              text-align: left;
+              margin-bottom: 3em;
+  }
+
+  .aboutTitle {
+    font-size: 1.8em;
+    color: white;
+  }
+
   .ainvert {
     font-family: "Baskervville", serif;
     font-weight: 100;
