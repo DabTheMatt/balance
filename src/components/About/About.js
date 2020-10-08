@@ -104,9 +104,19 @@ function About() {
           <p>We invite you to collaborate with us </p>
 
           <p>INSPIRO UP / Beata Kwiecińska / Maciej Dąbrowski</p>
+          <p>
+            email:{" "}
+            <a
+              className="ainvert"
+              style={{ fontSize: "1.2em", textDecoration: "none" }}
+              href="mailto:biuro@inspiro.org"
+            >
+              biuro@inspiro.org
+            </a>
+          </p>
         </div>
 
-        <div style={{ marginBottom: "5em" }}>
+        <div style={{ marginBottom: "4em" }}>
           <a
             className="checkinvert"
             style={{ marginTop: "6em", fontSize: "1.5em" }}

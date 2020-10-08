@@ -118,7 +118,7 @@ function AboutPl() {
             style={{ marginTop: "6em", fontSize: "1.5em" }}
             href="../balance/#/hellopl"
           >
-            Home
+            Strona główna
           </a>
         </div>
       </div>
