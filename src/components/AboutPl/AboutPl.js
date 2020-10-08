@@ -116,7 +116,7 @@ function AboutPl() {
           <a
             className="checkinvert"
             style={{ marginTop: "6em", fontSize: "1.5em" }}
-            href="../hellopl/"
+            href="/"
           >
             Home
           </a>

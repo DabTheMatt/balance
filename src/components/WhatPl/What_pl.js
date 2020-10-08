@@ -316,7 +316,7 @@ export default class What_pl extends Component {
               <a
                 className="a"
                 style={{ marginTop: "6em", fontSize: "1.5em" }}
-                href="../balance/#/"
+                href="../balance/#/hellopl"
               >
                 Strona główna
               </a>
