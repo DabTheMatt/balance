@@ -1,7 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
+import HelpForm from "../HelpForm/HelpForm"
 
-function About() {
-    return (
+export class About extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      
+    };
+  }
+
+  render() {
+      
+      return (
     <div>
     <div className="container ">
       <div className="aboutHeaderContainer">
@@ -115,6 +126,7 @@ function About() {
             </a>
           </p>
         </div>
+        
 
         <div style={{ marginBottom: "4em" }}>
           <a
@@ -128,6 +140,7 @@ function About() {
       </div>
     </div>
   );
+}
 }
 
 export default About;

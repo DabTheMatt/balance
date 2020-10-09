@@ -195,7 +195,27 @@ button {
   width: 60%;
 }
 
+.helpInput {
+  background: #00c3ff;
+  border: 0;
+  border-bottom: 2px dashed white;
+  border-radius: 3px;
+  font-size: 1.5em;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  font-family: "Baskervville", serif;
+  width: 60%;
+}
+
 .input:focus {
+  border: 0;
+  border-bottom: 2px dashed black;
+  outline-style: none;
+  box-shadow: none;
+}
+.helpInput:focus {
   border: 0;
   border-bottom: 2px dashed black;
   outline-style: none;
@@ -227,10 +247,29 @@ input[type="number"]::-webkit-outer-spin-button {
   flex-direction: column;
 }
 
+.helpform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 label {
   font-family: "Baskervville", serif;
   font-weight: 500;
   font-size: 2em;
+  margin: 1em 0;
+  color: white;
+}
+
+.helpLabel {
+  font-family: "Baskervville", serif;
+  font-weight: 500;
+  font-size: 1.5em;
   margin: 1em 0;
   color: white;
 }
