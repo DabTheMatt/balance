@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import blackSheep from "../../asets/licensed/blacksheep.png";
 
 import {
   HashRouter as Router,
@@ -85,7 +86,7 @@ export default class Hello extends Component {
                 about
               </Link>
             </h2>
-            <p>v0.1-alpha</p>
+            <p>v0.1-alpha</p><Link className="check polishbutton" style={{fontSize: "10px"}}to="/whatr"><img src={blackSheep} style={{width: "20px"}}></img></Link>
           </div>
         </div>
       </div>

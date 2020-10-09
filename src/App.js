@@ -6,6 +6,7 @@ import What from "../src/components/What/What";
 import What_pl from "../src/components/WhatPl/What_pl";
 import About from "../src/components/About/About";
 import AboutPl from "../src/components/AboutPl/AboutPl";
+import Whatr from "../src/components/What_r/What_r";
 
 import HelloPl from "../src/components/HelloPl/HelloPl";
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/aboutpl" component={AboutPl} />
           <Route path="/hellopl" component={HelloPl} />
+          <Route path="/whatr" component={Whatr} />
         </Switch>
       </Router>
     </div>
