@@ -334,7 +334,7 @@ export default class What extends Component {
             <div id="footer">
               <br></br>
               <br></br>
-              <p>v0.1-alpha</p>
+              
               <br></br>
             </div>
           </div>
@@ -375,6 +375,7 @@ export default class What extends Component {
         )}
 
         <div></div>
+        <p>v0.1-alpha</p><br/><br/>
       </div>
     );
   }

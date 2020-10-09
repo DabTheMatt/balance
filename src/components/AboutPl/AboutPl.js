@@ -119,9 +119,10 @@ function AboutPl() {
             href="../balance/#/hellopl"
           >
             Strona główna
-          </a>
+          </a> 
         </div>
       </div>
+      <p>v0.1-alpha</p>
     </div>
   );
 }

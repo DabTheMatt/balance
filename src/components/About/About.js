@@ -138,6 +138,7 @@ export class About extends Component {
           </a>
         </div>
       </div>
+      <p>v0.1-alpha</p>
     </div>
   );
 }
