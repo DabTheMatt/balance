@@ -1,5 +1,13 @@
 import React, { Component } from "react";
 import Tabletop from "tabletop";
+import blackSheep from "../../asets/licensed/blacksheep.png";
+import {
+  HashRouter as Router,
+  Link,
+  NavLink,
+  Route,
+  Switch,
+} from "react-router-dom";
 
 export default class Whatr extends Component {
   constructor(props) {
@@ -209,6 +217,8 @@ export default class Whatr extends Component {
         )}
 
         <div></div>
+        <p>v0.1-alpha</p><Link className="check polishbutton" style={{fontSize: "10px"}}to="/whatr"><img src={blackSheep} style={{width: "20px"}}></img></Link>
+
       </div>
     );
   }
