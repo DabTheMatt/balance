@@ -16,7 +16,7 @@ You can find the app here: [Balance App](https://dabthematt.github.io/balance/).
 
 We are looking for people who want to get involved in this life changing project and who can offer their time, experience and expertise.
 
-Balance is a simple application that compares the value of an item  with the value of supporting organisations dealing with humanitarian aid, heritage conservation and grassroots initiatives.
+Balance is a simple application that compares the value of an item  with the value of supporting organisations dealing with humanitarian aid, human rights problems, heritage conservation and grassroots initiatives.
 
 Balance gives the consumer the opportunity to learn about organizations and programs that help others and care for the natural environment.
 
@@ -57,7 +57,7 @@ Balance App znajdziesz pod linkiem: [Balance App](https://dabthematt.github.io/b
 
 Poszukujemy osób, które chcą zaangażować się w ten zmieniający życie projekt i mogą zaoferować swój czas, doświadczenie i wiedzę.
 
-Balance to prosta aplikacja, która porównuje wartość przedmiotu z wartością pomocy organizacji zajmujących się pomocą humanitarną, ochroną dziedzictwa kulturowego oraz wspieraniem inicjatyw oddolnych.
+Balance to prosta aplikacja, która porównuje wartość przedmiotu z wartością pomocy organizacji zajmujących się pomocą humanitarną, walką o prawa człowieka, ochroną dziedzictwa kulturowego oraz wspieraniem inicjatyw oddolnych.
 
 Balance daje konsumentowi możliwość poznania organizacji i programów, które pomagają innym i dbają o środowisko naturalne.
 
