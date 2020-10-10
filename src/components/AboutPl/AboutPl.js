@@ -39,6 +39,13 @@ function AboutPl() {
             Poszukujemy osób, które chcą zaangażować się w ten zmieniający życie
             projekt i mogą zaoferować swój czas, doświadczenie i wiedzę.
           </p>
+          <ul>
+<li>deweloperów</li>
+<li>badaczy</li>
+<li>socjologów</li>
+<li>pracowników organizacji pozarządowych</li>
+<li>specjalistów od interfejsu uytkownika</li>
+</ul>
           <p>
             (więcej informacji znajdziesz na stroinie naszego repozytorium na
             platformie GitHub{" "}
@@ -55,7 +62,7 @@ function AboutPl() {
 
           <p>
             Balance to prosta aplikacja, która porównuje wartość przedmiotu z
-            wartością pomocy organizacji zajmujących się pomocą humanitarną,
+            wartością pomocy organizacji zajmujących się pomocą humanitarną, walką o prawa człowieka, 
             ochroną dziedzictwa kulturowego oraz wspieraniem inicjatyw
             oddolnych.
           </p>
@@ -70,6 +77,8 @@ function AboutPl() {
             patronów zmian, którzy mogliby przekazać środki finansowe na rozwój
             aplikacji.
           </p>
+
+          
 
           <p>
             Mamy nadzieję, że rozwój aplikacji przyniesie zmianę nie tylko w
@@ -121,8 +130,9 @@ function AboutPl() {
             Strona główna
           </a> 
         </div>
+        <p>v0.1-alpha</p>
       </div>
-      <p>v0.1-alpha</p>
+      
     </div>
   );
 }

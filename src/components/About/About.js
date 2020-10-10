@@ -52,6 +52,15 @@ export class About extends Component {
             changing project and who can offer their time, experience and
             expertise.{" "}
           </p>
+          <p>We are currently looking for help to develop the application from the following people:</p>
+<ul>
+<li>developers</li>
+<li>researchers</li>
+<li>sociologists</li>
+<li>NGO employees</li>
+<li>user interface specialists</li>
+</ul>
+
           <p>
             (more information at our GitHub repozitory page{" "}
             <a
@@ -68,7 +77,7 @@ export class About extends Component {
           <p>
             Balance is a simple application that compares the value of an item
             with the value of supporting organisations dealing with humanitarian
-            aid, heritage conservation and grassroots initiatives.
+            aid, human rights problems, heritage conservation and grassroots initiatives.
           </p>
 
           <p>
@@ -137,8 +146,9 @@ export class About extends Component {
             Home
           </a>
         </div>
+        <p>v0.1-alpha</p>
       </div>
-      <p>v0.1-alpha</p>
+      
     </div>
   );
 }
