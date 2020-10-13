@@ -302,7 +302,7 @@ export default class What extends Component {
               
               <span className="white replyHeaderSpan">
                 {this.state.text1} {this.state.text2}
-                <sup className="balanceAdress">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="balanceChevron">>>&nbsp;</span>http://www.unicef.org</sup></span>
+                <sup className="balanceAdress">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="balanceChevron">>>&nbsp;</span>{this.state.href}</sup></span>
               </h1>
               <div className="balanceLine"></div>
               <div className="balanceInfo white">{this.state.info}</div>
