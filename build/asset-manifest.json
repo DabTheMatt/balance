@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/balance/static/css/main.94fafc46.chunk.css",
+    "main.css": "/balance/static/css/main.fdb5b065.chunk.css",
     "main.js": "/balance/static/js/main.654bd5a3.chunk.js",
     "main.js.map": "/balance/static/js/main.654bd5a3.chunk.js.map",
     "runtime-main.js": "/balance/static/js/runtime-main.a3953208.js",
@@ -8,9 +8,9 @@
     "static/js/2.f1618609.chunk.js": "/balance/static/js/2.f1618609.chunk.js",
     "static/js/2.f1618609.chunk.js.map": "/balance/static/js/2.f1618609.chunk.js.map",
     "index.html": "/balance/index.html",
-    "precache-manifest.5e149c575d9f81548427b80b6143703e.js": "/balance/precache-manifest.5e149c575d9f81548427b80b6143703e.js",
+    "precache-manifest.adede2bdef0557aa814c34dd5d92cd26.js": "/balance/precache-manifest.adede2bdef0557aa814c34dd5d92cd26.js",
     "service-worker.js": "/balance/service-worker.js",
-    "static/css/main.94fafc46.chunk.css.map": "/balance/static/css/main.94fafc46.chunk.css.map",
+    "static/css/main.fdb5b065.chunk.css.map": "/balance/static/css/main.fdb5b065.chunk.css.map",
     "static/js/2.f1618609.chunk.js.LICENSE.txt": "/balance/static/js/2.f1618609.chunk.js.LICENSE.txt",
     "static/media/blacksheep.png": "/balance/static/media/blacksheep.b2612104.png",
     "static/media/bStyle.css": "/balance/static/media/paneuropaneueregular-webfont.fc66a8cc.woff",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.a3953208.js",
     "static/js/2.f1618609.chunk.js",
-    "static/css/main.94fafc46.chunk.css",
+    "static/css/main.fdb5b065.chunk.css",
     "static/js/main.654bd5a3.chunk.js"
   ]
 }

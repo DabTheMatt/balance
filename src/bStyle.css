@@ -26,6 +26,7 @@ body {
 
 .replyHeaderSpan {
     font-family: 'Baskerville', serif;
+    text-transform: capitalize;
 }
 
 .replayContainer {
