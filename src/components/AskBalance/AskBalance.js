@@ -178,7 +178,7 @@ export default class What extends Component {
       });
     } else if (this.state.costValue <= 250) {
       this.state.data.map((obj) => {
-        if (obj.thershold <= 250) {
+        if (obj.thershold <= 500) {
           let array = new Array(
             parseInt(Number(this.state.costValue) / obj.price_per_item)
           );
@@ -302,7 +302,7 @@ export default class What extends Component {
               
               <span className="white replyHeaderSpan">
                 {this.state.text1} {this.state.text2}
-                <sup className="balanceAdress">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="balanceChevron">>>&nbsp;</span>{this.state.href}</sup></span>
+                <sup className="balanceAdress">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="balanceChevron">>>&nbsp;</span>http://www.unicef.org</sup></span>
               </h1>
               <div className="balanceLine"></div>
               <div className="balanceInfo white">{this.state.info}</div>
