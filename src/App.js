@@ -26,7 +26,7 @@ function App() {
     <div>
       <Router>
         <Switch>
-          <Route exact path="/" component={Hello} />
+          <Route exact path="/" component={Balance} />
           <Route path="/main" component={Main} />
           <Route path="/balance" component={Balance} />
           <Route path="/askbalance" component={AskBalance} />
