@@ -146,7 +146,7 @@ export class About extends Component {
             Home
           </a>
         </div>
-        <p>v0.1-alpha</p>
+        <p>v0.2-alpha</p>
       </div>
       
     </div>

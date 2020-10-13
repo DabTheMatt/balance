@@ -213,7 +213,7 @@ export default class What extends Component {
         )}
 
         <div></div>
-        <p>v0.1-alpha</p><Link className="check polishbutton" style={{fontSize: "10px"}}to="/whatr"><img src={blackSheep} style={{width: "20px"}}></img></Link>
+        <p>v0.2-alpha</p><Link className="check polishbutton" style={{fontSize: "10px"}}to="/whatr"><img src={blackSheep} style={{width: "20px"}}></img></Link>
 
       </div>
     );

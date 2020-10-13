@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "paneuropa_neue_beta_1.1Rg";
+  src: url("./asets/fonts/webfontkit-20201012-101627/paneuropaneueregular-webfont.woff2")
+      format("woff2"),
+    url("./asets/fonts/webfontkit-20201012-101627/paneuropaneueregular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "paneuropa_neue_beta_1.1Rg";
+}
+
+body {
+  background-color: rgb(0, 137, 172);
+}
+
+.replyHeader {
+    color: black;
+    font-size: 4em;
+    margin-top: 4em;
+    letter-spacing: 0.02em;
+    font-family: 'Baskerville', serif;
+}
+
+.replyHeaderSpan {
+    font-family: 'Baskerville', serif;
+}
+
+.replayContainer {
+    width: 60vw;
+}
+
+.balanceAdress {
+    color: white;
+    font-size: 0.3em;
+    font-family: 'Baskerville', serif;
+}
+
+.balanceChevron {
+    font-size: 0.8em;
+}
+
+.askInput {
+    background:  rgb(0, 137, 172);
+    border: 0;
+    border-bottom: 2px solid white;
+    border-radius: 3px;
+    font-size: 3em;
+    width: 40vw;
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+    font-family: 'Baskerville', serif;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+
+    -webkit-transform: rotate(-1.75deg);
+  }
+
+  .askInput:focus {
+    border: 0;
+    border-bottom: 2px solid white;
+    outline-style: none;
+    box-shadow: none;
+  }
+
+  .askForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin: 0 auto;
+    margin-top: 16em;
+    flex-direction: column;
+  }
+
+.balanceCenterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.balanceInfo {
+    font-size: 1.8em;
+    text-align: justify;
+  text-justify: inter-word;
+  margin-top: 0.9em;
+}
+
+.balanceTitle {
+  color: white;
+  font-size: 6em;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-top: 3em;
+  margin-bottom: 0em;
+  text-transform: uppercase;
+  
+}
+
+.balanceSubtitle {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin-top: 0em;
+}
+
+.balanceSubtitleBottom {
+    margin-bottom: 2em;
+}
+
+.balanceAskBottom {
+    margin-bottom: 1em;
+}
+
+.balanceLine {
+  border-top: 0.15em solid black;
+  width: 60vw;
+  margin-top: -2em;
+  float: center;
+  -webkit-transform: rotate(-1.75deg);
+}
+
+.balanceImageLine {
+  width: 80vw;
+}
+
+.balanceButton {
+font-family: 'Baskerville', serif;
+  font-weight: bolder;
+  text-align: center;
+  color: "black";
+  border: none;
+  background: none;
+  margin: 0.5em;
+  font-size: 3em;
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+    color: black;
+}
+
+.balanceLineContainer {
+  width: 100vw;
+  text-align: right;
+}
+
+.balanceVersion {
+  font-family: "Baskervville", serif;
+  font-size: 0.7em;
+  margin-top: 6em;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.white {
+    color: white;
+  }
+
+.marginTop {
+    margin-top: 2em;
+}

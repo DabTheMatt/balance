@@ -1,7 +1,12 @@
 * {
   font-family: "Nunito Sans", sans-serif;
 }
-
+.mainColor {
+  color: rgb(0,137,172);
+ /* cmyk: cmyk(90, 25, 25, 2);
+  lab 52, -23, 28;
+  1.75 rotate */
+}
 .white {
   color: white;
 }
@@ -42,7 +47,8 @@
 
 
 body {
-  background: #00c3ff;
+  /*background: #00c3ff; */
+ 
   margin: 0 auto;
   overflow-x: hidden; 
 }

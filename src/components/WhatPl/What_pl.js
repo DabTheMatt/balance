@@ -371,7 +371,7 @@ export default class What_pl extends Component {
         )}
 
         <div></div>
-        <p>v0.1-alpha</p><br/><br/>
+        <p>v0.2-alpha</p><br/><br/>
              </div>
     );
   }
