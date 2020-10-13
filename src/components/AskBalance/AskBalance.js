@@ -301,7 +301,7 @@ export default class What extends Component {
               is worth <br/>
               
               <span className="white replyHeaderSpan">
-                {this.state.text1} {this.state.table.length} {this.state.text2}
+                {this.state.text1} {this.state.text2}
                 <sup className="balanceAdress">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="balanceChevron">>>&nbsp;</span>http://www.unicef.org</sup></span>
               </h1>
               <div className="balanceLine"></div>
