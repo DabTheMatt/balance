@@ -26,6 +26,10 @@ body {
 
 .replyHeaderSpan {
     font-family: 'Baskerville', serif;
+    
+}
+
+.capitalize {
     text-transform: capitalize;
 }
 

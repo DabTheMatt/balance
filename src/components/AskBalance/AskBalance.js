@@ -104,9 +104,9 @@ export default class What extends Component {
           });
         }
       });
-    } else if (this.state.costValue <= 50) {
+    } else if (this.state.costValue <= 40) {
       this.state.data.map((obj) => {
-        if (obj.thershold <= 50) {
+        if (obj.thershold <= 40) {
           let array = new Array(
             parseInt(Number(this.state.costValue) / obj.price_per_item)
           );
@@ -122,9 +122,9 @@ export default class What extends Component {
           });
         }
       });
-    } else if (this.state.costValue <= 80) {
+    } else if (this.state.costValue <= 60) {
       this.state.data.map((obj) => {
-        if (obj.thershold <= 80) {
+        if (obj.thershold <= 60) {
           let array = new Array(
             parseInt(Number(this.state.costValue) / obj.price_per_item)
           );
@@ -295,7 +295,7 @@ export default class What extends Component {
               <div className="replayContainer">
             <h1 className="replyHeader">
               Your 
-              <span className="white replyHeaderSpan"> {this.state.whatValue} </span>
+              <span className="white replyHeaderSpan capitalize"> {this.state.whatValue} </span>
             
             
               is worth <br/>
