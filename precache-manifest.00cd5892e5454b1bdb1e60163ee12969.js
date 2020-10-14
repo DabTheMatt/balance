@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c2c581e5b1cf35548cf599591e922973",
+    "revision": "cceb0e805529b3b6d03a0c48c6cb7bc8",
     "url": "/balance/index.html"
   },
   {
-    "revision": "f8cba22c3d12eed48cb3",
-    "url": "/balance/static/css/main.326769d6.chunk.css"
+    "revision": "f4e3aebefbcb5f0ce604",
+    "url": "/balance/static/css/main.e516f532.chunk.css"
   },
   {
     "revision": "9c97d6992ff6b4ebb025",
@@ -16,12 +16,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/balance/static/js/2.f1618609.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f8cba22c3d12eed48cb3",
-    "url": "/balance/static/js/main.4106153a.chunk.js"
+    "revision": "f4e3aebefbcb5f0ce604",
+    "url": "/balance/static/js/main.30e10b6c.chunk.js"
   },
   {
     "revision": "e0d70038a2ad4ae38ecd",
     "url": "/balance/static/js/runtime-main.a3953208.js"
+  },
+  {
+    "revision": "3af374f2282d4c56b2ca9983a45d3b56",
+    "url": "/balance/static/media/baskvl-webfont.3af374f2.woff"
+  },
+  {
+    "revision": "68bfb9503176d59069cda337ad6b1eb7",
+    "url": "/balance/static/media/baskvl-webfont.68bfb950.woff2"
   },
   {
     "revision": "b2612104e6f32c6c21cf51772d8c29d3",
