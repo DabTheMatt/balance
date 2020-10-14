@@ -15,8 +15,28 @@ export default class Balance extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+        isEnter: false,
+        isEnterClassName: "balanceChevronBlack",
+        
+    };
   }
+
+  handleEnter = () => {
+    this.setState({
+      isTurnOn: this.state.isEnter ? false : true,
+      isEnterClassName: "balanceChevronWhite",
+    });
+    
+  };
+
+  handleLeave = () => {
+    this.setState({
+      isTurnOn: this.state.isEnter ? false : true,
+      isEnterClassName: "balanceChevronBlack",
+    });
+    
+  };
 
   render() {
     return (
@@ -24,12 +44,14 @@ export default class Balance extends Component {
         <h1 className="balanceTitle">balance</h1>
         <h2 className="balanceSubtitle balanceSubtitleBottom">How much is worth?</h2>
         <div className="balanceLineContainer">
-          <img className="balanceImageLine" src={line}></img>
+          <img className="balanceImageLineSmall" src={line}></img>
         </div>
         <br />
         <br />
-        <Link className="balanceButton" to="/AskBalance">
-          check <sapn className="balanceChevron">>></sapn>
+        <Link className="balanceButtonB" onMouseEnter={this.handleEnter}
+              onMouseLeave={this.handleLeave}
+                to="/AskBalance">
+          check <sapn className={this.state.isEnterClassName} >>></sapn>
           </Link>
         <div className="balanceVersion">v0.3-alpha-giraffe</div>
       </div>

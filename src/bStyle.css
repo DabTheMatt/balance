@@ -8,6 +8,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "baskervillenormal";
+  src: url("./asets/fonts/webfontkit-20201014-140058/baskvl-webfont.woff2")
+      format("woff2"),
+    url("./asets/fonts/webfontkit-20201014-140058/baskvl-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   font-family: "paneuropa_neue_beta_1.1Rg";
 }
@@ -17,70 +27,75 @@ body {
 }
 
 .replyHeader {
-    color: black;
-    font-size: 4em;
-    margin-top: 20vh;
-    letter-spacing: 0.02em;
-    font-family: 'Baskerville', serif;
+  color: black;
+  font-size: 4em;
+  margin-top: 20vh;
+  letter-spacing: 0.02em;
+  font-family: "baskervillenormal", serif;
 }
 
 .replyHeaderSpan {
-    font-family: 'Baskerville', serif;
-    
+  font-family: "baskervillenormal", serif;
 }
 
 .capitalize {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .replayContainer {
-    width: 60vw;
+  width: 60vw;
 }
 
 .balanceAdress {
-    color: white;
-    font-size: 0.3em;
-    font-family: 'Baskerville', serif;
+  color: white;
+  font-size: 0.3em;
+  font-family: "baskervillenormal", serif;
 }
 
-.balanceChevron {
-    font-size: 0.8em;
+.balanceChevronBlack {
+  color: black;
+  font-size: 0.8em;
+}
+
+.balanceChevronWhite {
+  color: white;
+  font-size: 0.8em;
 }
 
 .askInput {
-    background:  rgb(0, 137, 172);
-    border: 0;
-    border-bottom: 2px solid white;
-    border-radius: 3px;
-    font-size: 3em;
-    width: 40vw;
-    text-align: center;
-    text-transform: capitalize;
-    color: black;
-    font-family: 'Baskerville', serif;
-    font-weight: 800;
-    letter-spacing: 0.03em;
-    text-transform: capitalize;
+  background: rgb(0, 137, 172);
+  border: 0;
+  border-bottom: 2px solid white;
+  border-radius: 3px;
+  font-size: 3em;
+  width: 40vw;
+  text-align: center;
+  text-transform: capitalize;
+  color: black;
+  font-family: "baskervillenormal", serif;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
 
-    -webkit-transform: rotate(-1.75deg);
-  }
+  -webkit-transform: rotate(-1.75deg);
+}
 
-  .askInput:focus {
-    border: 0;
-    border-bottom: 2px solid white;
-    outline-style: none;
-    box-shadow: none;
-  }
+.askInput:focus {
+  border: 0;
+  border-bottom: 2px solid white;
+  outline-style: none;
+  box-shadow: none;
+}
 
-  .askForm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    margin: 0 auto;
-    margin-top: 20vh;
-    flex-direction: column;
-  }
+.askForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin: 0 auto;
+  margin-top: 20vh;
+  flex-direction: column;
+}
 
 .balanceCenterContainer {
   display: flex;
@@ -90,10 +105,11 @@ body {
 }
 
 .balanceInfo {
-    font-size: 1.8em;
-    text-align: justify;
+  font-size: 1.8em;
+  text-align: justify;
   text-justify: inter-word;
   margin-top: 0.9em;
+  margin-bottom: 3em;
 }
 
 .balanceTitle {
@@ -105,7 +121,7 @@ body {
   margin-top: 25vh;
   margin-bottom: 0em;
   text-transform: uppercase;
-  
+  -webkit-transform: rotate(-1.75deg);
 }
 
 .balanceSubtitle {
@@ -114,15 +130,15 @@ body {
   font-size: 2em;
   font-weight: 400;
   letter-spacing: 0.03em;
-  margin-top: 0em;
+  margin-top: -0.2em;
 }
 
 .balanceSubtitleBottom {
-    margin-bottom: 2em;
+  margin-bottom: 2.2em;
 }
 
 .balanceAskBottom {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .balanceLine {
@@ -133,24 +149,31 @@ body {
   -webkit-transform: rotate(-1.75deg);
 }
 
-.balanceImageLine {
+.balanceImageLineSmall {
   width: 80vw;
 }
 
-.balanceButton {
-font-family: 'Baskerville', serif;
-  font-weight: bolder;
-  text-align: center;
-  color: "black";
-  border: none;
-  background: none;
-  margin: 0.5em;
-  font-size: 3em;
-  text-decoration: none;
+.balanceImageLineBig {
+  width: 84vw;
 }
 
-a:-webkit-any-link {
-    color: black;
+.balanceButtonB {
+  font-family: "baskervillenormal", serif;
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+  border: none;
+  background: none;
+
+  margin-top: 1.6em;
+  font-size: 3em;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.balanceButtonW {
+  color: white;
 }
 
 .balanceLineContainer {
@@ -159,7 +182,7 @@ a:-webkit-any-link {
 }
 
 .balanceVersion {
-  font-family: "Baskervville", serif;
+  font-family: "baskervillenormal", serif;
   font-size: 0.7em;
   margin-top: 6em;
 }
@@ -171,9 +194,49 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .white {
-    color: white;
-  }
+  color: white;
+}
 
 .marginTop {
-    margin-top: 2em;
+  margin-top: 2em;
+}
+
+@media (max-width: 450px) {
+  .balanceTitle {
+    font-size: 4em;
+  }
+  .balanceSubtitle {
+    font-size: 1.3em;
+  }
+
+  .balanceSubtitleBottom {
+    margin-bottom: 4.4em;
+  }
+
+  .balanceImageLineSmall {
+    width: 90vw;
+  }
+  .balanceButtonB {
+    margin-top: 1.6em;
+    font-size: 2.8em;
+  }
+  .replayContainer {
+    width: 75vw;
+  }
+  .replyHeader {
+    font-size: 2.6em;
+    margin-top: 10vh;
+  }
+  .balanceInfo {
+    font-size: 1.1em;
+    margin-top: 0.9em;
+    margin-bottom: 6em;
+  }
+  .balanceLine {
+    border-top: 0.15em solid black;
+    width: 75vw;
+    margin-top: -1.4em;
+    float: center;
+    -webkit-transform: rotate(-1.75deg);
+  }
 }

@@ -32,8 +32,7 @@ export default class Hello extends Component {
       isTurnOn: this.state.isEnter ? false : true,
       bulbOn: "bulbOn",
     });
-    console.log("on", this.state.isEnter);
-    console.log("class", this.state.bulbOn);
+    
   };
 
   handleLeave = () => {
@@ -41,8 +40,7 @@ export default class Hello extends Component {
       isTurnOn: this.state.isEnter ? false : true,
       bulbOn: "bulbOff",
     });
-    console.log("on", this.state.isEnter);
-    console.log("class", this.state.bulbOn);
+    
   };
 
   render() {

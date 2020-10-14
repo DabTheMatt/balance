@@ -30,6 +30,7 @@ export default class What extends Component {
       href: "",
       whatErrorMsg: "",
       costErrorMsg: "",
+      isEnterClassName: "balanceChevronBlack"
     };
   }
 
@@ -49,8 +50,28 @@ export default class What extends Component {
     window.location.reload(false);
   };
 
+  handleEnter = () => {
+    this.setState({
+      isTurnOn: this.state.isEnter ? false : true,
+      isEnterClassName: "balanceChevronWhite",
+    });
+    
+  };
+
+  handleLeave = () => {
+    this.setState({
+      isTurnOn: this.state.isEnter ? false : true,
+      isEnterClassName: "balanceChevronBlack",
+    });
+    
+  };
+
   handleSubmit = (e) => {
     e.preventDefault();
+    this.setState({
+        isEnterClassName: "balanceChevronBlack"
+
+    })
 
     if (this.state.costValue == 0) {
       e.preventDefault();
@@ -302,7 +323,7 @@ export default class What extends Component {
               
               <span className="white replyHeaderSpan">
                 {this.state.text1} {this.state.text2}
-                <sup className="balanceAdress">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="balanceChevron">>>&nbsp;</span>http://www.unicef.org</sup></span>
+                <span className="balanceAdress" style={{marginLeft: "20px"}}><span className="balanceChevron">>></span>http://www.unicef.org</span></span>
               </h1>
               <div className="balanceLine"></div>
               <div className="balanceInfo white">{this.state.info}</div>
@@ -339,10 +360,13 @@ export default class What extends Component {
               >
                 Home
               </a>
-            </div> */}
-            <Link className="balanceButton marginTop" to="/Balance">
-          <span className="balanceChevron">{`<<`}</span> home
-                    </Link>
+            </div> */}<div onMouseEnter={this.handleEnter}
+            onMouseLeave={this.handleLeave}>
+            <Link className="balanceButtonB marginTop" 
+            
+            to="/Balance">
+          <span className={this.state.isEnterClassName}>{`<<`}</span> home
+                    </Link></div>
             <div id="">
             <p className="balanceVersion">v0.2-alpha</p>
               <br></br>
@@ -381,11 +405,13 @@ export default class What extends Component {
               )}
               <button 
                 onClick={this.handleClick}
+                onMouseEnter={this.handleEnter}
+              onMouseLeave={this.handleLeave}
                 type="submit"
-                className="balanceButton"
+                className="balanceButtonB"
                 style={{ textTransform: "" }}
               >
-                check <sapn className="balanceChevron">>></sapn>
+                check <sapn className={this.state.isEnterClassName}>>></sapn>
               </button>
             </form>
             <p className="balanceVersion">v0.3-alpha-giraffe</p>
