@@ -243,7 +243,7 @@ export default class What extends Component {
             numberOf: array.length,
             image: obj.image,
             table: [...array],
-            text1: `${array.length} ${obj.text1}`,
+            text1: `${obj.text1} ${array.length}`,
             text2: obj.text2,
             info: obj.info,
             adress: obj.website_name,
@@ -406,7 +406,7 @@ export default class What extends Component {
               <button 
                 onClick={this.handleClick}
                 onMouseEnter={this.handleEnter}
-              onMouseLeave={this.handleLeave}
+                onMouseLeave={this.handleLeave}
                 type="submit"
                 className="balanceButtonB"
                 style={{ textTransform: "" }}

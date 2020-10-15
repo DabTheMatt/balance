@@ -164,12 +164,10 @@ body {
   color: black;
   border: none;
   background: none;
-
   margin-top: 1.6em;
   font-size: 3em;
   text-decoration: none;
   cursor: pointer;
-  line-height: 0;
 }
 
 .balanceButtonW {

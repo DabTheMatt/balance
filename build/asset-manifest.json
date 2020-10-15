@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/balance/static/css/main.e516f532.chunk.css",
-    "main.js": "/balance/static/js/main.30e10b6c.chunk.js",
-    "main.js.map": "/balance/static/js/main.30e10b6c.chunk.js.map",
+    "main.css": "/balance/static/css/main.72d9544d.chunk.css",
+    "main.js": "/balance/static/js/main.3dd703d2.chunk.js",
+    "main.js.map": "/balance/static/js/main.3dd703d2.chunk.js.map",
     "runtime-main.js": "/balance/static/js/runtime-main.a3953208.js",
     "runtime-main.js.map": "/balance/static/js/runtime-main.a3953208.js.map",
     "static/js/2.f1618609.chunk.js": "/balance/static/js/2.f1618609.chunk.js",
     "static/js/2.f1618609.chunk.js.map": "/balance/static/js/2.f1618609.chunk.js.map",
     "index.html": "/balance/index.html",
-    "precache-manifest.00cd5892e5454b1bdb1e60163ee12969.js": "/balance/precache-manifest.00cd5892e5454b1bdb1e60163ee12969.js",
+    "precache-manifest.3b8ab65877d13dc9da1dc79cc9941142.js": "/balance/precache-manifest.3b8ab65877d13dc9da1dc79cc9941142.js",
     "service-worker.js": "/balance/service-worker.js",
-    "static/css/main.e516f532.chunk.css.map": "/balance/static/css/main.e516f532.chunk.css.map",
+    "static/css/main.72d9544d.chunk.css.map": "/balance/static/css/main.72d9544d.chunk.css.map",
     "static/js/2.f1618609.chunk.js.LICENSE.txt": "/balance/static/js/2.f1618609.chunk.js.LICENSE.txt",
     "static/media/bStyle.css": "/balance/static/media/paneuropaneueregular-webfont.fc66a8cc.woff",
     "static/media/blacksheep.png": "/balance/static/media/blacksheep.b2612104.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.a3953208.js",
     "static/js/2.f1618609.chunk.js",
-    "static/css/main.e516f532.chunk.css",
-    "static/js/main.30e10b6c.chunk.js"
+    "static/css/main.72d9544d.chunk.css",
+    "static/js/main.3dd703d2.chunk.js"
   ]
 }
