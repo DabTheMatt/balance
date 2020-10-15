@@ -22,44 +22,8 @@
   font-family: "paneuropa_neue_beta_1.1Rg";
 }
 
-body {
-  background-color: rgb(0, 137, 172);
-}
-
-.replyHeader {
-  color: black;
-  font-size: 4em;
-  margin-top: 20vh;
-  letter-spacing: 0.02em;
-  font-family: "baskervillenormal", serif;
-}
-
-.replyHeaderSpan {
-  font-family: "baskervillenormal", serif;
-}
-
-.capitalize {
-  text-transform: capitalize;
-}
-
-.replayContainer {
-  width: 60vw;
-}
-
-.balanceAdress {
-  color: white;
-  font-size: 0.3em;
-  font-family: "baskervillenormal", serif;
-}
-
-.balanceChevronBlack {
-  color: black;
-  font-size: 0.8em;
-}
-
-.balanceChevronWhite {
-  color: white;
-  font-size: 0.8em;
+a {
+  text-decoration: none;
 }
 
 .askInput {
@@ -97,64 +61,19 @@ body {
   flex-direction: column;
 }
 
-.balanceCenterContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.balanceInfo {
-  font-size: 1.8em;
-  text-align: justify;
-  text-justify: inter-word;
-  margin-top: 0.9em;
-  margin-bottom: 3em;
-}
-
-.balanceTitle {
+.balanceAdress {
   color: white;
-  font-size: 6em;
-  font-weight: 500;
-  text-align: center;
-  letter-spacing: 0.1em;
-  margin-top: 25vh;
-  margin-bottom: 0em;
-  text-transform: uppercase;
-  -webkit-transform: rotate(-1.75deg);
+  font-size: 0.3em;
+  font-family: "baskervillenormal", serif;
+  line-height: 0.3em;
 }
 
-.balanceSubtitle {
-  color: white;
-  text-align: center;
-  font-size: 2em;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  margin-top: -0.2em;
-}
-
-.balanceSubtitleBottom {
-  margin-bottom: 2.2em;
+.balanceAdress:hover {
+    color: black;
 }
 
 .balanceAskBottom {
   margin-bottom: 1em;
-}
-
-.balanceLine {
-  border-top: 0.15em solid black;
-  width: 60vw;
-  margin-top: -2em;
-  float: center;
-  -webkit-transform: rotate(-1.75deg);
-}
-
-.balanceImageLineSmall {
-  width: 80vw;
-}
-
-.balanceImageLineBig {
-  width: 84vw;
 }
 
 .balanceButtonB {
@@ -174,9 +93,80 @@ body {
   color: white;
 }
 
+.balanceCenterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.balanceChevron {
+    color: black;
+    font-size: 0.8em;
+  }
+
+.balanceChevronBlack {
+  color: black;
+  font-size: 0.8em;
+}
+
+.balanceChevronWhite {
+  color: white;
+  font-size: 0.8em;
+}
+
+.balanceImageLineSmall {
+  width: 80vw;
+}
+
+.balanceImageLineBig {
+  width: 84vw;
+}
+
+.balanceInfo {
+  font-size: 1.8em;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 0.9em;
+  margin-bottom: 3em;
+}
+
+.balanceLine {
+  border-top: 0.15em solid black;
+  width: 60vw;
+  margin-top: -2.4em;
+  float: center;
+  -webkit-transform: rotate(-1.75deg);
+}
+
 .balanceLineContainer {
   width: 100vw;
   text-align: right;
+}
+
+.balanceSubtitle {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin-top: -0.2em;
+}
+
+.balanceSubtitleBottom {
+  margin-bottom: 2.2em;
+}
+
+.balanceTitle {
+  color: white;
+  font-size: 6em;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-top: 25vh;
+  margin-bottom: 0em;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-1.75deg);
 }
 
 .balanceVersion {
@@ -185,46 +175,64 @@ body {
   margin-top: 6em;
 }
 
+body {
+  background-color: rgb(0, 137, 172);
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.white {
-  color: white;
-}
-
 .marginTop {
   margin-top: 2em;
 }
 
-@media (max-width: 450px) {
-  .balanceTitle {
-    font-size: 4em;
-  }
-  .balanceSubtitle {
-    font-size: 1.3em;
-  }
+.replyAdress {
+  vertical-align: top;
+  color: red;
+  height: auto;
+}
 
-  .balanceSubtitleBottom {
-    margin-bottom: 4.4em;
+.replayContainer {
+  width: 60vw;
+}
+
+.replyHeader {
+  color: black;
+  font-size: 4em;
+
+  letter-spacing: 0.02em;
+  font-family: "baskervillenormal", serif;
+  width: 100%;
+
+  margin-top: 20vh;
+  margin-bottom: 0.5em;
+}
+
+.replyHeaderSpan {
+  font-family: "baskervillenormal", serif;
+}
+
+.white {
+  color: white;
+}
+
+@media (max-width: 450px) {
+  .balanceButtonB {
+    margin-top: 1.6em;
+    font-size: 2.8em;
   }
 
   .balanceImageLineSmall {
     width: 90vw;
   }
-  .balanceButtonB {
-    margin-top: 1.6em;
-    font-size: 2.8em;
-  }
-  .replayContainer {
-    width: 75vw;
-  }
-  .replyHeader {
-    font-size: 2.6em;
-    margin-top: 10vh;
-  }
+
   .balanceInfo {
     font-size: 1.1em;
     margin-top: 0.9em;
@@ -236,5 +244,24 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-top: -1.4em;
     float: center;
     -webkit-transform: rotate(-1.75deg);
+  }
+
+  .balanceTitle {
+    font-size: 4em;
+  }
+  .balanceSubtitle {
+    font-size: 1.3em;
+  }
+
+  .balanceSubtitleBottom {
+    margin-bottom: 4.4em;
+  }
+
+  .replayContainer {
+    width: 75vw;
+  }
+  .replyHeader {
+    font-size: 2.3em;
+    margin-top: 10vh;
   }
 }

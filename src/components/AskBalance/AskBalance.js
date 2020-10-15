@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import {
-    HashRouter as Router,
-    Link,
-    NavLink,
-    Route,
-    Switch,
-  } from "react-router-dom";
+  HashRouter as Router,
+  Link,
+  NavLink,
+  Route,
+  Switch,
+} from "react-router-dom";
 import Tabletop from "tabletop";
 
 export default class What extends Component {
@@ -27,10 +27,11 @@ export default class What extends Component {
       text2: "",
       info: "",
       adress: "",
+      adress_short: "",
       href: "",
       whatErrorMsg: "",
       costErrorMsg: "",
-      isEnterClassName: "balanceChevronBlack"
+      isEnterClassName: "balanceChevronBlack",
     };
   }
 
@@ -55,7 +56,6 @@ export default class What extends Component {
       isTurnOn: this.state.isEnter ? false : true,
       isEnterClassName: "balanceChevronWhite",
     });
-    
   };
 
   handleLeave = () => {
@@ -63,15 +63,13 @@ export default class What extends Component {
       isTurnOn: this.state.isEnter ? false : true,
       isEnterClassName: "balanceChevronBlack",
     });
-    
   };
 
   handleSubmit = (e) => {
     e.preventDefault();
     this.setState({
-        isEnterClassName: "balanceChevronBlack"
-
-    })
+      isEnterClassName: "balanceChevronBlack",
+    });
 
     if (this.state.costValue == 0) {
       e.preventDefault();
@@ -105,9 +103,7 @@ export default class What extends Component {
   };
 
   handleClick = () => {
-    if (this.state.costValue == 0) {
-      console.log("ggg");
-    } else if (this.state.costValue <= 20) {
+    if (this.state.costValue <= 20) {
       this.state.data.map((obj) => {
         if (obj.thershold <= 20) {
           let array = new Array(
@@ -122,6 +118,7 @@ export default class What extends Component {
             info: obj.info,
             adress: obj.website_name,
             href: obj.webpage_adress,
+            adress_short: obj.website_adress_short,
           });
         }
       });
@@ -140,6 +137,7 @@ export default class What extends Component {
             info: obj.info,
             adress: obj.website_name,
             href: obj.webpage_adress,
+            adress_short: obj.website_adress_short,
           });
         }
       });
@@ -158,6 +156,7 @@ export default class What extends Component {
             info: obj.info,
             adress: obj.website_name,
             href: obj.webpage_adress,
+            adress_short: obj.website_adress_short,
           });
         }
       });
@@ -176,6 +175,7 @@ export default class What extends Component {
             info: obj.info,
             adress: obj.website_name,
             href: obj.webpage_adress,
+            adress_short: obj.website_adress_short,
           });
         }
       });
@@ -194,6 +194,7 @@ export default class What extends Component {
             info: obj.info,
             adress: obj.website_name,
             href: obj.webpage_adress,
+            adress_short: obj.website_adress_short,
           });
         }
       });
@@ -212,6 +213,7 @@ export default class What extends Component {
             info: obj.info,
             adress: obj.website_name,
             href: obj.webpage_adress,
+            adress_short: obj.website_adress_short,
           });
         }
       });
@@ -230,6 +232,7 @@ export default class What extends Component {
             info: obj.info,
             adress: obj.website_name,
             href: obj.webpage_adress,
+            adress_short: obj.website_adress_short,
           });
         }
       });
@@ -248,6 +251,7 @@ export default class What extends Component {
             info: obj.info,
             adress: obj.website_name,
             href: obj.webpage_adress,
+            adress_short: obj.website_adress_short,
           });
         }
       });
@@ -266,6 +270,7 @@ export default class What extends Component {
             info: obj.info,
             adress: obj.website_name,
             href: obj.webpage_adress,
+            adress_short: obj.website_adress_short,
           });
         }
       });
@@ -284,6 +289,7 @@ export default class What extends Component {
             info: obj.info,
             adress: obj.website_name,
             href: obj.webpage_adress,
+            adress_short: obj.website_adress_short,
           });
         }
       });
@@ -302,6 +308,7 @@ export default class What extends Component {
             info: obj.info,
             adress: obj.website_name,
             href: obj.webpage_adress,
+            adress_short: obj.website_adress_short,
           });
         }
       });
@@ -313,21 +320,21 @@ export default class What extends Component {
       <div className="">
         {this.state.showHow ? (
           <div className="balanceCenterContainer">
-              <div className="replayContainer">
-            <h1 className="replyHeader">
-              Your 
-              <span className="white replyHeaderSpan capitalize"> {this.state.whatValue} </span>
-            
-            
-              is worth <br/>
-              
-              <span className="white replyHeaderSpan">
-                {this.state.text1} {this.state.text2}
-                <span className="balanceAdress" style={{marginLeft: "20px"}}><span className="balanceChevron">>></span>http://www.unicef.org</span></span>
+            <div className="replayContainer">
+              <h1 className="replyHeader">
+                Your{" "}
+                <span className="replyHeaderSpan white capitalize">
+                  {this.state.whatValue}
+                </span>{" "}
+                is worth{" "}
+                <span className="replyHeaderSpan white capitalize">
+                  {this.state.text1} {this.state.text2}
+                </span>{" "}
+                <sup ><a className="balanceAdress" href={this.state.href}><nobr>>> {this.state.adress_short}</nobr></a></sup>
               </h1>
               <div className="balanceLine"></div>
               <div className="balanceInfo white">{this.state.info}</div>
-             {/* <div className="margin3em info">
+              {/* <div className="margin3em info">
               {[...this.state.table].map((i) => {
                 return <img className="image" src={this.state.image} />;
               })}
@@ -360,50 +367,54 @@ export default class What extends Component {
               >
                 Home
               </a>
-            </div> */}<div onMouseEnter={this.handleEnter}
-            onMouseLeave={this.handleLeave}>
-            <Link className="balanceButtonB marginTop" 
-            
-            to="/Balance">
-          <span className={this.state.isEnterClassName}>{`<<`}</span> home
-                    </Link></div>
+            </div> */}
+            <div
+              onMouseEnter={this.handleEnter}
+              onMouseLeave={this.handleLeave}
+            >
+              <Link className="balanceButtonB marginTop" to="/Balance">
+                <span className={this.state.isEnterClassName}>{`<<`}</span> home
+              </Link>
+            </div>
             <div id="">
-            <p className="balanceVersion">v0.2-alpha</p>
+              <p className="balanceVersion">v0.2-alpha</p>
               <br></br>
               <br></br>
-              
+
               <br></br>
             </div>
-            
           </div>
         ) : (
           <div className="balanceCenterContainer">
             <form onSubmit={this.handleSubmit} className="askForm">
-              <label className="balanceSubtitle balanceAskBottom">What do you want to buy?</label>
+              <label className="balanceSubtitle balanceAskBottom">
+                What do you want to buy?
+              </label>
               <input
                 className="askInput balanceAskBottom"
                 onChange={this.handleThingChange}
                 value={this.state.whatValue}
-                
               ></input>
-              
-              <label className="balanceSubtitle balanceAskBottom">How much it costs?</label>
-                <input
+
+              <label className="balanceSubtitle balanceAskBottom">
+                How much it costs?
+              </label>
+              <input
                 type="number"
                 className="askInput balanceAskBottom"
                 onChange={this.handleCostChange}
-                
                 value={this.state.costValue}
-                
               ></input>
-              <h2 className="balanceSubtitle balanceAskBottom">Ho much is it worth?</h2>
-              
+              <h2 className="balanceSubtitle balanceAskBottom">
+                Ho much is it worth?
+              </h2>
+
               {this.state.costErrorMsg ? (
                 <div style={{ height: "20px" }}>{this.state.costErrorMsg}</div>
               ) : (
                 <div style={{ height: "20px" }}>{this.state.costErrorMsg}</div>
               )}
-              <button 
+              <button
                 onClick={this.handleClick}
                 onMouseEnter={this.handleEnter}
                 onMouseLeave={this.handleLeave}
@@ -418,8 +429,10 @@ export default class What extends Component {
           </div>
         )}
 
-        <div><br/><br/></div>
-        
+        <div>
+          <br />
+          <br />
+        </div>
       </div>
     );
   }
