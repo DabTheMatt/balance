@@ -33,7 +33,8 @@ export default class What extends Component {
       whatErrorMsg: "",
       costErrorMsg: "",
       isEnterClassName: "balanceChevronBlack",
-      imageNumber: "",
+      numberOfImages: "",
+      objectName: ""
     };
   }
 
@@ -125,6 +126,8 @@ export default class What extends Component {
             adress: obj.website_name,
             href: obj.webpage_adress,
             adress_short: obj.website_adress_short,
+            numberOfImages: obj.number_of_images,
+            objectName: obj.name
           });
           
         }
@@ -279,6 +282,9 @@ export default class What extends Component {
             adress: obj.website_name,
             href: obj.webpage_adress,
             adress_short: obj.website_adress_short,
+            numberOfImages: obj.number_of_images,
+            objectName: obj.name
+
           });
         }
       });
@@ -298,6 +304,8 @@ export default class What extends Component {
             adress: obj.website_name,
             href: obj.webpage_adress,
             adress_short: obj.website_adress_short,
+            numberOfImages: obj.number_of_images
+
           });
         }
       });
@@ -344,7 +352,7 @@ export default class What extends Component {
               </h1>
               <div className="balanceLine"></div>
               <div>{[...this.state.table].map((i) => {
-                return <img className="image" src={ `${this.state.image}`+ `${(Math.floor(Math.random() * (16 - 1)) + 1)}`+`.png`} />;
+                return <img className={this.state.objectName} src={ `${this.state.image}`+ `${(Math.floor(Math.random() * (this.state.numberOfImages - 1)) + 1)}`+`.png`} />;
               })}</div>
               
               <div className="balanceInfo teal ">{this.state.info}</div>

@@ -151,7 +151,7 @@ html {
   font-weight: bold;
   text-align: justify;
   text-justify: inter-word;
-  margin-top: 0.9em;
+  margin-top: 2em;
   margin-bottom: 3em;
 }
 
@@ -218,10 +218,25 @@ body {
 }
 
 .image {
-  width: 3em;
+  width: auto;
   height: auto;
   margin: 0.2em;
   -webkit-transform: rotate(3deg);
+
+}
+
+.pencil {
+  width: 2em;
+  height: auto;
+  margin: 0.2em;
+  -webkit-transform: rotate(3deg);
+
+}
+
+.leg {
+  width: 55vw;
+  height: auto;
+  margin: auto 2em;
 
 }
 
@@ -341,6 +356,17 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 0.1em;
   }
 
+  .leg {
+    width: 50vw;
+    
+  
+  }
+
+  .pencil {
+    width: 1em;
+  
+  }
+
   .replayContainer {
     width: 75vw;
     height: auto;
@@ -348,7 +374,7 @@ input[type="number"]::-webkit-outer-spin-button {
  
 
   .replyHeader {
-    font-size: 2.3em;
+    font-size: 2em;
     margin-top: 10vh;
   }
 
