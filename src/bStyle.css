@@ -56,8 +56,9 @@ a {
   align-items: center;
   justify-content: center;
   width: 100vw;
+  height: auto;
   margin: 0 auto;
-  margin-top: 10vh;
+  margin-top: 20vh;
   flex-direction: column;
 }
 
@@ -66,6 +67,23 @@ a {
   font-size: 0.4em;
   font-family: "baskervillenormal", serif;
   line-height: 0.3em;
+}
+
+
+.balanceAdressBottom {
+  color: rgb(0, 137, 172);
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: "baskervillenormal", serif;
+  line-height: 2em;
+  margin-bottom: 3em;
+  letter-spacing: 0.1em;
+
+}
+
+.balanceAdressBottom:hover {
+  color: black;
+
 }
 
 .balanceAdress:hover {
@@ -83,7 +101,7 @@ a {
   color: black;
   border: none;
   background: none;
-  margin-top: 1.6em;
+  margin-top: 2em;
   font-size: 3em;
   text-decoration: none;
   cursor: pointer;
@@ -94,7 +112,7 @@ a {
 }
 
 html {
-  background-color: white;
+  background-color: rgb(0, 137, 172);
 }
 
 .balanceCenterContainer {
@@ -102,7 +120,6 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
 }
 
 .balanceChevron {
@@ -142,6 +159,16 @@ html {
   border-top: 0.15em solid black;
   width: 60vw;
   margin-top: -2.4em;
+  margin-bottom: 2em;
+  float: center;
+  -webkit-transform: rotate(-1.75deg);
+}
+
+.balanceLineBottom {
+  border-top: 0.15em solid black;
+  width: 60vw;
+  margin-top: -4em;
+  margin-bottom: 1em;
   float: center;
   -webkit-transform: rotate(-1.75deg);
 }
@@ -170,7 +197,7 @@ html {
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.1em;
-  margin-top: 5vh;
+  margin-top: 25vh;
   margin-bottom: 0em;
   text-transform: uppercase;
   -webkit-transform: rotate(-1.75deg);
@@ -190,6 +217,16 @@ body {
   text-transform: capitalize;
 }
 
+.image {
+  width: 3em;
+  height: auto;
+  margin: 0.2em;
+  -webkit-transform: rotate(3deg);
+
+}
+
+
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -201,7 +238,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .marginTop {
-  margin-top: 2em;
+  margin-top: 3em;
 }
 
 .replyAdress {
@@ -212,6 +249,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .replayContainer {
   width: 60vw;
+  margin-bottom: 3em;
 }
 
 .replyHeader {
@@ -222,7 +260,7 @@ input[type="number"]::-webkit-outer-spin-button {
   font-family: "baskervillenormal", serif;
   width: 100%;
 
-  margin-top: 5vh;
+  margin-top: 15vh;
   margin-bottom: 0.5em;
 }
 
@@ -236,7 +274,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .tealBackground {
   background-color:rgb(0, 137, 172);
-
+  
 }
 
 .white {
@@ -245,9 +283,27 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .whiteBackground {
   background-color: white;
+  height: auto;
+  padding-bottom: 4vh;
 }
 
 @media (max-width: 450px) {
+
+  .askInput {
+    width: 60vw;
+  }
+
+  .balanceAdressBottom {
+    
+    font-size: 0.8em;
+    font-weight: bold;
+    font-family: "baskervillenormal", serif;
+    line-height: 1em;
+    margin-bottom: 3em;
+    letter-spacing: 0.1em;
+  
+  }
+
   .balanceButtonB {
     margin-top: 1.6em;
     font-size: 2.8em;
@@ -281,13 +337,26 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-bottom: 4.4em;
   }
 
+  .image {
+    margin: 0.1em;
+  }
+
   .replayContainer {
     width: 75vw;
+    height: auto;
   }
+ 
+
   .replyHeader {
     font-size: 2.3em;
     margin-top: 10vh;
   }
+
+  html {
+    height: 100%;
+  }
+    
+ 
 }
 
 @media (max-width: 1200px) {
@@ -306,7 +375,11 @@ input[type="number"]::-webkit-outer-spin-button {
   
   }
 
-  
+  .balanceLineBottom {
+    
+    width: 65vw;
+   
+  }
 
   .replayContainer {
     width: 65vw;

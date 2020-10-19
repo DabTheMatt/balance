@@ -111,7 +111,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: obj.image,
+            image: obj.image_es,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -130,7 +130,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: obj.image,
+            image: obj.image_es,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -149,7 +149,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: obj.image,
+            image: obj.image_es,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -168,7 +168,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: obj.image,
+            image: obj.image_es,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -187,7 +187,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: obj.image,
+            image: obj.image_es,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -206,7 +206,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: obj.image,
+            image: obj.image_es,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -225,7 +225,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: obj.image,
+            image: obj.image_es,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -244,7 +244,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: obj.image,
+            image: obj.image_es,
             table: [...array],
             text1: `${obj.text1} ${array.length}`,
             text2: obj.text2,
@@ -263,7 +263,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: obj.image,
+            image: obj.image_es,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -282,7 +282,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: obj.image,
+            image: obj.image_es,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -301,7 +301,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: obj.image,
+            image: obj.image_es,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -316,14 +316,14 @@ export default class What extends Component {
   };
 
   render() {
-    return (
-      <div className="whiteBackground">
+    return (<div>
+      <div className="">
         {this.state.showHow ? (
           <div className="balanceCenterContainer whiteBackground">
             <div className="replayContainer whiteBackground">
               <h1 className="replyHeader">
                 Your{" "}
-                <span className="replyHeaderSpan  capitalize">
+                <span className="replyHeaderSpan  teal capitalize">
                   {this.state.whatValue}
                 </span>{" "}
                 is worth{" "}
@@ -333,12 +333,15 @@ export default class What extends Component {
                 <sup ><a className="balanceAdress" href={this.state.href}><nobr>>> {this.state.adress_short}</nobr></a></sup>
               </h1>
               <div className="balanceLine"></div>
-              <div className="balanceInfo teal ">{this.state.info}</div>
-              {/* <div className="margin3em info">
-              {[...this.state.table].map((i) => {
+              <div>{[...this.state.table].map((i) => {
                 return <img className="image" src={this.state.image} />;
-              })}
-              </div>  */}
+              })}</div>
+              
+              <div className="balanceInfo teal ">{this.state.info}</div>
+              <div className="balanceLineBottom"></div>
+              <div style={{textAlign: "right", marginBottom: "2em"}}>
+              <a className="balanceAdressBottom" href={this.state.href}><nobr>>> {this.state.adress_short}</nobr></a>
+              </div>
             </div>
             {/* <div className="margin3em info">
               <h2>
@@ -429,10 +432,10 @@ export default class What extends Component {
           </div>
         )}
 
-        <div className="h0">
-          <br />
-          <br />
+        <div className="tealBackground">
+          
         </div>
+      </div>
       </div>
     );
   }
