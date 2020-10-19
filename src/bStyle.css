@@ -57,13 +57,13 @@ a {
   justify-content: center;
   width: 100vw;
   margin: 0 auto;
-  margin-top: 20vh;
+  margin-top: 10vh;
   flex-direction: column;
 }
 
 .balanceAdress {
-  color: white;
-  font-size: 0.3em;
+  color: rgb(0, 137, 172);
+  font-size: 0.4em;
   font-family: "baskervillenormal", serif;
   line-height: 0.3em;
 }
@@ -93,11 +93,16 @@ a {
   color: white;
 }
 
+html {
+  background-color: white;
+}
+
 .balanceCenterContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100vh;
 }
 
 .balanceChevron {
@@ -124,7 +129,9 @@ a {
 }
 
 .balanceInfo {
+  color: black;
   font-size: 1.8em;
+  font-weight: bold;
   text-align: justify;
   text-justify: inter-word;
   margin-top: 0.9em;
@@ -163,7 +170,7 @@ a {
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.1em;
-  margin-top: 25vh;
+  margin-top: 5vh;
   margin-bottom: 0em;
   text-transform: uppercase;
   -webkit-transform: rotate(-1.75deg);
@@ -189,6 +196,10 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+.h0 {
+  height: 0px;
+}
+
 .marginTop {
   margin-top: 2em;
 }
@@ -207,11 +218,11 @@ input[type="number"]::-webkit-outer-spin-button {
   color: black;
   font-size: 4em;
 
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   font-family: "baskervillenormal", serif;
   width: 100%;
 
-  margin-top: 20vh;
+  margin-top: 5vh;
   margin-bottom: 0.5em;
 }
 
@@ -219,8 +230,21 @@ input[type="number"]::-webkit-outer-spin-button {
   font-family: "baskervillenormal", serif;
 }
 
+.teal {
+  color: rgb(0, 137, 172)
+}
+
+.tealBackground {
+  background-color:rgb(0, 137, 172);
+
+}
+
 .white {
   color: white;
+}
+
+.whiteBackground {
+  background-color: white;
 }
 
 @media (max-width: 450px) {
@@ -264,4 +288,28 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 2.3em;
     margin-top: 10vh;
   }
+}
+
+@media (max-width: 1200px) {
+  
+
+  .balanceImageLineSmall {
+    width: 90vw;
+  }
+
+  
+  .balanceLine {
+    
+    width: 65vw;
+    
+
+  
+  }
+
+  
+
+  .replayContainer {
+    width: 65vw;
+  }
+  
 }

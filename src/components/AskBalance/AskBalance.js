@@ -317,23 +317,23 @@ export default class What extends Component {
 
   render() {
     return (
-      <div className="">
+      <div className="whiteBackground">
         {this.state.showHow ? (
-          <div className="balanceCenterContainer">
-            <div className="replayContainer">
+          <div className="balanceCenterContainer whiteBackground">
+            <div className="replayContainer whiteBackground">
               <h1 className="replyHeader">
                 Your{" "}
-                <span className="replyHeaderSpan white capitalize">
+                <span className="replyHeaderSpan  capitalize">
                   {this.state.whatValue}
                 </span>{" "}
                 is worth{" "}
-                <span className="replyHeaderSpan white capitalize">
+                <span className="replyHeaderSpan  capitalize">
                   {this.state.text1} {this.state.text2}
                 </span>{" "}
                 <sup ><a className="balanceAdress" href={this.state.href}><nobr>>> {this.state.adress_short}</nobr></a></sup>
               </h1>
               <div className="balanceLine"></div>
-              <div className="balanceInfo white">{this.state.info}</div>
+              <div className="balanceInfo teal ">{this.state.info}</div>
               {/* <div className="margin3em info">
               {[...this.state.table].map((i) => {
                 return <img className="image" src={this.state.image} />;
@@ -376,7 +376,7 @@ export default class What extends Component {
                 <span className={this.state.isEnterClassName}>{`<<`}</span> home
               </Link>
             </div>
-            <div id="">
+            <div className="whiteBackground" id="">
               <p className="balanceVersion">v0.2-alpha</p>
               <br></br>
               <br></br>
@@ -385,7 +385,7 @@ export default class What extends Component {
             </div>
           </div>
         ) : (
-          <div className="balanceCenterContainer">
+          <div className="balanceCenterContainer tealBackground">
             <form onSubmit={this.handleSubmit} className="askForm">
               <label className="balanceSubtitle balanceAskBottom">
                 What do you want to buy?
@@ -429,7 +429,7 @@ export default class What extends Component {
           </div>
         )}
 
-        <div>
+        <div className="h0">
           <br />
           <br />
         </div>

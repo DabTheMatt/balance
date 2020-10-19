@@ -40,7 +40,7 @@ export default class Balance extends Component {
 
   render() {
     return (
-      <div className="balanceCenterContainer">
+      <div className="balanceCenterContainer tealBackground">
         <h1 className="balanceTitle">balance</h1>
         <h2 className="balanceSubtitle balanceSubtitleBottom">How much is worth?</h2>
         <div className="balanceLineContainer">
