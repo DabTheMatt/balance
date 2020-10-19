@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Tabletop from "tabletop";
 
+
 export default class What extends Component {
   constructor(props) {
     super(props);
@@ -32,6 +33,7 @@ export default class What extends Component {
       whatErrorMsg: "",
       costErrorMsg: "",
       isEnterClassName: "balanceChevronBlack",
+      imageNumber: "",
     };
   }
 
@@ -101,8 +103,12 @@ export default class What extends Component {
       costValue: e.target.value,
     });
   };
-
   handleClick = () => {
+    let randomNumber = Math.floor(Math.random() * 9);
+    this.setState ({
+      imageNumber: Math.floor(Math.random() * (9 - 1)) + 1
+    })
+    
     if (this.state.costValue <= 20) {
       this.state.data.map((obj) => {
         if (obj.thershold <= 20) {
@@ -111,7 +117,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: obj.image_es,
+            image: `https://raw.githubusercontent.com/DabTheMatt/balance/master/src/asets/es/pencil_0`,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -120,7 +126,9 @@ export default class What extends Component {
             href: obj.webpage_adress,
             adress_short: obj.website_adress_short,
           });
+          
         }
+        
       });
     } else if (this.state.costValue <= 40) {
       this.state.data.map((obj) => {
@@ -317,6 +325,8 @@ export default class What extends Component {
 
   render() {
     return (<div>
+        
+
       <div className="">
         {this.state.showHow ? (
           <div className="balanceCenterContainer whiteBackground">
@@ -334,7 +344,7 @@ export default class What extends Component {
               </h1>
               <div className="balanceLine"></div>
               <div>{[...this.state.table].map((i) => {
-                return <img className="image" src={this.state.image} />;
+                return <img className="image" src={ `${this.state.image}`+ `${(Math.floor(Math.random() * (9 - 1)) + 1)}`+`.png`} />;
               })}</div>
               
               <div className="balanceInfo teal ">{this.state.info}</div>
@@ -372,8 +382,8 @@ export default class What extends Component {
               </a>
             </div> */}
             <div
-              onMouseEnter={this.handleEnter}
-              onMouseLeave={this.handleLeave}
+              /* onMouseEnter={this.handleEnter}
+              onMouseLeave={this.handleLeave} */
             >
               <Link className="balanceButtonB marginTop" to="/Balance">
                 <span className={this.state.isEnterClassName}>{`<<`}</span> home
