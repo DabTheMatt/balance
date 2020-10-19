@@ -117,7 +117,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: `https://raw.githubusercontent.com/DabTheMatt/balance/master/src/asets/es/pencil_0`,
+            image: `https://raw.githubusercontent.com/DabTheMatt/balance/master/src/asets/es/pencil_`,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -344,7 +344,7 @@ export default class What extends Component {
               </h1>
               <div className="balanceLine"></div>
               <div>{[...this.state.table].map((i) => {
-                return <img className="image" src={ `${this.state.image}`+ `${(Math.floor(Math.random() * (9 - 1)) + 1)}`+`.png`} />;
+                return <img className="image" src={ `${this.state.image}`+ `${(Math.floor(Math.random() * (16 - 1)) + 1)}`+`.png`} />;
               })}</div>
               
               <div className="balanceInfo teal ">{this.state.info}</div>
