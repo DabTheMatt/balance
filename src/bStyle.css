@@ -23,14 +23,23 @@
 }
 
 a {
+  
+}
+
+a {
+  color: black;
   text-decoration: none;
+}
+
+a:hover {
+  color: white;
 }
 
 .askInput {
   background: rgb(0, 137, 172);
-  border: 0;
+  border: 0px solid rgb(0, 137, 172);
   border-bottom: 2px solid white;
-  border-radius: 3px;
+  border-radius: 0px;
   font-size: 3em;
   width: 40vw;
   text-align: center;
@@ -40,7 +49,6 @@ a {
   font-weight: 800;
   letter-spacing: 0.03em;
   text-transform: capitalize;
-
   -webkit-transform: rotate(-1.75deg);
 }
 
@@ -57,10 +65,24 @@ a {
   justify-content: center;
   width: 100vw;
   height: auto;
-  margin: 0 auto;
+  
   margin-top: 20vh;
   flex-direction: column;
 }
+
+.balanceAbout {
+  font-size: 1.8em;
+  font-weight: normal;
+  margin-top: 2em;
+}
+
+
+.balanceAboutParagraph {
+  width: 60vw;
+  color: white;
+  font-size: 1.6em;
+}
+
 
 .balanceAdress {
   color: rgb(0, 137, 172);
@@ -68,7 +90,6 @@ a {
   font-family: "baskervillenormal", serif;
   line-height: 0.3em;
 }
-
 
 .balanceAdressBottom {
   color: rgb(0, 137, 172);
@@ -78,16 +99,14 @@ a {
   line-height: 2em;
   margin-bottom: 3em;
   letter-spacing: 0.1em;
-
 }
 
 .balanceAdressBottom:hover {
   color: black;
-
 }
 
 .balanceAdress:hover {
-    color: black;
+  color: black;
 }
 
 .balanceAskBottom {
@@ -107,6 +126,23 @@ a {
   cursor: pointer;
 }
 
+.balanceButtonB2 {
+  font-family: "baskervillenormal", serif;
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+  border: none;
+  background: none;
+  margin-top: 2em;
+  font-size: 3em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.balanceButtonB2:hover {
+  color: rgb(0, 137, 172);
+}
+
 .balanceButtonW {
   color: white;
 }
@@ -116,16 +152,19 @@ html {
 }
 
 .balanceCenterContainer {
+  width: 60vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0 auto;
+  background-color: rgb(0, 137, 172);
 }
 
 .balanceChevron {
-    color: black;
-    font-size: 0.8em;
-  }
+  color: black;
+  font-size: 0.8em;
+}
 
 .balanceChevronBlack {
   color: black;
@@ -150,9 +189,13 @@ html {
   font-size: 1.8em;
   font-weight: bold;
   text-align: justify;
-  text-justify: inter-word;
+  text-justify: none;
   margin-top: 2em;
   margin-bottom: 3em;
+}
+
+.balanceJustify {
+  text-align: justify;
 }
 
 .balanceLine {
@@ -222,22 +265,19 @@ body {
   height: auto;
   margin: 0.2em;
   -webkit-transform: rotate(3deg);
-
 }
 
 .pencil {
-  width: 2em;
+  width: 2.3em;
   height: auto;
   margin: 0.2em;
   -webkit-transform: rotate(3deg);
-
 }
 
 .leg {
   width: 45vw;
   height: auto;
   margin: auto 2em;
-
 }
 
 
@@ -251,6 +291,8 @@ input[type="number"]::-webkit-outer-spin-button {
 .h0 {
   height: 0px;
 }
+
+
 
 .marginTop {
   margin-top: 3em;
@@ -284,12 +326,11 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .teal {
-  color: rgb(0, 137, 172)
+  color: rgb(0, 137, 172);
 }
 
 .tealBackground {
-  background-color:rgb(0, 137, 172);
-  
+  background-color: rgb(0, 137, 172);
 }
 
 .white {
@@ -299,24 +340,26 @@ input[type="number"]::-webkit-outer-spin-button {
 .whiteBackground {
   background-color: white;
   height: auto;
-  padding-bottom: 4vh;
 }
 
 @media (max-width: 450px) {
-
   .askInput {
     width: 60vw;
   }
 
+  .balanceAboutParagraph {
+    width: 70vw;
+    color: white;
+    font-size: 1.3em;
+  }
+
   .balanceAdressBottom {
-    
     font-size: 0.8em;
     font-weight: bold;
     font-family: "baskervillenormal", serif;
     line-height: 1em;
     margin-bottom: 3em;
     letter-spacing: 0.1em;
-  
   }
 
   .balanceButtonB {
@@ -330,6 +373,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .balanceInfo {
     font-size: 1.1em;
+    font-weight: bold;
+    word-spacing: -1px;
     margin-top: 0.9em;
     margin-bottom: 6em;
   }
@@ -357,21 +402,18 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .leg {
-    width: 50vw;
-    
-  
+    width: 45vw;
   }
 
   .pencil {
-    width: 1em;
-  
+    width: 1.2em;
   }
 
   .replayContainer {
     width: 75vw;
     height: auto;
+    margin-bottom: 0;
   }
- 
 
   .replyHeader {
     font-size: 2em;
@@ -381,34 +423,26 @@ input[type="number"]::-webkit-outer-spin-button {
   html {
     height: 100%;
   }
-    
- 
 }
 
 @media (max-width: 1200px) {
-  
-
   .balanceImageLineSmall {
     width: 90vw;
   }
 
-  
   .balanceLine {
-    
     width: 65vw;
-    
-
-  
   }
 
   .balanceLineBottom {
-    
     width: 65vw;
-   
+  }
+
+  .leg {
+    width: 60vw;
   }
 
   .replayContainer {
     width: 65vw;
   }
-  
 }

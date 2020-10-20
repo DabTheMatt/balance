@@ -335,7 +335,7 @@ export default class What extends Component {
     return (<div>
         
 
-      <div className="">
+      <div className="whiteBackground">
         {this.state.showHow ? (
           <div className="balanceCenterContainer whiteBackground">
             <div className="replayContainer whiteBackground">
@@ -393,7 +393,7 @@ export default class What extends Component {
               /* onMouseEnter={this.handleEnter}
               onMouseLeave={this.handleLeave} */
             >
-              <Link className="balanceButtonB marginTop" to="/Balance">
+              <Link className="balanceButtonB2 marginTop" to="/Balance">
                 <span className={this.state.isEnterClassName}>{`<<`}</span> home
               </Link>
             </div>
@@ -405,9 +405,9 @@ export default class What extends Component {
               <br></br>
             </div>
           </div>
-        ) : (
+        ) : (<div className="tealBackground">
           <div className="balanceCenterContainer tealBackground">
-            <form onSubmit={this.handleSubmit} className="askForm">
+            <form onSubmit={this.handleSubmit} className="askForm ">
               <label className="balanceSubtitle balanceAskBottom">
                 What do you want to buy?
               </label>
@@ -422,12 +422,13 @@ export default class What extends Component {
               </label>
               <input
                 type="number"
+                step=".01"
                 className="askInput balanceAskBottom"
                 onChange={this.handleCostChange}
                 value={this.state.costValue}
               ></input>
               <h2 className="balanceSubtitle balanceAskBottom">
-                Ho much is it worth?
+                How much is it worth?
               </h2>
 
               {this.state.costErrorMsg ? (
@@ -447,7 +448,7 @@ export default class What extends Component {
               </button>
             </form>
             <p className="balanceVersion">v0.3-alpha-giraffe</p>
-          </div>
+          </div></div>
         )}
 
         <div className="tealBackground">

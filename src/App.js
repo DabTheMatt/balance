@@ -10,6 +10,8 @@ import AboutPl from "../src/components/AboutPl/AboutPl";
 import Whatr from "../src/components/What_r/What_r";
 import Balance from "../src/components/Balance/Balance";
 import AskBalance from "../src/components/AskBalance/AskBalance";
+import BalanceAbout from "../src/components/BalanceAbout/BalanceAbout";
+
 
 import HelloPl from "../src/components/HelloPl/HelloPl";
 
@@ -28,6 +30,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Balance} />
           <Route path="/main" component={Main} />
+          <Route path="/balanceabout" component={BalanceAbout} />
+
           <Route path="/balance" component={Balance} />
           <Route path="/askbalance" component={AskBalance} />
           <Route path="/what" component={What} />
