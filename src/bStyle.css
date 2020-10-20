@@ -280,7 +280,11 @@ body {
   margin: auto 2em;
 }
 
-
+.book {
+  width: auto;
+  height: 11em;
+  margin: auto 1em;
+}
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {

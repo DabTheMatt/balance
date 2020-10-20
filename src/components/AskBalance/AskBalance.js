@@ -179,7 +179,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: obj.image_es,
+            image: `https://raw.githubusercontent.com/DabTheMatt/balance/master/src/asets/es/book_`,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -187,6 +187,8 @@ export default class What extends Component {
             adress: obj.website_name,
             href: obj.webpage_adress,
             adress_short: obj.website_adress_short,
+            numberOfImages: obj.number_of_images,
+            objectName: obj.name
           });
         }
       });
