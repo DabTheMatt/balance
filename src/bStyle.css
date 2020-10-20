@@ -282,8 +282,8 @@ body {
 
 .book {
   width: auto;
-  height: 11em;
-  margin: auto 1em;
+  height: 12em;
+  margin: o auto;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -323,6 +323,14 @@ input[type="number"]::-webkit-outer-spin-button {
 
   margin-top: 15vh;
   margin-bottom: 0.5em;
+}
+
+.replyHeaderYo {
+  color: black;
+
+  letter-spacing: -0.1em;
+  font-family: "baskervillenormal", serif;
+
 }
 
 .replyHeaderSpan {
@@ -401,12 +409,19 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-bottom: 4.4em;
   }
 
+  .book {
+    width: auto;
+    height: 6em;
+    margin: o auto;
+  }
+
   .image {
     margin: 0.1em;
   }
 
   .leg {
-    width: 45vw;
+    width: 30vw;
+    margin: auto 0.5em;
   }
 
   .pencil {

@@ -278,7 +278,7 @@ export default class What extends Component {
             numberOf: array.length,
             image: obj.image_es,
             table: [...array],
-            text1: `${array.length} ${obj.text1}`,
+            text1: `${obj.text1} ${array.length}`,
             text2: obj.text2,
             info: obj.info,
             adress: obj.website_name,
@@ -342,12 +342,12 @@ export default class What extends Component {
           <div className="balanceCenterContainer whiteBackground">
             <div className="replayContainer whiteBackground">
               <h1 className="replyHeader">
-                Your{" "}
+                <span className="replyHeaderYo">Y</span>our{" "}
                 <span className="replyHeaderSpan  teal capitalize">
                   {this.state.whatValue}
                 </span>{" "}
                 is worth{" "}
-                <span className="replyHeaderSpan  capitalize">
+                <span className="replyHeaderSpan  ">
                   {this.state.text1} {this.state.text2}
                 </span>{" "}
                 <sup ><a className="balanceAdress" href={this.state.href}><nobr>>> {this.state.adress_short}</nobr></a></sup>
