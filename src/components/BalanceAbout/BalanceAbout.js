@@ -32,7 +32,7 @@ export class About extends Component {
             className=" balanceAboutParagraph" 
           >
             <p className="balanceJustify">
-              the pproject to create an application that will change the world.
+              the project to create an application that will change the world.
               The idea for Balance was born out of the search for an answer to
               the question of how much are our everyday decisions worth? How
               much are our purchases worth? How much is a new chair, a pair of
