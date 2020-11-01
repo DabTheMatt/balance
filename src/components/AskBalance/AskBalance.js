@@ -34,7 +34,9 @@ export default class What extends Component {
       costErrorMsg: "",
       isEnterClassName: "balanceChevronBlack",
       numberOfImages: "",
-      objectName: ""
+      objectName: "",
+      objectNameShort: "",
+      imageGrid: ""
     };
   }
 
@@ -127,7 +129,8 @@ export default class What extends Component {
             href: obj.webpage_adress,
             adress_short: obj.website_adress_short,
             numberOfImages: obj.number_of_images,
-            objectName: obj.name
+            objectName: obj.name,
+            imageGrid: obj.image_grid
           });
           
         }
@@ -188,7 +191,9 @@ export default class What extends Component {
             href: obj.webpage_adress,
             adress_short: obj.website_adress_short,
             numberOfImages: obj.number_of_images,
-            objectName: obj.name
+            objectName: obj.name,
+            objectNameShort: obj.name_short,
+            imageGrid: obj.image_grid
           });
         }
       });
@@ -200,7 +205,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: obj.image_es,
+            image: `https://raw.githubusercontent.com/DabTheMatt/balance/master/src/asets/es/firstaids/firstaid_`,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -208,6 +213,10 @@ export default class What extends Component {
             adress: obj.website_name,
             href: obj.webpage_adress,
             adress_short: obj.website_adress_short,
+            numberOfImages: obj.number_of_images,
+            objectName: obj.name,
+            objectNameShort: obj.name_short,
+            imageGrid: obj.image_grid
           });
         }
       });
@@ -268,9 +277,9 @@ export default class What extends Component {
           });
         }
       });
-    } else if (this.state.costValue <= 25000) {
+    } else if (this.state.costValue <= 40000) {
       this.state.data.map((obj) => {
-        if (obj.thershold <= 25000) {
+        if (obj.thershold <= 40000) {
           let array = new Array(
             parseInt(Number(this.state.costValue) / obj.price_per_item)
           );
@@ -285,7 +294,9 @@ export default class What extends Component {
             href: obj.webpage_adress,
             adress_short: obj.website_adress_short,
             numberOfImages: obj.number_of_images,
-            objectName: obj.name
+            objectName: obj.name,
+            objectNameShort: obj.name_short,
+            imageGrid: obj.image_grid
 
           });
         }
@@ -298,7 +309,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: obj.image_es,
+            image: `https://raw.githubusercontent.com/DabTheMatt/balance/master/src/asets/es/beds/bed_`,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -306,7 +317,10 @@ export default class What extends Component {
             adress: obj.website_name,
             href: obj.webpage_adress,
             adress_short: obj.website_adress_short,
-            numberOfImages: obj.number_of_images
+            numberOfImages: obj.number_of_images,
+            objectName: obj.name,
+            objectNameShort: obj.name_short,
+            imageGrid: obj.image_grid
 
           });
         }
@@ -354,8 +368,8 @@ export default class What extends Component {
               </h1>
               <div className="balanceLine"></div>
               
-              <div className="imagesGrid">{[...this.state.table].map((i) => {
-                return <img className={this.state.objectName} src={ `${this.state.image}`+ `${(Math.floor(Math.random() * (this.state.numberOfImages ) + 1))}`+`.png`} />;
+              <div className={this.state.imageGrid}>{[...this.state.table].map((i) => {
+                return <img className={this.state.objectNameShort} src={ `${this.state.image}`+ `${(Math.floor(Math.random() * (this.state.numberOfImages ) + 1))}`+`.png`} />;
               })}</div>
               
               <div className="balanceInfo teal ">{this.state.info}</div>
