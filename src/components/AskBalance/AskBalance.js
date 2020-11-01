@@ -353,7 +353,8 @@ export default class What extends Component {
                 <sup ><a className="balanceAdress" href={this.state.href}><nobr>>> {this.state.adress_short}</nobr></a></sup>
               </h1>
               <div className="balanceLine"></div>
-              <div>{[...this.state.table].map((i) => {
+              
+              <div className="imagesGrid">{[...this.state.table].map((i) => {
                 return <img className={this.state.objectName} src={ `${this.state.image}`+ `${(Math.floor(Math.random() * (this.state.numberOfImages ) + 1))}`+`.png`} />;
               })}</div>
               
