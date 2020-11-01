@@ -276,11 +276,12 @@ body {
 
 .imagesGrid {
   display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     
     justify-content: space-between;
     justify-items: center;
     width: 55vw;
+    gap: 2em
 }
 
 .leg {
@@ -290,9 +291,8 @@ body {
 }
 
 .book {
-  width: auto;
-  height: 12em;
-  margin: o auto;
+  width: 150px;
+  height: auto;
 }
 
 input[type="number"]::-webkit-inner-spin-button,

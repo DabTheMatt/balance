@@ -179,7 +179,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: `https://raw.githubusercontent.com/DabTheMatt/balance/master/src/asets/es/book_`,
+            image: `https://raw.githubusercontent.com/DabTheMatt/balance/master/src/asets/es/books/book_`,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
