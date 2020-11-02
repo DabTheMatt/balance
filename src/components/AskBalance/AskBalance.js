@@ -120,7 +120,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: `https://raw.githubusercontent.com/DabTheMatt/balance/master/src/asets/es/pencils/pencil_`,
+            image: obj.image_es,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -147,7 +147,7 @@ export default class What extends Component {
             numberOf: array.length,
             image: obj.image_es,
             table: [...array],
-            text1: `${array.length} ${obj.text1}`,
+            text1: `${obj.text1} ${array.length} `,
             text2: obj.text2,
             info: obj.info,
             adress: obj.website_name,
@@ -353,13 +353,13 @@ export default class What extends Component {
   };
 
   render() {
-    return (<div>
+    return (<div className="">
         
 
-      <div className="whiteBackground">
+      <div className="">
         {this.state.showHow ? (
           <div className="balanceCenterContainer whiteBackground">
-            <div className="replayContainer whiteBackground">
+            <div className="replayContainer whiteBackground flexContainer">
               <h1 className="replyHeader">
                 <span className="replyHeaderYo">Y</span>our{" "}
                 <span className="replyHeaderSpan  teal capitalize">
@@ -419,12 +419,14 @@ export default class What extends Component {
                 <span className={this.state.isEnterClassName}>{`<<`}</span> home
               </Link>
             </div>
+            <p className="balanceVersion">v0.3-alpha-giraffe</p>
             <div className="whiteBackground" id="">
-              <p className="balanceVersion">v0.2-alpha</p>
+              
               <br></br>
               <br></br>
 
               <br></br>
+              
             </div>
           </div>
         ) : (<div className="tealBackground">
@@ -473,9 +475,7 @@ export default class What extends Component {
           </div></div>
         )}
 
-        <div className="tealBackground">
-          
-        </div>
+        
       </div>
       </div>
     );

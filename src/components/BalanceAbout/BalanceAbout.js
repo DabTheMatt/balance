@@ -16,12 +16,12 @@ export class About extends Component {
 
   render() {
     return (
-      <div className="balanceCenterContainer">
-        <div className="balanceCenterContainer">
-        <div className="">
+      <div className="allWhite">
+        <div className=" whiteBackground">
+        <div className="whiteBackground">
             
-              <div className="" style={{textAlign: "center", fontSize: "2em", marginTop: "2em" }}>
-              <h1>Welcome to the
+              <div className="whiteBackground " style={{textAlign: "center", fontSize: "2em", marginTop: "2em" }}>
+              <h1 className="aboutTitle">Welcome to the
               
               Balance Project</h1> 
               </div>
@@ -29,7 +29,7 @@ export class About extends Component {
           </div>
 
           <div
-            className=" balanceAboutParagraph" 
+            className=" balanceAboutParagraph whiteBackground" 
           >
             <p className="balanceJustify">
               the project to create an application that will change the world.
@@ -145,21 +145,20 @@ export class About extends Component {
                 biuro@inspiro.org
               </a>
             </p>
-          </div>
-
-          <div><br></br>
-              <br></br>
-              <Link className="balanceButtonB marginTop" to="/Balance">
+            <Link className="balanceButtonT " style={{fontSize: "2em"}} to="/Balance">
                 <span className={this.state.isEnterClassName}>{`<<`}</span> home
               </Link>
+              <p className="balanceVersion" style={{color: "black", fontSize: "0.5em"}}>v0.3-alpha-giraffe</p>
+
+          </div>
+          <br></br>
+              <br></br>
+              
+          <div>
               
             </div>
             <div className="" id="">
-              <p className="balanceVersion">v0.2-alpha</p>
-              <br></br>
-              <br></br>
-
-              <br></br>
+              
             </div>
         </div>
       </div>
