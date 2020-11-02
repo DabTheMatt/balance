@@ -120,7 +120,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: `https://raw.githubusercontent.com/DabTheMatt/balance/master/src/asets/es/pencil_`,
+            image: `https://raw.githubusercontent.com/DabTheMatt/balance/master/src/asets/es/pencils/pencil_`,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -130,6 +130,7 @@ export default class What extends Component {
             adress_short: obj.website_adress_short,
             numberOfImages: obj.number_of_images,
             objectName: obj.name,
+            objectNameShort: obj.name_short,
             imageGrid: obj.image_grid
           });
           
@@ -152,6 +153,10 @@ export default class What extends Component {
             adress: obj.website_name,
             href: obj.webpage_adress,
             adress_short: obj.website_adress_short,
+            numberOfImages: obj.number_of_images,
+            objectName: obj.name,
+            objectNameShort: obj.name_short,
+            imageGrid: obj.image_grid
           });
         }
       });
@@ -374,7 +379,7 @@ export default class What extends Component {
               
               <div className="balanceInfo teal ">{this.state.info}</div>
               <div className="balanceLineBottom"></div>
-              <div style={{textAlign: "right", marginBottom: "2em"}}>
+              <div style={{textAlign: "right", marginBottom: "2em", width: "650px"}}>
               <a className="balanceAdressBottom" href={this.state.href}><nobr>>> {this.state.adress_short}</nobr></a>
               </div>
             </div>

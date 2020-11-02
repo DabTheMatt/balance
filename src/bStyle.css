@@ -148,7 +148,7 @@ html {
 }
 
 .balanceCenterContainer {
-  width: 60vw;
+  width: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,7 +181,7 @@ html {
 }
 
 .balanceInfo {
-  width: 55vw;
+  width: 650px;
   color: black;
   font-size: 1.8em;
   font-weight: bold;
@@ -197,7 +197,7 @@ html {
 
 .balanceLine {
   border-top: 0.15em solid black;
-  width: 55vw;
+  width: 650px;
   margin-top: -2.4em;
   margin-bottom: 3em;
   float: center;
@@ -206,7 +206,7 @@ html {
 
 .balanceLineBottom {
   border-top: 0.15em solid black;
-  width: 55vw;
+  width: 650px;
   margin-top: -4em;
   margin-bottom: 1em;
   float: center;
@@ -271,22 +271,14 @@ body {
   -webkit-transform: rotate(3deg);
 }
 
-.imagesGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 
-  justify-content: space-between;
-  justify-items: center;
-  width: 55vw;
-  gap: 2em;
-}
 
 .imageGridBed {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-content: space-between;
   justify-items: center;
-  width: 55vw;
+  width: 650px;
   gap: 4em;
 }
 
@@ -295,16 +287,16 @@ body {
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   justify-items: center;
-  width: 55vw;
+  width: 650px;
   gap: 1em;
 }
 
 .imageGridLeg {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   justify-items: center;
-  width: 55vw;
+  width: 650px;
 }
 
 .imageGridBook {
@@ -312,13 +304,41 @@ body {
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
   justify-items: center;
-  width: 55vw;
+  width: 650px;
+}
+
+.imageGridPencil {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+}
+
+.imageGridVacine {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+}
+
+.vacine {
+  width: 3em;
+  height: auto;
+  margin: 1em auto;
+}
+
+.pencil {
+  width: 2em;
+  height: auto;
+  margin: 1em auto;
 }
 
 .leg {
-  width: 120px;
+  width: 150px;
   height: auto;
-  margin: auto 2em;
+  margin: 2em 2em;
 }
 
 .book {
@@ -358,7 +378,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .replayContainer {
-  width: 50vw;
+  width: 650px;
   margin-bottom: 3em;
   height: 100%;
 }
@@ -369,7 +389,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
   letter-spacing: 0.03em;
   font-family: "baskervillenormal", serif;
-  width: 55vw;
+  width: 650px;
 
   margin-top: 15vh;
   margin-bottom: 0.5em;
@@ -408,6 +428,7 @@ sup {
 .whiteBackground {
   background-color: white;
   height: 100%;
+  width: auto;
 }
 
 @media (max-width: 1200px) {
