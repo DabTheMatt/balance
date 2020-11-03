@@ -176,6 +176,10 @@ export default class What extends Component {
             adress: obj.website_name,
             href: obj.webpage_adress,
             adress_short: obj.website_adress_short,
+            numberOfImages: obj.number_of_images,
+            objectName: obj.name,
+            objectNameShort: obj.name_short,
+            imageGrid: obj.image_grid
           });
         }
       });
@@ -260,6 +264,10 @@ export default class What extends Component {
             adress: obj.website_name,
             href: obj.webpage_adress,
             adress_short: obj.website_adress_short,
+            numberOfImages: obj.number_of_images,
+            objectName: obj.name,
+            objectNameShort: obj.name_short,
+            imageGrid: obj.image_grid
           });
         }
       });

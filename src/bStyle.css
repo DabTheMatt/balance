@@ -342,6 +342,28 @@ body {
   width: 650px;
 }
 
+.imageGridBee {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+}
+
+.imageGridShelter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+}
+
+.shelter {
+  width: 13em;
+  height: auto;
+  margin: 1em auto;
+}
+
 .imageGridBook {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -370,6 +392,12 @@ body {
   width: 3em;
   height: auto;
   margin: 1em auto;
+}
+
+.bee {
+  width: 5em;
+  height: auto;
+  margin: 0em auto;
 }
 
 .pencil {
