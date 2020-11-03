@@ -314,15 +314,15 @@ export default class What extends Component {
           });
         }
       });
-    } else if (this.state.costValue <= 50000) {
+    } else if (this.state.costValue <= 60000) {
       this.state.data.map((obj) => {
-        if (obj.thershold <= 50000) {
+        if (obj.thershold <= 60000) {
           let array = new Array(
             parseInt(Number(this.state.costValue) / obj.price_per_item)
           );
           return this.setState({
             numberOf: array.length,
-            image: `https://raw.githubusercontent.com/DabTheMatt/balance/master/src/asets/es/beds/bed_`,
+            image: obj.image_es,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -338,9 +338,9 @@ export default class What extends Component {
           });
         }
       });
-    } else if (this.state.costValue <= 100000) {
+    } else if (this.state.costValue <= 500000) {
       this.state.data.map((obj) => {
-        if (obj.thershold <= 100000) {
+        if (obj.thershold <= 500000) {
           let array = new Array(
             parseInt(Number(this.state.costValue) / obj.price_per_item)
           );
@@ -354,6 +354,10 @@ export default class What extends Component {
             adress: obj.website_name,
             href: obj.webpage_adress,
             adress_short: obj.website_adress_short,
+            numberOfImages: obj.number_of_images,
+            objectName: obj.name,
+            objectNameShort: obj.name_short,
+            imageGrid: obj.image_grid
           });
         }
       });
@@ -387,7 +391,7 @@ export default class What extends Component {
               
               <div className="balanceInfo teal ">{this.state.info}</div>
               <div className="balanceLineBottom"></div>
-              <div style={{textAlign: "right", marginBottom: "2em", width: "650px"}}>
+              <div className="bottomDiv">
               <a className="balanceAdressBottom" href={this.state.href}><nobr>>> {this.state.adress_short}</nobr></a>
               </div>
             </div>
