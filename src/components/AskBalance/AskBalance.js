@@ -478,7 +478,7 @@ export default class What extends Component {
                 onMouseLeave={this.handleLeave}
                 type="submit"
                 className="balanceButtonB"
-                style={{ textTransform: "" }}
+                
               >
                 check <sapn className={this.state.isEnterClassName}>>></sapn>
               </button>
