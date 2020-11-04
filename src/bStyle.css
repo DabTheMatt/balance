@@ -355,6 +355,20 @@ body {
   margin: 2em 2em;
 }
 
+.imageGridMenstrual {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+  gap: 0.5em;
+}
+
+.menstrual {
+  width: 100px;
+  height: auto;
+}
+
 .imageGridBee {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -414,6 +428,21 @@ body {
 
 .pencil {
   width: 2.3em;
+  height: auto;
+  margin: 0.2em;
+  -webkit-transform: rotate(3deg);
+}
+
+.imageGridBaobab {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+}
+
+.baobab {
+  width: 400px;
   height: auto;
   margin: 0.2em;
   -webkit-transform: rotate(3deg);
@@ -644,6 +673,21 @@ sup {
     margin: 0em auto;
   }
 
+  .imageGridBaobab {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 350px;
+  }
+  
+  .baobab {
+    width: 250px;
+    height: auto;
+    margin: 0.2em;
+    -webkit-transform: rotate(3deg);
+  }
+
   .imageGridBed {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -699,6 +743,20 @@ sup {
     width: 150px;
     height: auto;
     margin: 2em 2em;
+  }
+
+  .imageGridMenstrual {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 350px;
+  }
+  
+  .menstrual {
+    width: 80px;
+    height: auto;
+    margin: 1em;
   }
 
   .imageGridPencil {

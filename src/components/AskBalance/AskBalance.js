@@ -191,7 +191,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: `https://raw.githubusercontent.com/DabTheMatt/balance/master/src/asets/es/books/book_`,
+            image: obj.image_es,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -214,7 +214,7 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: `https://raw.githubusercontent.com/DabTheMatt/balance/master/src/asets/es/firstaids/firstaid_`,
+            image: obj.image_es,
             table: [...array],
             text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
@@ -231,7 +231,7 @@ export default class What extends Component {
       });
     } else if (this.state.costValue <= 250) {
       this.state.data.map((obj) => {
-        if (obj.thershold <= 500) {
+        if (obj.thershold <= 250) {
           let array = new Array(
             parseInt(Number(this.state.costValue) / obj.price_per_item)
           );
@@ -245,6 +245,10 @@ export default class What extends Component {
             adress: obj.website_name,
             href: obj.webpage_adress,
             adress_short: obj.website_adress_short,
+            numberOfImages: obj.number_of_images,
+            objectName: obj.name,
+            objectNameShort: obj.name_short,
+            imageGrid: obj.image_grid
           });
         }
       });
@@ -271,9 +275,9 @@ export default class What extends Component {
           });
         }
       });
-    } else if (this.state.costValue <= 10000) {
+    } else if (this.state.costValue <= 2000) {
       this.state.data.map((obj) => {
-        if (obj.thershold <= 10000) {
+        if (obj.thershold <= 2000) {
           let array = new Array(
             parseInt(Number(this.state.costValue) / obj.price_per_item)
           );
@@ -281,12 +285,16 @@ export default class What extends Component {
             numberOf: array.length,
             image: obj.image_es,
             table: [...array],
-            text1: `${obj.text1} ${array.length}`,
+            text1: `${array.length} ${obj.text1}`,
             text2: obj.text2,
             info: obj.info,
             adress: obj.website_name,
             href: obj.webpage_adress,
             adress_short: obj.website_adress_short,
+            numberOfImages: obj.number_of_images,
+            objectName: obj.name,
+            objectNameShort: obj.name_short,
+            imageGrid: obj.image_grid
           });
         }
       });
