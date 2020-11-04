@@ -275,9 +275,9 @@ export default class What extends Component {
           });
         }
       });
-    } else if (this.state.costValue <= 2000) {
+    } else if (this.state.costValue <= 5000) {
       this.state.data.map((obj) => {
-        if (obj.thershold <= 2000) {
+        if (obj.thershold <= 5000) {
           let array = new Array(
             parseInt(Number(this.state.costValue) / obj.price_per_item)
           );
