@@ -488,6 +488,12 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-top: 3em;
 }
 
+::placeholder {
+  color: rgba(0,0,0,0.5);
+  font-size: 0.7em;
+  font-weight: 500;
+}
+
 .replyAdress {
   vertical-align: top;
   color: red;
@@ -535,7 +541,6 @@ sup {
 }
 
 .tealBackground {
-  background-color: rgb(0, 137, 172);
 }
 
 .white {
@@ -552,6 +557,17 @@ sup {
 }
 
 @media (max-width: 900px) {
+
+  .aboutTitle {
+    width: 350px;
+    margin-top: 5em;
+    line-height: 1em;
+    font-size: 1.8em;
+    justify-self: center;
+    margin: 0 auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
 
   .askForm {
     display: flex;
@@ -578,6 +594,16 @@ sup {
     letter-spacing: 0.03em;
     text-transform: capitalize;
     -webkit-transform: rotate(-1.75deg);
+  }
+
+  .balanceAboutParagraph {
+    width: 350px;
+    color: rgb(0, 137, 172);
+    font-size: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .balanceAdress {
@@ -626,6 +652,14 @@ sup {
     text-align: left;
 
     width: 350px;
+  }
+
+  .balanceJustify {
+    text-align: left;
+    width: 350px;
+    font-weight: 550;
+    margin-top: 0.1em;
+    font-size: 1em;
   }
 
   .balanceLine {
@@ -856,6 +890,17 @@ sup {
 
 @media (max-width: 400px) {
 
+  .aboutTitle {
+    width: 310px;
+    margin-top: 5em;
+    line-height: 1em;
+    font-size: 1.6em;
+    justify-self: center;
+    margin: 0 auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
   .askForm {
     display: flex;
     align-items: center;
@@ -869,7 +914,7 @@ sup {
   .askInput {
     background: rgb(0, 137, 172);
     border: 0px solid rgb(0, 137, 172);
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
     border-radius: 0px;
     font-size: 2em;
     width: 260px;
@@ -881,6 +926,16 @@ sup {
     letter-spacing: 0.03em;
     text-transform: capitalize;
     -webkit-transform: rotate(-1.75deg);
+  }
+
+  .balanceAboutParagraph {
+    width: 310px;
+    color: rgb(0, 137, 172);
+    font-size: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .balanceAdress {
@@ -908,7 +963,7 @@ sup {
   }
 
   .balanceCenterContainer {
-    width: 320px;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -917,7 +972,7 @@ sup {
     background-color: rgb(0, 137, 172);
   }
   .balanceImageLineSmall {
-    width: 350px;
+    width: 280px;
   }
 
   .balanceInfo {
@@ -929,6 +984,14 @@ sup {
     text-align: left;
 
     width: 280px;
+  }
+
+  .balanceJustify {
+    text-align: left;
+    width: 280px;
+    font-weight: 550;
+    margin-top: 0.1em;
+    font-size: 0.9em;
   }
 
   .balanceLine {
@@ -959,7 +1022,7 @@ sup {
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.1em;
-    margin-top: 20vh;
+    margin-top: 12vh;
     margin-bottom: 0em;
     text-transform: uppercase;
     -webkit-transform: rotate(-1.75deg);

@@ -112,9 +112,9 @@ export default class What extends Component {
       imageNumber: Math.floor(Math.random() * (9 - 1)) + 1
     })
     
-    if (this.state.costValue <= 20) {
+    if (this.state.costValue <= 5) {
       this.state.data.map((obj) => {
-        if (obj.thershold <= 20) {
+        if (obj.thershold <= 5) {
           let array = new Array(
             parseInt(Number(this.state.costValue) / obj.price_per_item)
           );
@@ -183,9 +183,9 @@ export default class What extends Component {
           });
         }
       });
-    } else if (this.state.costValue <= 100) {
+    } else if (this.state.costValue <= 80) {
       this.state.data.map((obj) => {
-        if (obj.thershold <= 100) {
+        if (obj.thershold <= 80) {
           let array = new Array(
             parseInt(Number(this.state.costValue) / obj.price_per_item)
           );
@@ -229,9 +229,9 @@ export default class What extends Component {
           });
         }
       });
-    } else if (this.state.costValue <= 250) {
+    } else if (this.state.costValue <= 300) {
       this.state.data.map((obj) => {
-        if (obj.thershold <= 250) {
+        if (obj.thershold <= 300) {
           let array = new Array(
             parseInt(Number(this.state.costValue) / obj.price_per_item)
           );
@@ -275,9 +275,9 @@ export default class What extends Component {
           });
         }
       });
-    } else if (this.state.costValue <= 5000) {
+    } else if (this.state.costValue <= 2000) {
       this.state.data.map((obj) => {
-        if (obj.thershold <= 5000) {
+        if (obj.thershold <= 2000) {
           let array = new Array(
             parseInt(Number(this.state.costValue) / obj.price_per_item)
           );
@@ -298,9 +298,9 @@ export default class What extends Component {
           });
         }
       });
-    } else if (this.state.costValue <= 40000) {
+    } else if (this.state.costValue <= 10000) {
       this.state.data.map((obj) => {
-        if (obj.thershold <= 40000) {
+        if (obj.thershold <= 10000) {
           let array = new Array(
             parseInt(Number(this.state.costValue) / obj.price_per_item)
           );
@@ -322,9 +322,9 @@ export default class What extends Component {
           });
         }
       });
-    } else if (this.state.costValue <= 60000) {
+    } else if (this.state.costValue <= 26000) {
       this.state.data.map((obj) => {
-        if (obj.thershold <= 60000) {
+        if (obj.thershold <= 26000) {
           let array = new Array(
             parseInt(Number(this.state.costValue) / obj.price_per_item)
           );
@@ -369,8 +369,31 @@ export default class What extends Component {
           });
         }
       });
-    }
+    } else if (this.state.costValue > 500000) {
+      this.state.data.map((obj) => {
+        if (obj.thershold > 500000) {
+          let array = new Array(
+            parseInt(Number(this.state.costValue) / obj.price_per_item)
+          );
+          return this.setState({
+            numberOf: array.length,
+            image: obj.image_es,
+            table: [],
+            text1: `${obj.text1}`,
+            text2: obj.text2,
+            info: obj.info,
+            adress: obj.website_name,
+            href: obj.webpage_adress,
+            adress_short: obj.website_adress_short,
+            numberOfImages: obj.number_of_images,
+            objectName: obj.name,
+            objectNameShort: obj.name_short,
+            imageGrid: obj.image_grid
+          });
+        }
+      });
   };
+}
 
   render() {
     return (<div className="">
@@ -462,7 +485,7 @@ export default class What extends Component {
               ></input>
 
               <label className="balanceSubtitle balanceAskBottom">
-                How much it costs?
+                How much $ it costs?
               </label>
               <input
                 type="number"
