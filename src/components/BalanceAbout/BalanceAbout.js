@@ -148,7 +148,7 @@ export class About extends Component {
             <Link className="balanceButtonT " style={{fontSize: "2em"}} to="/Balance">
                 <span className={this.state.isEnterClassName}>{`<<`}</span> home
               </Link>
-              <p className="balanceVersion" style={{color: "black", fontSize: "0.5em"}}>v0.3-alpha-giraffe</p>
+              <p className="balanceVersion" style={{color: "black", fontSize: "0.5em"}}>v0.4-alpha-lightning</p>
 
           </div>
           <br></br>

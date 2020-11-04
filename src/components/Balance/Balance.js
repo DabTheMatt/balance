@@ -57,7 +57,7 @@ export default class Balance extends Component {
                 to="/BalanceAbout">
           about 
           </Link>
-        <div className="balanceVersion">v0.3-alpha-giraffe</div>
+        <div className="balanceVersion">v0.4-alpha-lightning</div>
       </div>
     );
   }

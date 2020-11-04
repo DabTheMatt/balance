@@ -514,7 +514,7 @@ export default class What extends Component {
                 check <sapn className={this.state.isEnterClassName}>>></sapn>
               </button>
             </form>
-            <p className="balanceVersion">v0.3-alpha-giraffe</p>
+            <p className="balanceVersion">v0.4-alpha-lightning</p>
           </div></div>
         )}
 
