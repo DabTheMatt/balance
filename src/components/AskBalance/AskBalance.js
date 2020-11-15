@@ -378,8 +378,8 @@ export default class What extends Component {
           );
           return this.setState({
             numberOf: array.length,
-            image: obj.image_es,
-            table: [],
+            image: obj.image,
+            table: [...array],
             text1: `${obj.text1}`,
             text2: obj.text2,
             info: obj.info,
