@@ -36,7 +36,8 @@ export default class What extends Component {
       numberOfImages: "",
       objectName: "",
       objectNameShort: "",
-      imageGrid: ""
+      imageGrid: "",
+      isWorth: "is worth"
     };
   }
 
@@ -388,7 +389,9 @@ export default class What extends Component {
             numberOfImages: obj.number_of_images,
             objectName: obj.name,
             objectNameShort: obj.name_short,
-            imageGrid: obj.image_grid
+            imageGrid: obj.image_grid,
+            isWorth: ``,
+            whatValue: ``
           });
         }
       });
@@ -408,7 +411,7 @@ export default class What extends Component {
                 <span className="replyHeaderSpan  teal capitalize">
                   {this.state.whatValue}
                 </span>{" "}
-                is worth{" "}
+                {this.state.isWorth}{" "}
                 <span className="replyHeaderSpan  ">
                   {this.state.text1} {this.state.text2}
                 </span>{" "}
