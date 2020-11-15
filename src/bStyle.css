@@ -357,7 +357,7 @@ body {
 
 .imageGridMenstrual {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   justify-items: center;
   width: 650px;
@@ -365,7 +365,7 @@ body {
 }
 
 .menstrual {
-  width: 100px;
+  width: 200px;
   height: auto;
 }
 
@@ -407,15 +407,16 @@ body {
 
 .imageGridBook {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   justify-items: center;
   width: 650px;
 }
 
 .book {
-  width: 150px;
+  width: 170px;
   height: auto;
+  margin: 0.5em;
 }
 
 .imageGridPencil {
