@@ -1,0 +1,505 @@
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+.mainColor {
+  color: rgb(0,137,172);
+ /* cmyk: cmyk(90, 25, 25, 2);
+  lab 52, -23, 28;
+  1.75 rotate */
+}
+.white {
+  color: white;
+}
+
+.aboutHeaderHello {
+  font-family: "Baskervville, serif";
+  font-size: "0.5em";
+  color: "black"
+}
+
+.aboutHeader {
+  font-family: "Baskervville", serif;
+  width: 50vw;
+  color: black;
+  font-size: 1em;
+  text-align: left;
+  line-height: 0.9em;
+}
+
+.aboutTitle {
+  font-size: 2em;
+  color: white;
+}
+
+.aboutHeaderContainer {
+  margin-top: 6em;
+  height: 7em;
+}
+
+.aboutParagraph {
+  font-family: "Baskervville, serif";
+            font-size: 1.2em;
+            width: 50vw;
+            text-align: left;
+            margin-bottom: 3em;
+}
+
+
+
+body {
+  /*background: #00c3ff; */
+ 
+  margin: 0 auto;
+  overflow-x: hidden; 
+}
+
+.bulbOn {
+  background-image: url("../src/asets/licensed/lightbulbcolor.png");
+  height: 50px;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bulbAboutOn {
+  background-image: url("../src/asets/licensed/lightbulbcolor.png");
+  height: 50px;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bulbOff {
+  background-image: url("../src/asets/licensed/lightbulbbw.png");
+  height: 50px;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bulbPosition {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 2em;
+  position: relative;
+  top: 30px;
+  left: 300px;
+}
+.bulbAboutPosition {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 2em;
+  position: relative;
+  text-align: left;
+  top: 130px;
+  left: 730px;
+}
+
+html {
+  margin: 0 auto;
+}
+
+::placeholder {
+  padding: 0;
+}
+
+.info {
+  width: 60vw;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 7em;
+  margin: 0 auto;
+  line-height: 1em;
+  color: #ffffff;
+}
+
+h2 {
+  font-weight: 300;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  color: #ffffff;
+  font-size: 2em;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  margin: 0 auto;
+
+  flex-direction: column;
+}
+
+.center {
+  text-align: center;
+}
+
+.titleRotation {
+  font-family: "Baskervville", serif;
+}
+
+.weight400 {
+  font-weight: 400;
+}
+
+.weight300 {
+  font-weight: 300;
+}
+
+button {
+  font-family: Oswald;
+  border: none;
+  background: none;
+  margin: 0.5em;
+  font-size: 1.6em;
+}
+
+.worth:hover {
+  font-size: 2em;
+}
+
+.check {
+  font-family: "Baskervville", serif;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 3em;
+}
+
+.check:hover {
+  color: white;
+}
+
+.checkinvert {
+  font-family: "Baskervville", serif;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 3em;
+}
+
+.checkinvert:hover {
+  color: black;
+}
+
+.input {
+  background: #00c3ff;
+  border: 0;
+  border-bottom: 2px dashed white;
+  border-radius: 3px;
+  font-size: 4em;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  font-family: "Baskervville", serif;
+  width: 60%;
+}
+
+.helpInput {
+  background: #00c3ff;
+  border: 0;
+  border-bottom: 2px dashed white;
+  border-radius: 3px;
+  font-size: 1.5em;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  font-family: "Baskervville", serif;
+  width: 60%;
+}
+
+.input:focus {
+  border: 0;
+  border-bottom: 2px dashed black;
+  outline-style: none;
+  box-shadow: none;
+}
+.helpInput:focus {
+  border: 0;
+  border-bottom: 2px dashed black;
+  outline-style: none;
+  box-shadow: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.margin3em {
+  margin: 0 5em;
+}
+
+.margintop20vh {
+  margin-top: 20vh;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin: 0 auto;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.helpform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+label {
+  font-family: "Baskervville", serif;
+  font-weight: 500;
+  font-size: 2em;
+  margin: 1em 0;
+  color: white;
+}
+
+.helpLabel {
+  font-family: "Baskervville", serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  margin: 1em 0;
+  color: white;
+}
+
+.image {
+  width: 6em;
+  height: 6em;
+  margin: 0.4em;
+}
+
+.thing {
+  font-family: "Baskervville", serif;
+  font-size: 1.3em;
+  color: black;
+  margin: 1.5em;
+  line-height: 1.4em;
+  text-transform: capitalize;
+}
+
+.top1em {
+  margin-top: 0.6em;
+}
+
+.a {
+  text-decoration: none;
+  color: black;
+}
+
+.a:hover {
+  color: white;
+}
+
+.ainvert {
+  font-family: "Baskervville", serif;
+  font-weight: 100;
+  font-size: 2em;
+  text-decoration: none;
+  color: white;
+}
+
+.ainvert:hover {
+  color: black;
+}
+
+h3 {
+  color: white;
+}
+
+::placeholder {
+  color: white;
+  text-transform: lowercase;
+  font-size: 0.5em;
+}
+
+.polishbutton {
+  color: white;
+  font-size: 0.7em;
+}
+
+.polishbutton:hover {
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  .aboutHeader {
+    font-family: "Baskervville", serif;
+    width: 70vw;
+    color: black;
+    font-size: 1em;
+    text-align: left;
+    line-height: 0.9em;
+  }
+
+  .aboutHeaderContainer {
+    margin-top: 4em;
+    height: 4em;
+  }
+
+  .aboutParagraph {
+    font-family: "Baskervville, serif";
+              font-size: 0.7em;
+              width: 70vw;
+              text-align: left;
+              margin-bottom: 3em;
+  }
+
+  .aboutTitle {
+    font-size: 1.8em;
+    color: white;
+  }
+
+  .ainvert {
+    font-family: "Baskervville", serif;
+    font-weight: 100;
+    font-size: 1.6em;
+    text-decoration: none;
+    color: white;
+  }
+  .bulbPosition {
+    
+    top: 30px;
+    left: 150px;
+  }
+
+  .check {
+    font-weight: bold;
+    font-size: 1.8em;
+  }
+  .checkmargintop20vh {
+    margin-top: 15vh;
+  }
+  .container {
+    margin: 2em auto;
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 7em;
+  }
+  h1 {
+    font-size: 5em;
+
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 1em;
+    margin: 0em 1em;
+    margin-bottom: 2em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  .info {
+    width: 80vw;
+    margin: 0 15em;
+  }
+  .input {
+    font-size: 2em;
+  }
+  .image {
+    width: 3em;
+    height: 3em;
+    margin: 0.2em;
+  }
+  label {
+    font-size: 1.5em;
+  }
+
+  .mainh2 {
+    font-size: 1.5em;
+  }
+  .margintop10vh {
+    margin-top: 10vh;
+  }
+  .margintop20vh {
+    margin-top: 10vh;
+  }
+  .margin3em {
+    margin: 0 2em;
+  }
+  .thing {
+    font-size: 1em;
+    margin: 0 auto;
+  }
+  .titleRotation {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+  .top1em {
+    margin-top: 0em;
+  }
+
+  .polishbutton {
+    font-size: 1.2em;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 400px) {
+    .bulbPosition {
+    
+        top: 30px;
+        left: 135px;
+      }
+  .check {
+    font-size: 1.6em;
+  }
+  .container {
+    margin: 0em auto;
+  }
+  h1 {
+    font-size: 4em;
+    margin: 0 auto;
+  }
+  .html {
+    max-width: 320px;
+    max-height: 568px;
+  }
+  .info {
+    width: 80vw;
+    margin: 0 2em;
+  }
+  .mainh2 {
+    font-size: 1.2em;
+  }
+  .margin3em {
+    margin: 0 2em;
+  }
+  .margintop20vh {
+    margin-top: 10vh;
+  }
+  .polishbutton {
+    font-size: 0.8em;
+    margin-bottom: 2em;
+  }
+  .titleRotation {
+    font-size: 3em;
+  }
+  .top1em {
+    margin-top: 0.5em;
+  }
+}

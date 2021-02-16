@@ -1,0 +1,1202 @@
+@font-face {
+  font-family: "paneuropa_neue_beta_1.1Rg";
+  src: url("./asets/fonts/webfontkit-20201012-101627/paneuropaneueregular-webfont.woff2")
+      format("woff2"),
+    url("./asets/fonts/webfontkit-20201012-101627/paneuropaneueregular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "baskervillenormal";
+  src: url("./asets/fonts/webfontkit-20201014-140058/baskvl-webfont.woff2")
+      format("woff2"),
+    url("./asets/fonts/webfontkit-20201014-140058/baskvl-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "paneuropa_neue_beta_1.1Rg";
+}
+
+a {
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.allWhite {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.aboutTitle {
+  width: 650px;
+  margin-top: 5em;
+  line-height: 1em;
+  font-size: 3em;
+  justify-self: center;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 0.3em;
+}
+
+.askInput {
+  background: rgb(0, 137, 172);
+  border: 0px solid rgb(0, 137, 172);
+  border-bottom: 2px solid white;
+  border-radius: 0px;
+  font-size: 3em;
+  width: 40vw;
+  text-align: center;
+  text-transform: capitalize;
+  color: black;
+  font-family: "baskervillenormal", serif;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  -webkit-transform: rotate(-1.75deg);
+}
+
+.askInput:focus {
+  border: 0;
+  border-bottom: 2px solid white;
+  outline-style: none;
+  box-shadow: none;
+}
+
+.askForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+  margin-top: 20vh;
+  flex-direction: column;
+}
+
+.balanceAbout {
+  font-size: 1.8em;
+  font-weight: normal;
+  margin-top: 2em;
+}
+
+.balanceAboutParagraph {
+  width: 650px;
+  color: rgb(0, 137, 172);
+  font-size: 1.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.balanceAdress {
+  color: rgb(0, 137, 172);
+  font-size: 0.4em;
+  font-family: "baskervillenormal", serif;
+  margin-top: -2em;
+}
+
+.balanceAdressBottom {
+  color: rgb(0, 137, 172);
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: "baskervillenormal", serif;
+  line-height: 2em;
+  margin-bottom: 3em;
+  letter-spacing: 0.1em;
+}
+
+.balanceAdressBottom:hover {
+  color: black;
+}
+
+.balanceAdress:hover {
+  color: black;
+}
+
+.balanceAskBottom {
+  margin-bottom: 1em;
+}
+
+.balanceButtonB {
+  font-family: "baskervillenormal", serif;
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+  border: none;
+  background: none;
+  margin-top: 2em;
+  font-size: 3em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.balanceButtonB2 {
+  font-family: "baskervillenormal", serif;
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+  border: none;
+  background: none;
+  margin-top: 2em;
+  font-size: 3em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.balanceButtonB2:hover {
+  color: rgb(0, 137, 172);
+}
+
+.balanceButtonW {
+  color: white;
+}
+
+.bottomDiv {
+  text-align: right;
+  margin-bottom: 2em;
+  width: 650px;
+}
+
+
+.balanceButtonT {
+  font-family: "baskervillenormal", serif;
+  color: black;
+  font-weight: bolder;
+}
+
+.balanceButtonT:hover {
+  color: rgb(0, 137, 172);
+}
+
+.balanceCenterContainer {
+  width: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: rgb(0, 137, 172);
+}
+
+.balanceChevron {
+  color: black;
+  font-size: 0.8em;
+}
+
+.balanceChevronBlack {
+  color: black;
+  font-size: 0.8em;
+}
+
+.balanceChevronWhite {
+  color: white;
+  font-size: 0.8em;
+}
+
+.balanceImageLineSmall {
+  width: 80vw;
+}
+
+.balanceImageLineBig {
+  width: 84vw;
+}
+
+.balanceInfo {
+  width: 650px;
+  color: black;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: left;
+  text-justify: none;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.balanceJustify {
+  text-align: justify;
+  width: 650px;
+  font-weight: 550;
+  margin-top: 0.1em;
+}
+
+.balanceLine {
+  border-top: 0.15em solid black;
+  width: 650px;
+  margin-top: -2.4em;
+  margin-bottom: 3em;
+  float: center;
+  -webkit-transform: rotate(-1.75deg);
+}
+
+.balanceLineBottom {
+  border-top: 0.15em solid black;
+  width: 650px;
+  margin-top: -4em;
+  margin-bottom: 1em;
+  float: center;
+  -webkit-transform: rotate(-1.75deg);
+}
+
+.balanceLineContainer {
+  width: 100vw;
+  text-align: right;
+}
+
+.balanceSubtitle {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin-top: -0.2em;
+}
+
+.balanceSubtitleBottom {
+  margin-bottom: 2.2em;
+}
+
+.balanceTitle {
+  color: white;
+  font-size: 6em;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-top: 25vh;
+  margin-bottom: 0em;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-1.75deg);
+}
+
+.balanceVersion {
+  font-family: "baskervillenormal", serif;
+  font-size: 0.7em;
+  margin: 0 auto;
+  margin-top: 6em;
+}
+
+body {
+  background-color: rgb(0, 137, 172);
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.image {
+  width: auto;
+  height: auto;
+  margin: 0.2em;
+  -webkit-transform: rotate(3deg);
+}
+
+
+
+.imageGridBed {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+  gap: 4em;
+}
+
+.bed {
+  width: 100%;
+  height: auto;
+  margin: auto 2em;
+}
+
+.imageGridFirstaid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+  gap: 0.5em;
+}
+
+.firstaid {
+  width: 210px;
+  height: auto;
+}
+
+.imageGridLeg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+}
+
+.leg {
+  width: 150px;
+  height: auto;
+  margin: 2em 2em;
+}
+
+.imageGridMenstrual {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+  gap: 0.5em;
+}
+
+.menstrual {
+  width: 200px;
+  height: auto;
+}
+
+.imageGridBee {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+}
+
+.imageGridShelter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+}
+
+.shelter {
+  width: 13em;
+  height: auto;
+  margin: 1em auto;
+}
+
+.imageGridWheelchair {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+}
+
+.wheelchair {
+  width: 30em;
+  height: auto;
+  margin: 0em auto;
+}
+
+.imageGridBook {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+}
+
+.book {
+  width: 170px;
+  height: auto;
+  margin: 0.5em;
+}
+
+.imageGridPencil {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+}
+
+.pencil {
+  width: 2.3em;
+  height: auto;
+  margin: 0.2em;
+  -webkit-transform: rotate(3deg);
+}
+
+.imageGridBaobab {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+}
+
+.baobab {
+  width: 400px;
+  height: auto;
+  margin: 0.2em;
+  -webkit-transform: rotate(3deg);
+}
+
+.imageGridVacine {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  width: 650px;
+}
+
+.vacine {
+  width: 3em;
+  height: auto;
+  margin: 1em auto;
+}
+
+.bee {
+  width: auto;
+  height: 5em;
+  margin: 0em auto;
+}
+
+.pencil {
+  width: 2em;
+  height: auto;
+  margin: 1em auto;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.h0 {
+  height: 0px;
+}
+
+.marginTop {
+  margin-top: 3em;
+}
+
+::placeholder {
+  color: rgba(0,0,0,0.5);
+  font-size: 0.7em;
+  font-weight: 500;
+}
+
+.replyAdress {
+  vertical-align: top;
+  color: red;
+  height: auto;
+}
+
+.replayContainer {
+  width: 100%;
+  margin-bottom: 3em;
+  height: 100%;
+}
+
+.replyHeader {
+  color: black;
+  font-size: 4em;
+
+  letter-spacing: 0.03em;
+  font-family: "baskervillenormal", serif;
+  width: 650px;
+
+  margin-top: 15vh;
+  margin-bottom: 0.5em;
+}
+
+.replyHeaderYo {
+  color: black;
+  line-height: 1em;
+  letter-spacing: -0.1em;
+  font-family: "baskervillenormal", serif;
+}
+
+.replyHeaderSpan {
+  font-family: "baskervillenormal", serif;
+  line-height: 0.5em;
+}
+
+sup {
+  vertical-align: top;
+  position: relative;
+  top: -0.2em;
+}
+
+.teal {
+  color: rgb(0, 137, 172);
+}
+
+.tealBackground {
+}
+
+.white {
+  color: white;
+}
+
+.whiteBackground {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+
+  .aboutTitle {
+    width: 350px;
+    margin-top: 5em;
+    line-height: 1em;
+    font-size: 1.8em;
+    justify-self: center;
+    margin: 0 auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  .askForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    margin-top: 15vh;
+    flex-direction: column;
+  }
+
+  .askInput {
+    background: rgb(0, 137, 172);
+    border: 0px solid rgb(0, 137, 172);
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+    font-size: 3em;
+    width: 300px;
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+    font-family: "baskervillenormal", serif;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    -webkit-transform: rotate(-1.75deg);
+  }
+
+  .balanceAboutParagraph {
+    width: 350px;
+    color: rgb(0, 137, 172);
+    font-size: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .balanceAdress {
+    color: rgb(0, 137, 172);
+    font-size: 0.4em;
+    font-family: "baskervillenormal", serif;
+    margin-top: 0em;
+  }
+
+  .balanceAdressBottom {
+    font-size: 1em;;
+  }
+
+  .balanceButtonB {
+    font-family: "baskervillenormal", serif;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    border: none;
+    background: none;
+    margin-top: 0.35em;
+    font-size: 3em;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .balanceCenterContainer {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: rgb(0, 137, 172);
+  }
+  .balanceImageLineSmall {
+    width: 350px;
+  }
+
+  .balanceInfo {
+    font-size: 1.1em;
+    font-weight: bold;
+    word-spacing: -1px;
+    margin-top: 1em;
+    margin-bottom: 4.5em;
+    text-align: left;
+
+    width: 350px;
+  }
+
+  .balanceJustify {
+    text-align: left;
+    width: 350px;
+    font-weight: 550;
+    margin-top: 0.1em;
+    font-size: 1em;
+  }
+
+  .balanceLine {
+    border-top: 0.15em solid black;
+    width: 350px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    float: center;
+    -webkit-transform: rotate(-1.75deg);
+  }
+
+  .balanceLineBottom {
+    width: 350px;
+  }
+
+  .balanceTitle {
+    color: white;
+    font-size: 5em;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: 20vh;
+    margin-bottom: 0em;
+    text-transform: uppercase;
+    -webkit-transform: rotate(-1.75deg);
+  }
+
+  .bottomDiv {
+    text-align: right;
+    margin-bottom: 2em;
+    width: 350px;
+  }
+
+  .imageGridBee {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 350px;
+  }
+
+  .bee {
+    width: auto;
+    height: 3em;
+    margin: 0em auto;
+  }
+
+  .imageGridBaobab {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 350px;
+  }
+  
+  .baobab {
+    width: 250px;
+    height: auto;
+    margin: 0.2em;
+    -webkit-transform: rotate(3deg);
+  }
+
+  .imageGridBed {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 350px;
+    gap: 4em;
+  }
+  
+  .bed {
+    width: 100%;
+    height: auto;
+    margin: auto 2em;
+  }
+
+  .imageGridBook {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 350px;
+  }
+  
+  .book {
+    width: 100px;
+    height: auto;
+  }
+
+  .imageGridFirstaid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 350px;
+    
+  }
+  
+  .firstaid {
+    width: 210px;
+    height: auto;
+    margin: 1em;
+  }
+
+  .imageGridLeg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 350px;
+  }
+  
+  .leg {
+    width: 150px;
+    height: auto;
+    margin: 2em 2em;
+  }
+
+  .imageGridMenstrual {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 350px;
+  }
+  
+  .menstrual {
+    width: 80px;
+    height: auto;
+    margin: 1em;
+  }
+
+  .imageGridPencil {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 350px;
+  }
+  
+  .pencil {
+    width: 2em;
+    height: auto;
+    margin: 0.2em;
+    -webkit-transform: rotate(3deg);
+  }
+
+  .imageGridShelter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 350px;
+  }
+
+  .shelter {
+    width: 9em;
+    height: auto;
+    margin: 0em auto;
+  }
+
+  .imageGridWheelchair {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 350px;
+  }
+  
+  .wheelchair {
+    width: 18em;
+    height: auto;
+    margin: 0em auto;
+  }
+
+  .imageGridVacine {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 350px;
+  }
+  
+  .vacine {
+    width: 3em;
+    height: auto;
+    margin: 0em auto;
+  }
+
+  .leg {
+    width: 3em;
+    margin: auto 0.5em;
+  }
+
+  .leg {
+    width: 6em;
+  }
+
+  .replayContainer {
+    width: 65vw;
+  }
+
+  .replyHeader {
+    color: black;
+    font-size: 2.6em;
+    letter-spacing: 0.03em;
+    font-family: "baskervillenormal", serif;
+    width: 350px;
+    margin-top: 15vh;
+    margin-bottom: -0.4em;
+  }
+
+  .replyHeaderSpan {
+    font-family: "baskervillenormal", serif;
+    line-height: 1em;
+  }
+
+  .whiteBackground {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .aboutTitle {
+    width: 310px;
+    margin-top: 5em;
+    line-height: 1em;
+    font-size: 1.6em;
+    justify-self: center;
+    margin: 0 auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  .askForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    margin-top: 15vh;
+    flex-direction: column;
+  }
+
+  .askInput {
+    background: rgb(0, 137, 172);
+    border: 0px solid rgb(0, 137, 172);
+    border-bottom: 1px solid white;
+    border-radius: 0px;
+    font-size: 2em;
+    width: 260px;
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+    font-family: "baskervillenormal", serif;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    -webkit-transform: rotate(-1.75deg);
+  }
+
+  .balanceAboutParagraph {
+    width: 310px;
+    color: rgb(0, 137, 172);
+    font-size: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .balanceAdress {
+    color: rgb(0, 137, 172);
+    font-size: 0.5em;
+    font-family: "baskervillenormal", serif;
+    margin-top: 0em;
+  }
+
+  .balanceAdressBottom {
+    font-size: 0.8em;;
+  }
+
+  .balanceButtonB {
+    font-family: "baskervillenormal", serif;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    border: none;
+    background: none;
+    margin-top: 0.5em;
+    font-size: 2.8em;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .balanceCenterContainer {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: rgb(0, 137, 172);
+  }
+  .balanceImageLineSmall {
+    width: 280px;
+  }
+
+  .balanceInfo {
+    font-size: 1.1em;
+    font-weight: bold;
+    word-spacing: -1px;
+    margin-top: 1em;
+    margin-bottom: 4.5em;
+    text-align: left;
+
+    width: 280px;
+  }
+
+  .balanceJustify {
+    text-align: left;
+    width: 280px;
+    font-weight: 550;
+    margin-top: 0.1em;
+    font-size: 0.9em;
+  }
+
+  .balanceLine {
+    border-top: 0.15em solid black;
+    width: 280px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    float: center;
+    -webkit-transform: rotate(-1.75deg);
+  }
+
+  .balanceLineBottom {
+    width: 280px;
+  }
+
+  .balanceSubtitle {
+    color: white;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin-top: -0.2em;
+  }
+
+  .balanceTitle {
+    color: white;
+    font-size: 4em;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: 12vh;
+    margin-bottom: 0em;
+    text-transform: uppercase;
+    -webkit-transform: rotate(-1.75deg);
+  }
+
+  .bottomDiv {
+    text-align: right;
+    margin-bottom: 2em;
+    width: 280px;
+  }
+
+  .imageGridBee {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 280px;
+  }
+
+  .bee {
+    width: auto;
+    height: 3em;
+    margin: 0em auto;
+  }
+
+  .imageGridBed {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 280px;
+    gap: 4em;
+  }
+  
+  .bed {
+    width: 100%;
+    height: auto;
+    margin: auto 2em;
+  }
+
+  .imageGridBook {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 280px;
+  }
+  
+  .book {
+    width: 100px;
+    height: auto;
+  }
+
+  .imageGridFirstaid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 280px;
+    
+  }
+  
+  .firstaid {
+    width: 210px;
+    height: auto;
+    margin: 1em;
+  }
+
+  .imageGridLeg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 280px;
+  }
+  
+  .leg {
+    width: 150px;
+    height: auto;
+    margin: 2em 2em;
+  }
+
+  .imageGridPencil {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 280px;
+  }
+  
+  .pencil {
+    width: 2em;
+    height: auto;
+    margin: 0.2em;
+    -webkit-transform: rotate(3deg);
+  }
+
+  .imageGridShelter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 280px;
+  }
+
+  .shelter {
+    width: 9em;
+    height: auto;
+    margin: 0em auto;
+  }
+
+  .imageGridWheelchair {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 280px;
+  }
+  
+  .wheelchair {
+    width: 18em;
+    height: auto;
+    margin: 0em auto;
+  }
+
+  .imageGridVacine {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    width: 280px;
+  }
+  
+  .vacine {
+    width: 3em;
+    height: auto;
+    margin: 0em auto;
+  }
+
+  .leg {
+    width: 3em;
+    margin: auto 0.5em;
+  }
+
+  .leg {
+    width: 6em;
+  }
+
+  .replayContainer {
+    width: 65vw;
+  }
+
+  .replyHeader {
+    color: black;
+    font-size: 2em;
+    letter-spacing: 0.03em;
+    font-family: "baskervillenormal", serif;
+    width: 280px;
+    margin-top: 15vh;
+    margin-bottom: -0.4em;
+  }
+
+  .replyHeaderSpan {
+    font-family: "baskervillenormal", serif;
+    line-height: 1em;
+  }
+
+  .whiteBackground {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
