@@ -55,18 +55,6 @@ export class About extends Component {
             </p>
 
             <p className="balanceJustify">
-              {" "}
-              We are looking for people who want to get involved in this life
-              changing project and who can offer their time, experience and
-              expertise.{" "}
-            </p>
-            <p className="balanceJustify">
-              We are currently looking for help to develop the application from
-              the following people: <strong>developers, researchers, sociologists, NGO
-              employees, user interface specialists.</strong>
-            </p>
-
-            <p className="balanceJustify">
               (more information at our GitHub repozitory page{" "}
               <a
                 
@@ -99,37 +87,16 @@ export class About extends Component {
             </p>
 
             <p className="balanceJustify">
-              We hope that the development of the application will not only
-              bring about a change in our spending habits, social awareness and
-              community spirit, but will also help in the development of the
-              social startup "INSPIRO UP". In the future “INSPIRO UP” will
-              financially support the construction of an independent community
-              center in Poland, where INSPIRO has operated for many years.
-              Inspiro created a community centre that was a safe haven for
-              people from all walks of life focusing on education, self
-              development, socializing, culture, art and building a civil
-              society.
+              
+              idea, programming, design: Maciej Dabrowski
             </p>
-
             <p className="balanceJustify">
-              We dream about INSPIRO being able to exist again and we believe
-              that the development of the Balance App and work on this project
-              will help us make this dream come true.
+              
+              database of values: Beata Kwiecinska
             </p>
-
             <p className="balanceJustify">
-              To make our vision a reality and build a social startup that
-              creates applications to change the world, we learned the basics of
-              programming, and now we are putting that knowledge into action.
-            </p>
-
-            <p className="balanceJustify">
-              Change is difficult but it does not have to be impossible, and we
-              hope it will be possible with you.
-            </p>
-
-            <p className="balanceJustify">
-              We invite you to collaborate with us{" "}
+              
+              graphics: Edyta Stajniak
             </p>
 
             <p className="balanceJustify">
@@ -140,9 +107,9 @@ export class About extends Component {
               <a
                 className="ainvert"
                 style={{ fontSize: "1.0em", textDecoration: "none" }}
-                href="mailto:biuro@inspiro.org"
+                href="mailto:dabrowskimaciej@protonmail.com"
               >
-                biuro@inspiro.org
+                dabrowskimaciej@protonmail.com
               </a>
             </p>
             <Link className="balanceButtonT " style={{fontSize: "2em"}} to="/Balance">

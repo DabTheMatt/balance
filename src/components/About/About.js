@@ -48,20 +48,6 @@ export class About extends Component {
           </p>
 
           <p>
-            We are looking for people who want to get involved in this life
-            changing project and who can offer their time, experience and
-            expertise.{" "}
-          </p>
-          <p>We are currently looking for help to develop the application from the following people:</p>
-<ul>
-<li>developers</li>
-<li>researchers</li>
-<li>sociologists</li>
-<li>NGO employees</li>
-<li>user interface specialists</li>
-</ul>
-
-          <p>
             (more information at our GitHub repozitory page{" "}
             <a
               className="ainvert"
@@ -92,46 +78,19 @@ export class About extends Component {
             for the development of the app.
           </p>
 
-          <p>
-            We hope that the development of the application will not only bring
-            about a change in our spending habits, social awareness and
-            community spirit, but will also help in the development of the
-            social startup "INSPIRO UP". In the future “INSPIRO UP” will
-            financially support the construction of an independent community
-            center in Poland, where INSPIRO has operated for many years. Inspiro
-            created a community centre that was a safe haven for people from all
-            walks of life focusing on education, self development, socializing,
-            culture, art and building a civil society.
-          </p>
+          
 
-          <p>
-            We dream about INSPIRO being able to exist again and we believe that
-            the development of the Balance App and work on this project will
-            help us make this dream come true.
-          </p>
-
-          <p>
-            To make our vision a reality and build a social startup that creates
-            applications to change the world, we learned the basics of
-            programming, and now we are putting that knowledge into action.
-          </p>
-
-          <p>
-            Change is difficult but it does not have to be impossible, and we
-            hope it will be possible with you.
-          </p>
-
-          <p>We invite you to collaborate with us </p>
-
-          <p>INSPIRO UP / Beata Kwiecińska / Maciej Dąbrowski</p>
+          <p>idea, programming, design: Maciej Dąbrowski</p>
+          <p>database of values: Beata Kwiecińska</p>
+          <p>graphics: Edyta Stajniak</p>
           <p>
             email:{" "}
             <a
               className="ainvert"
               style={{ fontSize: "1.2em", textDecoration: "none" }}
-              href="mailto:biuro@inspiro.org"
+              href="mailto:dabrowskimaciej@protonmail.com"
             >
-              biuro@inspiro.org
+              dabrowskimaciej@protonmail.com
             </a>
           </p>
         </div>
