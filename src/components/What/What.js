@@ -27,8 +27,9 @@ export default class What extends Component {
   }
 
   componentDidMount() {
+    console.log(process.env.REACT_APP_VALUES_KEY);
     Tabletop.init({
-      key: "1NKa7gPtvcImda1TyAfkM9mlkJ5rDuke5eRqmQImNFWA",
+      key: process.env.REACT_APP_VALUES_KEY,
       callback: (googleData) => {
         this.setState({
           data: googleData,
